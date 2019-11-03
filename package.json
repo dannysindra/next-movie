@@ -35,13 +35,16 @@
     "@storybook/addon-a11y": "^5.2.5",
     "@storybook/addon-actions": "^5.2.5",
     "@storybook/addon-links": "^5.2.5",
+    "@storybook/addon-storyshots": "^5.2.5",
     "@storybook/addon-viewport": "^5.2.5",
     "@storybook/addons": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "babel-loader": "^8.0.6",
     "husky": ">=1",
     "lint-staged": ">=8",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.11.0",
+    "require-context.macro": "^1.2.2"
   },
   "husky": {
     "hooks": {

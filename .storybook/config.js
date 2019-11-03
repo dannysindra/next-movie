@@ -1,6 +1,7 @@
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { withA11y } from '@storybook/addon-a11y';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import requireContext from 'require-context.macro';
 
 addDecorator(withA11y);
 
@@ -11,4 +12,4 @@ addParameters({
 });
 
 // automatically import all files ending in *.stories.js
-configure(require.context('../src/components', true, /\.stories\.js$/), module);
+configure(requireContext('../src/components', true, /\.stories\.js$/), module);
