@@ -9,15 +9,15 @@ Array [
       className="App"
     >
       <nav
-        className="af ag ah ai aj ak al am an"
+        className="ag ah ai aj ak al am an ao"
         data-baseweb="header-navigation"
         role="navigation"
       >
         <div
-          className="aj ao ap aq ar as at au"
+          className="ak ap aq ar as at au av"
         >
           <div
-            className="av ar"
+            className="aw as"
           >
             <h1
               className="ae"
@@ -27,13 +27,13 @@ Array [
           </div>
         </div>
         <div
-          className="aj ao ap aw ar as ax ay"
+          className="ak ap aq ax as at ay az"
         />
         <div
-          className="aj ao ap aq ar as az b0"
+          className="ak ap aq ar as at b0 b1"
         >
           <div
-            className="av ar"
+            className="aw as"
             style={
               Object {
                 "width": "370px",
@@ -41,18 +41,18 @@ Array [
             }
           >
             <div
-              className="af b1 ah b2 b3 aj b4"
+              className="ag b2 ai b3 b4 ak b5"
               data-baseweb="input"
             >
               <div
-                className="b5 aj b4 b6 b7 b8 b9 ba bb bc bd be af b1 ah b2 b3 bf bg"
+                className="b6 ak b5 b7 b8 b9 ba bb bc bd be bf ag b2 ai b3 b4 bg bh"
                 data-baseweb="base-input"
               >
                 <div
-                  className="aj bh bi"
+                  className="ak bi bj"
                 >
                   <svg
-                    className="bj bk bl bm bn"
+                    className="bk bl bm bn bo"
                     data-baseweb="icon"
                     viewBox="0 0 24 24"
                   >
@@ -73,7 +73,7 @@ Array [
                   aria-labelledby={null}
                   aria-required={false}
                   autoComplete="on"
-                  className="b5 bo bp bq br b4 bs bt bu bv bw bx by af b1 ah b2 b3 bz c0"
+                  className="b6 bp bq br bs b5 bt bu bv bw bx by bz ag b2 ai b3 b4 c0 c1"
                   disabled={false}
                   id="typeahead"
                   inputMode="text"
@@ -94,10 +94,10 @@ Array [
             </div>
           </div>
           <div
-            className="av ar"
+            className="aw as"
           >
             <button
-              className="c1 bh ay bp bq c2 br c3 c4 b9 ba c5 c6 c7 c8 c9 ca cb cc af ag cd ai bd be bb bc bv bw bi ce cf cg ch ci cj"
+              className="c2 bi az bq br c3 bs c4 c5 ba bb c6 c7 c8 c9 ca cb cc cd ag ah ce aj be bf bc bd bw bx bj cf cg ch ci cj ck"
               data-baseweb="button"
               disabled={false}
               onClick={[Function]}
@@ -106,7 +106,7 @@ Array [
             </button>
           </div>
           <div
-            className="av ar"
+            className="aw as"
           />
         </div>
       </nav>
@@ -148,15 +148,15 @@ Array [
     className=""
   >
     <nav
-      className="af ag ah ai aj ak al am an"
+      className="ag ah ai aj ak al am an ao"
       data-baseweb="header-navigation"
       role="navigation"
     >
       <div
-        className="aj ao ap aq ar as at au"
+        className="ak ap aq ar as at au av"
       >
         <div
-          className="av ar"
+          className="aw as"
         >
           <h1
             className="ae"
@@ -166,13 +166,13 @@ Array [
         </div>
       </div>
       <div
-        className="aj ao ap aw ar as ax ay"
+        className="ak ap aq ax as at ay az"
       />
       <div
-        className="aj ao ap aq ar as az b0"
+        className="ak ap aq ar as at b0 b1"
       >
         <div
-          className="av ar"
+          className="aw as"
           style={
             Object {
               "width": "370px",
@@ -180,18 +180,18 @@ Array [
           }
         >
           <div
-            className="af b1 ah b2 b3 aj b4"
+            className="ag b2 ai b3 b4 ak b5"
             data-baseweb="input"
           >
             <div
-              className="b5 aj b4 b6 b7 b8 b9 ba bb bc bd be af b1 ah b2 b3 bf bg"
+              className="b6 ak b5 b7 b8 b9 ba bb bc bd be bf ag b2 ai b3 b4 bg bh"
               data-baseweb="base-input"
             >
               <div
-                className="aj bh bi"
+                className="ak bi bj"
               >
                 <svg
-                  className="bj bk bl bm bn"
+                  className="bk bl bm bn bo"
                   data-baseweb="icon"
                   viewBox="0 0 24 24"
                 >
@@ -212,7 +212,7 @@ Array [
                 aria-labelledby={null}
                 aria-required={false}
                 autoComplete="on"
-                className="b5 bo bp bq br b4 bs bt bu bv bw bx by af b1 ah b2 b3 bz c0"
+                className="b6 bp bq br bs b5 bt bu bv bw bx by bz ag b2 ai b3 b4 c0 c1"
                 disabled={false}
                 id="typeahead"
                 inputMode="text"
@@ -233,10 +233,10 @@ Array [
           </div>
         </div>
         <div
-          className="av ar"
+          className="aw as"
         >
           <button
-            className="c1 bh ay bp bq c2 br c3 c4 b9 ba c5 c6 c7 c8 c9 ca cb cc af ag cd ai bd be bb bc bv bw bi ce cf cg ch ci cj"
+            className="c2 bi az bq br c3 bs c4 c5 ba bb c6 c7 c8 c9 ca cb cc cd ag ah ce aj be bf bc bd bw bx bj cf cg ch ci cj ck"
             data-baseweb="button"
             disabled={false}
             onClick={[Function]}
@@ -245,11 +245,22 @@ Array [
           </button>
         </div>
         <div
-          className="av ar"
+          className="aw as"
         />
       </div>
     </nav>
   </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots Login Base 1`] = `
+Array [
+  <div
+    className=""
+  />,
   <div
     className=""
   />,
