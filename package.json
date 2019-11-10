@@ -1,9 +1,10 @@
 {
   "name": "next-movie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "baseui": "^9.13.0",
+    "next-movie-components": "^0.1.13",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
