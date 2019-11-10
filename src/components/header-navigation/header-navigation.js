@@ -7,7 +7,9 @@ import {
     StyledNavigationItem
 } from 'baseui/header-navigation';
 
-import { Button, Search } from 'next-movie-components';
+import { Button } from 'next-movie-components';
+
+import { Search } from '../search';
 
 const Root = {
     style: ({ $theme }) => ({
@@ -31,7 +33,7 @@ export const HeaderNavigation = () => {
             <StyledNavigationList $align={ALIGN.center} />
             <StyledNavigationList $align={ALIGN.right}>
                 <StyledNavigationItem style={{ width: '370px' }}>
-                    <Search placeholder="Search a movie by title" />
+                    <Search />
                 </StyledNavigationItem>
                 <StyledNavigationItem>
                     <Button variant="primary">Sign In</Button>
