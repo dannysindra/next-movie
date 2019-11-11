@@ -14,7 +14,12 @@ import { usePrimaryColor } from '../styles';
 
 const Root = {
     style: ({ $theme }) => ({
-        backgroundColor: $theme.colors.background
+        backgroundColor: $theme.colors.background,
+        borderBottom: 'none',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0
     })
 };
 

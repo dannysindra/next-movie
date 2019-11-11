@@ -1,0 +1,692 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots App Base 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="App"
+    >
+      <nav
+        className="ag ah ai aj ak al am an ao ap aq ar as"
+        data-baseweb="header-navigation"
+        role="navigation"
+      >
+        <div
+          className="ak at au av aw ax ay az"
+        >
+          <div
+            className="b0 aw"
+          >
+            <h1
+              className="ae"
+            >
+              Next Movie
+            </h1>
+          </div>
+        </div>
+        <div
+          className="ak at au b1 aw ax b2 b3"
+        />
+        <div
+          className="ak at au av aw ax b4 b5"
+        >
+          <div
+            className="b0 aw"
+            style={
+              Object {
+                "width": "370px",
+              }
+            }
+          >
+            <div
+              className="ag b6 ai b7 b8 ak b9"
+              data-baseweb="input"
+            >
+              <div
+                className="ba ak b9 bb bc bd be bf bg bh bi bj ag b6 ai b7 b8 bk bl"
+                data-baseweb="base-input"
+              >
+                <div
+                  className="ak bm bn"
+                >
+                  <svg
+                    className="bo bp bq br bs"
+                    data-baseweb="icon"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>
+                      Search
+                    </title>
+                    <path
+                      clipRule="evenodd"
+                      d="M11 6C8.79086 6 7 7.79086 7 10C7 12.2091 8.79086 14 11 14C13.2091 14 15 12.2091 15 10C15 7.79086 13.2091 6 11 6ZM5 10C5 6.68629 7.68629 4 11 4C14.3137 4 17 6.68629 17 10C17 11.2958 16.5892 12.4957 15.8907 13.4765L19.7071 17.2929C20.0976 17.6834 20.0976 18.3166 19.7071 18.7071C19.3166 19.0976 18.6834 19.0976 18.2929 18.7071L14.4765 14.8907C13.4957 15.5892 12.2958 16 11 16C7.68629 16 5 13.3137 5 10Z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <input
+                  aria-describedby={null}
+                  aria-invalid={false}
+                  aria-label={null}
+                  aria-labelledby={null}
+                  aria-required={false}
+                  autoComplete="on"
+                  className="ba bt bu bv bw b9 bx by bz c0 c1 c2 c3 ag b6 ai b7 b8 c4 c5"
+                  disabled={false}
+                  id="typeahead"
+                  inputMode="text"
+                  name=""
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyPress={[Function]}
+                  onKeyUp={[Function]}
+                  pattern={null}
+                  placeholder="Search a movie by title"
+                  required={false}
+                  rows={null}
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="b0 aw"
+          >
+            <button
+              className="c6 bm b3 bu bv c7 bw c8 c9 be bf ca cb cc cd ce cf cg ch ag ah ci aj bi bj bg bh c0 c1 bn cj ck cl cm cn co"
+              data-baseweb="button"
+              disabled={false}
+              onClick={[Function]}
+            >
+              Sign In
+            </button>
+          </div>
+          <div
+            className="b0 aw"
+          />
+        </div>
+      </nav>
+      <header
+        className="App-header"
+      >
+        <img
+          alt="logo"
+          className="App-logo"
+          src="logo.svg"
+        />
+        <p>
+          Edit 
+          <code>
+            src/App.js
+          </code>
+           and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Learn React
+        </a>
+      </header>
+      <div
+        className="card-deck"
+      >
+        <h2
+          className="ag cp af cq cr"
+        >
+          Popular movies
+        </h2>
+        <div
+          className="b9 cs ct cu"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          <ul
+            className="cv cw cx b9 cy ak cz d0 d1 d2 d3"
+          >
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    July 26
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    November 1
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    October 18
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    November 8
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/pIcV8XXIIvJCbtPoxF9qHMKdRr2.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    October 18
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    October 11
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+            <li
+              className="d4 ba"
+            >
+              <div
+                className="d5 bc d6 d7 bg bi bh bj d8 d9"
+                data-baseweb="card"
+              >
+                <img
+                  className="bg bi da bx"
+                  src="https://image.tmdb.org/t/p/w500/jIbTPKCRWgmS2HaafKXeRaPHMGp.jpg"
+                />
+                <div
+                  className="db dc dd de"
+                >
+                  <h1
+                    className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                  >
+                    November 8
+                  </h1>
+                  <div
+                    className="dm dn ag b6 ai b7"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button
+            className="do aq dp ca dq dr ds dt cp du dv dw dx ar"
+            onClick={[Function]}
+          >
+            &lt;
+          </button>
+          <button
+            className="do aq dp ca dq dr ds dt cp du dv dw dx as"
+            onClick={[Function]}
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots CardDeck Base 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="card-deck"
+    >
+      <h2
+        className="ag cp af cq cr"
+      >
+        Popular movies
+      </h2>
+      <div
+        className="b9 cs ct cu"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <ul
+          className="cv cw cx b9 cy ak cz d0 d1 d2 d3"
+        >
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  July 26
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  November 1
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  October 18
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  November 8
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/pIcV8XXIIvJCbtPoxF9qHMKdRr2.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  October 18
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  October 11
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+          <li
+            className="d4 ba"
+          >
+            <div
+              className="d5 bc d6 d7 bg bi bh bj d8 d9"
+              data-baseweb="card"
+            >
+              <img
+                className="bg bi da bx"
+                src="https://image.tmdb.org/t/p/w500/jIbTPKCRWgmS2HaafKXeRaPHMGp.jpg"
+              />
+              <div
+                className="db dc dd de"
+              >
+                <h1
+                  className="ag ah ci aj df ce cf cg dg dh di dj dk dl"
+                >
+                  November 8
+                </h1>
+                <div
+                  className="dm dn ag b6 ai b7"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button
+          className="do aq dp ca dq dr ds dt cp du dv dw dx ar"
+          onClick={[Function]}
+        >
+          &lt;
+        </button>
+        <button
+          className="do aq dp ca dq dr ds dt cp du dv dw dx as"
+          onClick={[Function]}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots HeaderNavigation Base 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <nav
+      className="ag ah ai aj ak al am an ao ap aq ar as"
+      data-baseweb="header-navigation"
+      role="navigation"
+    >
+      <div
+        className="ak at au av aw ax ay az"
+      >
+        <div
+          className="b0 aw"
+        >
+          <h1
+            className="ae"
+          >
+            Next Movie
+          </h1>
+        </div>
+      </div>
+      <div
+        className="ak at au b1 aw ax b2 b3"
+      />
+      <div
+        className="ak at au av aw ax b4 b5"
+      >
+        <div
+          className="b0 aw"
+          style={
+            Object {
+              "width": "370px",
+            }
+          }
+        >
+          <div
+            className="ag b6 ai b7 b8 ak b9"
+            data-baseweb="input"
+          >
+            <div
+              className="ba ak b9 bb bc bd be bf bg bh bi bj ag b6 ai b7 b8 bk bl"
+              data-baseweb="base-input"
+            >
+              <div
+                className="ak bm bn"
+              >
+                <svg
+                  className="bo bp bq br bs"
+                  data-baseweb="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    Search
+                  </title>
+                  <path
+                    clipRule="evenodd"
+                    d="M11 6C8.79086 6 7 7.79086 7 10C7 12.2091 8.79086 14 11 14C13.2091 14 15 12.2091 15 10C15 7.79086 13.2091 6 11 6ZM5 10C5 6.68629 7.68629 4 11 4C14.3137 4 17 6.68629 17 10C17 11.2958 16.5892 12.4957 15.8907 13.4765L19.7071 17.2929C20.0976 17.6834 20.0976 18.3166 19.7071 18.7071C19.3166 19.0976 18.6834 19.0976 18.2929 18.7071L14.4765 14.8907C13.4957 15.5892 12.2958 16 11 16C7.68629 16 5 13.3137 5 10Z"
+                    fillRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <input
+                aria-describedby={null}
+                aria-invalid={false}
+                aria-label={null}
+                aria-labelledby={null}
+                aria-required={false}
+                autoComplete="on"
+                className="ba bt bu bv bw b9 bx by bz c0 c1 c2 c3 ag b6 ai b7 b8 c4 c5"
+                disabled={false}
+                id="typeahead"
+                inputMode="text"
+                name=""
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyPress={[Function]}
+                onKeyUp={[Function]}
+                pattern={null}
+                placeholder="Search a movie by title"
+                required={false}
+                rows={null}
+                type="text"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="b0 aw"
+        >
+          <button
+            className="c6 bm b3 bu bv c7 bw c8 c9 be bf ca cb cc cd ce cf cg ch ag ah ci aj bi bj bg bh c0 c1 bn cj ck cl cm cn co"
+            data-baseweb="button"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Sign In
+          </button>
+        </div>
+        <div
+          className="b0 aw"
+        />
+      </div>
+    </nav>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots Login Base 1`] = `
+Array [
+  <div
+    className=""
+  />,
+  <div
+    className=""
+  />,
+]
+`;

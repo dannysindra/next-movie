@@ -1,6 +1,8 @@
 import React from 'react';
 
+import { CardDeck } from '../card-deck';
 import { HeaderNavigation } from '../header-navigation';
+import { fixtures } from '../utils';
 
 import logo from './logo.svg';
 import './app.css';
@@ -23,6 +25,7 @@ export const App = () => {
                     Learn React
                 </a>
             </header>
+            <CardDeck name="Popular movies" data={fixtures.movies} />
         </div>
     );
 };

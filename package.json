@@ -1,17 +1,17 @@
 {
   "name": "next-movie",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "baseui": "^9.13.0",
     "bloodhound-js": "^1.2.3",
     "jquery": "^3.4.1",
-    "next-movie-components": "^0.1.13",
+    "next-movie-components": "^0.2.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
     "styletron-engine-atomic": "^1.4.3",
-    "styletron-react": "^5.2.4"
+    "styletron-react": "^5.2.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +40,7 @@
     "@babel/core": "^7.6.4",
     "@storybook/addon-a11y": "^5.2.5",
     "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-backgrounds": "^5.2.6",
     "@storybook/addon-links": "^5.2.5",
     "@storybook/addon-storyshots": "^5.2.5",
     "@storybook/addon-viewport": "^5.2.5",
