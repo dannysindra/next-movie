@@ -6,7 +6,7 @@
     "baseui": "^9.13.0",
     "bloodhound-js": "^1.2.3",
     "jquery": "^3.4.1",
-    "next-movie-components": "^0.2.1",
+    "next-movie-components": "^0.3.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",

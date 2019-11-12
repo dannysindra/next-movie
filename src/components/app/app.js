@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CardDeck } from '../card-deck';
 import { HeaderNavigation } from '../header-navigation';
-import { fixtures } from '../utils';
+import { fixtures } from '../../utils';
 
 import logo from './logo.svg';
 import './app.css';

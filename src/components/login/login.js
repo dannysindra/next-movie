@@ -3,7 +3,7 @@ import { ModalHeader, ModalBody } from 'baseui/modal';
 
 import { Modal as BaseModal } from 'next-movie-components';
 
-import { usePrimaryColor } from '../styles';
+import { usePrimaryColor } from '../../styles';
 
 export const Login = props => {
     const titleClass = usePrimaryColor({

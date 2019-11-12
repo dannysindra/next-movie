@@ -18,4 +18,4 @@ addParameters({
 });
 
 // automatically import all files ending in *.stories.js
-configure(requireContext('../src', true, /\.stories\.js$/), module);
+configure(requireContext('../src/components', true, /\.stories\.js$/), module);

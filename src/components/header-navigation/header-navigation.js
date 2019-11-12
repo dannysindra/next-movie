@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useStyletron } from 'baseui';
+import { Block } from 'baseui/block';
 import {
     HeaderNavigation as BaseHeaderNavigation,
     ALIGN,
@@ -10,7 +12,6 @@ import { Button } from 'next-movie-components';
 
 import { Login } from '../login';
 import { Search } from '../search';
-import { usePrimaryColor } from '../styles';
 
 const Root = {
     style: ({ $theme }) => ({
@@ -25,7 +26,7 @@ const Root = {
 
 export const HeaderNavigation = () => {
     const [isLoginOpen, setIsLoginOpen] = useState(false);
-    const headerClass = usePrimaryColor();
+    const [, theme] = useStyletron();
 
     const openLogin = e => {
         setIsLoginOpen(true);
@@ -41,14 +42,20 @@ export const HeaderNavigation = () => {
             <BaseHeaderNavigation overrides={{ Root }}>
                 <StyledNavigationList $align={ALIGN.left}>
                     <StyledNavigationItem>
-                        <h1 className={headerClass}>Next Movie</h1>
+                        <Block
+                            as="h1"
+                            margin={0}
+                            color={theme.colors.colorPrimary}
+                        >
+                            Next Movie
+                        </Block>
                     </StyledNavigationItem>
                 </StyledNavigationList>
                 <StyledNavigationList $align={ALIGN.center} />
                 <StyledNavigationList $align={ALIGN.right}>
-                    <StyledNavigationItem style={{ width: '370px' }}>
+                    <Block display={['none', 'none', 'block']} width="370px">
                         <Search />
-                    </StyledNavigationItem>
+                    </Block>
                     <StyledNavigationItem>
                         <Button onClick={openLogin} variant="primary">
                             Sign In

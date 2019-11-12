@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { fixtures } from '../utils';
+import { fixtures } from '../../utils';
 import { CardDeck } from './card-deck';
 
 export default {
