@@ -17,3 +17,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+.App-content {
+  padding-top: 24px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+@media only screen and (max-width: 1135px) {
+  .App-content {
+    padding-left: initial;
+    padding-right: initial;
+  }
+}

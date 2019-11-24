@@ -8,5 +8,5 @@ export default {
 };
 
 export const base = () => (
-    <CardDeck name="Popular movies" data={fixtures.movies} />
+    <CardDeck name="Popular movies" data={fixtures.popularMovies} />
 );

@@ -9,7 +9,7 @@ export const CardDeck = ({ name, data }) => {
             <Block
                 as="h2"
                 $style={({ $theme }) => ({
-                    ...$theme.typography.font450,
+                    ...$theme.typography.font550,
                     color: $theme.colors.colorSecondary,
                     fontWeight: 'bold'
                 })}
