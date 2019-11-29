@@ -1,21 +1,5 @@
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  text-align: center;
-}
-
-.App-link {
-  color: #09d3ac;
+.App {
+  background: #0e2431;
 }
 
 .App-content {
@@ -24,9 +8,9 @@
   padding-right: 64px;
 }
 
-@media only screen and (max-width: 1135px) {
+@media only screen and (max-width: 850px) {
   .App-content {
-    padding-left: initial;
-    padding-right: initial;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

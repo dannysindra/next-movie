@@ -1,19 +1,23 @@
 import React from 'react';
+import { Provider as ReduxProvider } from 'react-redux';
 
-import { CardDeck } from '../card-deck';
+import { store } from '../../redux';
 import { HeaderNavigation } from '../header-navigation';
-import { Reel } from '../reel';
+import { Hero } from '../hero';
+import { PopularMovies } from '../popular-movies';
 
 import './app.css';
 
 export const App = () => {
     return (
-        <div className="App">
-            <HeaderNavigation />
-            <Reel movies={[]} onClickAdd={() => {}} onClickMore={() => {}} />
-            <div className="App-content">
-                <CardDeck name="Popular movies" data={[]} />
+        <ReduxProvider store={store}>
+            <div className="App">
+                <HeaderNavigation />
+                <Hero />
+                <div className="App-content">
+                    <PopularMovies />
+                </div>
             </div>
-        </div>
+        </ReduxProvider>
     );
 };

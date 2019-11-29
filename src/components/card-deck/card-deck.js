@@ -5,7 +5,7 @@ import { Card, Deck } from 'next-movie-components';
 
 export const CardDeck = ({ name, data }) => {
     return (
-        <div className="card-deck">
+        <Block as="div" className="card-deck" position="relative">
             <Block
                 as="h2"
                 $style={({ $theme }) => ({
@@ -21,6 +21,6 @@ export const CardDeck = ({ name, data }) => {
                     <Card key={id} headerImage={headerImage} title={content} />
                 ))}
             </Deck>
-        </div>
+        </Block>
     );
 };

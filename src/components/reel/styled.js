@@ -33,8 +33,7 @@ export const Backdrop = styled('div', {
     position: 'absolute',
     width: '100%',
     maxHeight: '700px',
-    overflow: 'hidden',
-    zIndex: -1
+    overflow: 'hidden'
 });
 
 Backdrop.Mask = BackdropMask;
@@ -44,6 +43,8 @@ Backdrop.Vignette = BackdropVignette;
 const BodyLeft = styled('div', ({ $theme }) => ({
     width: '185px',
     display: 'none',
+    maxHeight: '270px',
+    overflow: 'hidden',
     [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
         display: 'block',
         marginRight: $theme.sizing.scale1000
@@ -60,8 +61,9 @@ export const Body = styled('div', ({ $theme }) => {
     const { sizing } = $theme;
 
     return {
-        paddingTop: '18vw',
         display: 'flex',
+        position: 'relative',
+        paddingTop: '18vw',
         paddingLeft: sizing.scale800,
         paddingRight: sizing.scale800,
         [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
@@ -85,7 +87,7 @@ const MetadataTitle = styled('h2', ({ $theme }) => ({
     color: 'white'
 }));
 
-const MetadataTagline = styled('h3', ({ $theme }) => {
+const MetadataSubtitle = styled('h3', ({ $theme }) => {
     const { colors, typography } = $theme;
 
     return {
@@ -101,7 +103,7 @@ const MetadataActions = styled('div', ({ $theme }) => {
 export const Metadata = styled('div', {});
 
 Metadata.Title = MetadataTitle;
-Metadata.Tagline = MetadataTagline;
+Metadata.Subtitle = MetadataSubtitle;
 Metadata.Actions = MetadataActions;
 
 const ThumbnailImage = styled('img', {

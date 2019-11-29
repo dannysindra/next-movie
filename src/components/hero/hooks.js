@@ -1,4 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { fetchUpcomingMovies, queryUpcomingMovies } from '../../redux';
 
 const useInterval = (callback, delay, reset) => {
     const savedCallback = useRef();
@@ -46,4 +49,14 @@ export const useReel = ({
     };
 
     return [index, onItemClick];
+};
+
+export const useFetchUpcomingMovies = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchUpcomingMovies());
+    }, [dispatch]);
+
+    return useSelector(queryUpcomingMovies);
 };

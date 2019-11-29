@@ -1,0 +1,3 @@
+import { API_SEARCH, API_UPCOMING, API_POPULAR } from './tmdb';
+
+export { API_SEARCH, API_UPCOMING, API_POPULAR };

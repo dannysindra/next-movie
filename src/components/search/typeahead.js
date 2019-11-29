@@ -4,13 +4,12 @@
 // https://stackoverflow.com/questions/30750916/how-to-reference-typeahead-and-bloodhound-when-loading-npm-typeahead-js
 
 import $ from 'jquery';
+
+import { API_SEARCH } from '../../apis';
 import './typeahead.bundle.min.js';
 import './typeahead.css';
 
 const Bloodhound = require('bloodhound-js');
-
-const API_DOMAIN = `https://api.themoviedb.org/3`;
-const API_SEARCH = `${API_DOMAIN}/search/movie?query=%QUERY&api_key=${process.env.REACT_APP_TMDB_API_KEY}`;
 
 const suggests = new Bloodhound({
     datumTokenizer(datum) {

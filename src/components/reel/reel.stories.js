@@ -1,14 +1,8 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import { Reel } from './reel';
 
 export default {
     title: 'Reel'
-};
-
-const actions = {
-    onClickAdd: action('clicked Add to Watchlist'),
-    onClickMore: action('clicked More Info')
 };
 
 const movies = [
@@ -59,4 +53,4 @@ const movies = [
     }
 ];
 
-export const base = () => <Reel {...actions} movies={movies} />;
+export const base = () => <Reel index={0} movies={movies} />;

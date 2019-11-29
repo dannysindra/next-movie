@@ -1,10 +1,6 @@
 import React from 'react';
-import { useStyletron } from 'baseui';
-import Plus from 'baseui/icon/plus';
-import Show from 'baseui/icon/show';
-import { string, number, arrayOf, shape, func } from 'prop-types';
-
-import { Button } from 'next-movie-components';
+import { Block } from 'baseui/block';
+import { string, number, arrayOf, shape, node, func } from 'prop-types';
 
 import {
     Root,
@@ -15,21 +11,21 @@ import {
     Carousel,
     Thumbnail
 } from './styled';
-import { useReel } from './hooks';
 
-export const Reel = ({ movies, duration, onClickAdd, onClickMore }) => {
-    const [, theme] = useStyletron();
-    const [index, onReelItemClick] = useReel({
-        initialIndex: 0,
-        numberOfItems: movies.length,
-        duration
-    });
-
-    if (!movies || movies.length <= 0) {
+export const Reel = ({
+    index,
+    movies,
+    onReelItemClick,
+    primaryButton,
+    secondaryButton
+}) => {
+    if (index < 0 || !movies || movies.length <= 0) {
         return null;
     }
 
-    const { id, backdropImgUrl, posterImgUrl, title, tagline } = movies[index];
+    const { id, backdropImgUrl, posterImgUrl, title, releaseDate } = movies[
+        index
+    ];
 
     return (
         <Root>
@@ -45,27 +41,11 @@ export const Reel = ({ movies, duration, onClickAdd, onClickMore }) => {
                 <Body.Right>
                     <Metadata>
                         <Metadata.Title>{title}</Metadata.Title>
-                        <Metadata.Tagline>{tagline}</Metadata.Tagline>
+                        <Metadata.Subtitle>{releaseDate}</Metadata.Subtitle>
                         <Metadata.Actions>
-                            <Button
-                                onClick={e => {
-                                    onClickAdd(e, index);
-                                }}
-                                startEnhancer={() => <Plus size={24} />}
-                                style={{ marginRight: theme.sizing.scale600 }}
-                                variant="primary"
-                            >
-                                Watchlist
-                            </Button>
-                            <Button
-                                onClick={e => {
-                                    onClickMore(e, index);
-                                }}
-                                startEnhancer={() => <Show size={24} />}
-                                variant="secondary"
-                            >
-                                More Info
-                            </Button>
+                            {primaryButton}
+                            <Block display="inline" marginRight="scale600" />
+                            {secondaryButton}
                         </Metadata.Actions>
                     </Metadata>
                     <Carousel>
@@ -91,20 +71,23 @@ export const Reel = ({ movies, duration, onClickAdd, onClickMore }) => {
 };
 
 Reel.propTypes = {
+    index: number.isRequired,
     movies: arrayOf(
         shape({
-            id: string.isRequired,
+            id: number.isRequired,
             backdropImgUrl: string,
             posterImgUrl: string,
             title: string,
             tagline: string
         })
     ).isRequired,
-    duration: number,
-    onClickAdd: func.isRequired,
-    onClickMore: func.isRequired
+    onReelItemClick: func,
+    primaryButton: node,
+    secondaryButton: node
 };
 
 Reel.defaultProps = {
-    duration: 7000
+    onReelItemClick: undefined,
+    primaryButton: undefined,
+    secondaryButton: undefined
 };
