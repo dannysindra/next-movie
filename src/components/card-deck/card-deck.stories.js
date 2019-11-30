@@ -1,12 +1,21 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 
 import { fixtures } from '../../utils';
 import { CardDeck } from './card-deck';
 
+const actions = {
+    onCardClick: action('onCardClick')
+};
+
 export default {
-    title: 'CardDeck'
+    title: 'components|CardDeck'
 };
 
 export const base = () => (
-    <CardDeck name="Popular movies" data={fixtures.popularMovies} />
+    <CardDeck
+        {...actions}
+        name="Popular movies"
+        data={fixtures.popularMovies}
+    />
 );

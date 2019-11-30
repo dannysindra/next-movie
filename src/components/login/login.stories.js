@@ -2,7 +2,7 @@ import React from 'react';
 import { Login } from './login';
 
 export default {
-    title: 'Login'
+    title: 'components|Login'
 };
 
 export const base = () => <Login isOpen />;

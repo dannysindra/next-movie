@@ -26,5 +26,7 @@ const releaseType = 'with_release_type=3|2';
 const API_SEARCH = `${basePath}/search/movie?query=%QUERY&${apiKey}`;
 const API_UPCOMING = `${basePath}/movie/upcoming?${apiKey}&${region}`;
 const API_POPULAR = `${basePath}/discover/movie?${apiKey}&${language}&${region}&${releaseGte}&${releaseLte}&${sortPopularityDesc}&${includeAdult}&${includeVideo}&${releaseType}`;
+const API_DETAILS = id =>
+    `${basePath}/movie/${id}?${apiKey}&append_to_response=videos,releases`;
 
-export { API_SEARCH, API_UPCOMING, API_POPULAR };
+export { API_SEARCH, API_UPCOMING, API_POPULAR, API_DETAILS };

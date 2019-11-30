@@ -4,8 +4,10 @@ import movieReducer from './movies';
 export {
     fetchUpcomingMovies,
     fetchPopularMovies,
+    fetchMovieById,
     queryUpcomingMovies,
-    queryPopularMovies
+    queryPopularMovies,
+    queryMovieById
 } from './movies';
 
 const rootReducer = combineReducers({

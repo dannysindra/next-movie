@@ -3,7 +3,7 @@ import { Block } from 'baseui/block';
 
 import { Card, Deck } from 'next-movie-components';
 
-export const CardDeck = ({ name, data }) => {
+export const CardDeck = ({ data, name, onCardClick }) => {
     return (
         <Block as="div" className="card-deck" position="relative">
             <Block
@@ -18,7 +18,14 @@ export const CardDeck = ({ name, data }) => {
             </Block>
             <Deck>
                 {data.map(({ id, headerImage, content }) => (
-                    <Card key={id} headerImage={headerImage} title={content} />
+                    <Card
+                        key={id}
+                        headerImage={headerImage}
+                        title={content}
+                        onClick={event => {
+                            onCardClick(event, id);
+                        }}
+                    />
                 ))}
             </Deck>
         </Block>
