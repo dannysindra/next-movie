@@ -1,19 +1,23 @@
 import React from 'react';
+import { Block } from 'baseui/block';
+
+import { InfoButton, WatchlistButton } from '../button';
+
 import { Reel } from './reel';
 
 export default {
-    title: 'components|Reel'
+    title: 'components|Hero'
 };
 
 const movies = [
     {
         id: 0,
         backdropImgUrl:
-            'https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg',
+            'https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg',
         posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg',
-        title: 'Ford v Ferrari',
-        tagline: 'They took the American dream for a ride'
+            'https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg',
+        title: 'Jumanji: The Next Level',
+        releaseDate: 'December 12, 2019'
     },
     {
         id: 1,
@@ -22,7 +26,7 @@ const movies = [
         posterImgUrl:
             'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
         title: 'Midway',
-        tagline: 'One battle turned the tide of war'
+        releaseDate: 'November 5, 2019'
     },
     {
         id: 2,
@@ -31,7 +35,7 @@ const movies = [
         posterImgUrl:
             'https://image.tmdb.org/t/p/w500/4Fc3UkAyXIKWW8jrCQpvOkTE1gy.jpg',
         title: 'The Irishman',
-        tagline: 'His story changed history'
+        releaseDate: 'October 31, 2019'
     },
     {
         id: 3,
@@ -40,7 +44,7 @@ const movies = [
         posterImgUrl:
             'https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg',
         title: 'Ford v Ferrari',
-        tagline: 'They took the American dream for a ride'
+        releaseDate: 'November 12, 2019'
     },
     {
         id: 4,
@@ -49,8 +53,20 @@ const movies = [
         posterImgUrl:
             'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
         title: 'Midway',
-        tagline: 'One battle turned the tide of war'
+        releaseDate: 'November 5, 2019'
     }
 ];
 
-export const base = () => <Reel index={0} movies={movies} />;
+export const base = () => (
+    <Reel
+        index={0}
+        movies={movies}
+        controls={
+            <>
+                <WatchlistButton>Watchlist</WatchlistButton>
+                <Block display="inline" marginRight="scale600" />
+                <InfoButton>More Info</InfoButton>
+            </>
+        }
+    />
+);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Block } from 'baseui/block';
 import { action } from '@storybook/addon-actions';
 
 import { fixtures } from '../../utils';
@@ -15,7 +16,18 @@ export default {
 export const base = () => (
     <CardDeck
         {...actions}
-        name="Popular movies"
+        label={
+            <Block
+                as="h2"
+                color="colorSecondary"
+                $style={({ $theme }) => ({
+                    ...$theme.typography.font550,
+                    fontWeight: 'bold'
+                })}
+            >
+                Popular movies
+            </Block>
+        }
         data={fixtures.popularMovies}
     />
 );

@@ -4,10 +4,10 @@ import { Block } from 'baseui/block';
 
 import { Button } from 'next-movie-components';
 
-import { Navigation } from '../navigation';
+import { Navigation } from './navigation';
 import { Login } from '../login';
 import { Search } from '../search';
-import { useModal } from './hooks';
+import { useModal, useVisibility } from './hooks';
 
 const NextMovieLink = () => (
     <Link to="/" style={{ textDecoration: 'none' }}>
@@ -23,6 +23,7 @@ const NextMovieLink = () => (
 
 export const HeaderNavigation = () => {
     const { isOpen, open, close } = useModal(false);
+    const transparent = useVisibility();
 
     return (
         <>
@@ -39,6 +40,7 @@ export const HeaderNavigation = () => {
                         Sign In
                     </Button>
                 }
+                $transparent={transparent}
             />
         </>
     );

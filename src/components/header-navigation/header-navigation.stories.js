@@ -33,7 +33,7 @@ const LoginButton = () => (
 );
 
 export default {
-    title: 'components|Navigation'
+    title: 'components|HeaderNavigation'
 };
 
 export const base = () => (

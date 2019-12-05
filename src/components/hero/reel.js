@@ -1,5 +1,4 @@
 import React from 'react';
-import { Block } from 'baseui/block';
 import { string, number, arrayOf, shape, node, func } from 'prop-types';
 
 import {
@@ -12,17 +11,7 @@ import {
     Thumbnail
 } from './styled';
 
-export const Reel = ({
-    index,
-    movies,
-    onReelItemClick,
-    primaryButton,
-    secondaryButton
-}) => {
-    if (index < 0 || !movies || movies.length <= 0) {
-        return null;
-    }
-
+export const Reel = ({ index, movies, onReelItemClick, controls }) => {
     const { id, backdropImgUrl, posterImgUrl, title, releaseDate } = movies[
         index
     ];
@@ -42,11 +31,7 @@ export const Reel = ({
                     <Metadata>
                         <Metadata.Title>{title}</Metadata.Title>
                         <Metadata.Subtitle>{releaseDate}</Metadata.Subtitle>
-                        <Metadata.Actions>
-                            {primaryButton}
-                            <Block display="inline" marginRight="scale600" />
-                            {secondaryButton}
-                        </Metadata.Actions>
+                        <Metadata.Actions>{controls}</Metadata.Actions>
                     </Metadata>
                     <Carousel>
                         {movies.map((movie, index) => (
@@ -82,12 +67,10 @@ Reel.propTypes = {
         })
     ).isRequired,
     onReelItemClick: func,
-    primaryButton: node,
-    secondaryButton: node
+    controls: node
 };
 
 Reel.defaultProps = {
     onReelItemClick: undefined,
-    primaryButton: undefined,
-    secondaryButton: undefined
+    controls: undefined
 };

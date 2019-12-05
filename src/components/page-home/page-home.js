@@ -1,18 +1,17 @@
 import React from 'react';
-import { Block } from 'baseui/block';
 
+import { Page } from '../page';
 import { Hero } from '../hero';
-import { MoviesPopular } from '../movies-popular';
-
-import { Content } from './styled';
+import { PopularMoviesDeck, NowPlayingMoviesDeck } from '../movies-deck';
 
 export const PageHome = () => {
     return (
-        <Block>
+        <Page>
             <Hero />
-            <Content>
-                <MoviesPopular />
-            </Content>
-        </Block>
+            <Page.Content>
+                <NowPlayingMoviesDeck />
+                <PopularMoviesDeck />
+            </Page.Content>
+        </Page>
     );
 };

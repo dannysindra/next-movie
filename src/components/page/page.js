@@ -1,6 +1,6 @@
 import { styled } from 'baseui';
 
-export const Content = styled('div', ({ $theme }) => {
+const PageContent = styled('div', ({ $theme }) => {
     const { sizing } = $theme;
 
     return {
@@ -13,3 +13,7 @@ export const Content = styled('div', ({ $theme }) => {
         }
     };
 });
+
+export const Page = styled('div', {});
+
+Page.Content = PageContent;

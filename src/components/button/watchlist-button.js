@@ -3,7 +3,7 @@ import Plus from 'baseui/icon/plus';
 
 import { Button } from 'next-movie-components';
 
-export const SaveButton = ({ children, ...rest }) => (
+export const WatchlistButton = ({ children, ...rest }) => (
     <Button
         startEnhancer={() => <Plus size={24} />}
         variant="primary"

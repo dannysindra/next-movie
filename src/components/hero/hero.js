@@ -1,11 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-
-import { Reel } from '../reel';
+import { Block } from 'baseui/block';
 
 import { useFetchUpcomingMovies, useReel } from './hooks';
-import { InfoButton } from './info-button';
-import { SaveButton } from './watchlist-button';
+import { InfoButton, WatchlistButton } from '../button';
+
+import { Reel } from './reel';
 
 export const Hero = () => {
     const history = useHistory();
@@ -16,13 +16,13 @@ export const Hero = () => {
         duration: 7000
     });
 
-    if (!movies) {
+    if (!movies || movies.length === 0) {
         return null;
     }
 
-    const primaryButton = <SaveButton>Watchlist</SaveButton>;
+    const watchlistButton = <WatchlistButton>Watchlist</WatchlistButton>;
 
-    const secondaryButton = (
+    const infoButton = (
         <InfoButton
             onClick={event => {
                 event.stopPropagation();
@@ -38,8 +38,13 @@ export const Hero = () => {
             index={index}
             movies={movies}
             onReelItemClick={onReelItemClick}
-            primaryButton={primaryButton}
-            secondaryButton={secondaryButton}
+            controls={
+                <>
+                    {watchlistButton}
+                    <Block display="inline" marginRight="scale600" />
+                    {infoButton}
+                </>
+            }
         />
     );
 };
