@@ -1,8 +1,8 @@
 import {
-    API_UPCOMING,
-    API_POPULAR,
-    API_NOW_PLAYING,
-    API_DETAILS
+    API_MOVIE_UPCOMING,
+    API_MOVIE_POPULAR,
+    API_MOVIE_NOW_PLAYING,
+    API_MOVIE_DETAILS
 } from '../../apis';
 
 import { upcoming, popular, nowPlaying } from './constants';
@@ -14,6 +14,7 @@ import {
     receiveMovieById,
     receiveMovieByIdError
 } from './actions';
+import { queryFetchingUpcomingMovies, queryUpcomingMovies } from './selectors';
 
 const fetchMovies = ({ namespace, api } = {}) => () => async dispatch => {
     dispatch(requestMovies({ namespace }));
@@ -40,20 +41,48 @@ const fetchMovies = ({ namespace, api } = {}) => () => async dispatch => {
     }
 };
 
-export const fetchUpcomingMovies = fetchMovies({
-    namespace: upcoming,
-    api: API_UPCOMING
-});
-
 export const fetchPopularMovies = fetchMovies({
     namespace: popular,
-    api: API_POPULAR
+    api: API_MOVIE_POPULAR
 });
 
 export const fetchNowPlayingMovies = fetchMovies({
     namespace: nowPlaying,
-    api: API_NOW_PLAYING
+    api: API_MOVIE_NOW_PLAYING
 });
+
+export const fetchUpcomingMovies = () => async (dispatch, getState) => {
+    const globalState = getState();
+    const isFetching = queryFetchingUpcomingMovies(globalState);
+    const hasData = queryUpcomingMovies(globalState).length > 0;
+
+    if (isFetching || hasData) {
+        return;
+    }
+
+    dispatch(requestMovies({ namespace: upcoming }));
+
+    let response;
+    let json;
+
+    try {
+        response = await fetch(API_MOVIE_UPCOMING);
+        json = await response.json();
+    } catch (error) {
+        dispatch(receiveMoviesError({ namespace: upcoming, error }));
+    }
+
+    if (!response.ok) {
+        dispatch(
+            receiveMoviesError({
+                namespace: upcoming,
+                error: new Error(response.statusText)
+            })
+        );
+    } else {
+        dispatch(receiveMovies({ ...json, namespace: upcoming }));
+    }
+};
 
 export const fetchMovieById = id => async dispatch => {
     dispatch(requestMovieById());
@@ -62,7 +91,7 @@ export const fetchMovieById = id => async dispatch => {
     let json;
 
     try {
-        response = await fetch(API_DETAILS(id));
+        response = await fetch(API_MOVIE_DETAILS(id));
         json = await response.json();
     } catch (error) {
         dispatch(receiveMovieByIdError({ error }));

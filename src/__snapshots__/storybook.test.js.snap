@@ -1,347 +1,184 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots App Base 1`] = `
-Array [
-  <div
-    className=""
-  >
-    <nav
-      className="ag ah ai aj ak al am an ao ap aq ar as at au av aw ax"
-      data-baseweb="header-navigation"
-      role="navigation"
-    >
-      <div
-        className="ak ay az b0 b1 b2 b3 b4"
-      >
-        <div
-          className="b5 b1"
-        >
-          <a
-            href="/"
-            onClick={[Function]}
-            style={
-              Object {
-                "textDecoration": "none",
-              }
-            }
-          >
-            <h1
-              className="b6 ae"
-              data-baseweb="block"
-            >
-              Next Movie
-            </h1>
-          </a>
-        </div>
-      </div>
-      <div
-        className="ak ay az b7 b1 b2 b8 b9"
-      />
-      <div
-        className="ak ay az b0 b1 b2 ba bb"
-      >
-        <div
-          className="bc bd be bf"
-          data-baseweb="block"
-        >
-          <div
-            className="ag bg ai bh bi ak bj"
-            data-baseweb="input"
-          >
-            <div
-              className="bk ak bj bl bm bn bo bp bq br bs bt ag bg ai bh bi bu bv"
-              data-baseweb="base-input"
-            >
-              <div
-                className="ak bw bx"
-              >
-                <svg
-                  className="by bz c0 c1 c2"
-                  data-baseweb="icon"
-                  viewBox="0 0 24 24"
-                >
-                  <title>
-                    Search
-                  </title>
-                  <path
-                    clipRule="evenodd"
-                    d="M11 6C8.79086 6 7 7.79086 7 10C7 12.2091 8.79086 14 11 14C13.2091 14 15 12.2091 15 10C15 7.79086 13.2091 6 11 6ZM5 10C5 6.68629 7.68629 4 11 4C14.3137 4 17 6.68629 17 10C17 11.2958 16.5892 12.4957 15.8907 13.4765L19.7071 17.2929C20.0976 17.6834 20.0976 18.3166 19.7071 18.7071C19.3166 19.0976 18.6834 19.0976 18.2929 18.7071L14.4765 14.8907C13.4957 15.5892 12.2958 16 11 16C7.68629 16 5 13.3137 5 10Z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                aria-describedby={null}
-                aria-invalid={false}
-                aria-label={null}
-                aria-labelledby={null}
-                aria-required={false}
-                autoComplete="on"
-                className="bk ao c3 c4 c5 bj c6 c7 b6 c8 c9 ca cb ag bg ai bh bi cc cd"
-                disabled={false}
-                id="typeahead"
-                inputMode="text"
-                name=""
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyPress={[Function]}
-                onKeyUp={[Function]}
-                pattern={null}
-                placeholder="Search a movie by title"
-                required={false}
-                rows={null}
-                type="text"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="b5 b1"
-        >
-          <button
-            className="ce bw b9 c3 c4 cf c5 cg ch bo bp ci cj ck cl cm cn co cp ag ah cq aj bs bt bq br c8 c9 bx cr cs ct cu cv cw"
-            data-baseweb="button"
-            disabled={false}
-            onClick={[Function]}
-          >
-            Sign In
-          </button>
-        </div>
-        <div
-          className="b5 b1"
-        />
-      </div>
-    </nav>
-    <div
-      className=""
-    >
-      <div
-        className="cx b1 b2 cy cz"
-      />
-    </div>
-  </div>,
-  <div
-    className=""
-  />,
-]
-`;
-
 exports[`Storyshots components|CardDeck Base 1`] = `
 Array [
   <div
     className=""
   >
     <div
-      className="d0 d1"
+      className="ae"
       data-baseweb="block"
     >
       <h2
-        className="d2 ag d3 af d4"
+        className="af ag ah ai aj"
         data-baseweb="block"
       >
         Popular movies
       </h2>
       <div
-        className="bj d5 d0 d6"
+        className="ak al ae am"
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
       >
         <ul
-          className="d7 d8 d9 bj da ak db dc dd de df"
+          className="an ao ap ak aq ar as at au av aw"
         >
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  July 26
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  November 1
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  October 18
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  November 8
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/pIcV8XXIIvJCbtPoxF9qHMKdRr2.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  October 18
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  October 11
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
           <li
-            className="dg bk"
+            className="ax ay"
           >
             <div
-              className="dh bm di dj bq bs br bt dk ci dl dm"
+              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="bq bs dn c6"
+                className="b3 b4 bb bc"
                 src="https://image.tmdb.org/t/p/w500/jIbTPKCRWgmS2HaafKXeRaPHMGp.jpg"
               />
               <div
-                className="do dp dq dr"
+                className="bd be bf bg"
               >
-                <h1
-                  className="ag d3 cq d4 ds cm cn co dt du dv dw dx dy dz e0 e1 e2"
-                >
-                  November 8
-                </h1>
                 <div
-                  className="e3 e4 ag bg ai bh"
+                  className="bh bi ag bj bk bl"
                 />
               </div>
             </div>
           </li>
         </ul>
         <button
-          className="e5 aq e6 ci e7 e8 e9 ea eb ec ed ee bc ar"
+          className="bm bn bo b8 bp bq br bs bt bu bv bw bx by"
           onClick={[Function]}
         >
           &lt;
         </button>
         <button
-          className="e5 aq e6 ci e7 e8 e9 ea eb ec ed ee bc as"
+          className="bm bn bo b8 bp bq br bs bt bu bv bw bx bz"
           onClick={[Function]}
         >
           &gt;
@@ -361,18 +198,18 @@ Array [
     className=""
   >
     <nav
-      className="ag ah ai aj ak al am an ef ap aq ar as at au av aw ax"
+      className="ag c1 bk c2 ar c3 c4 c5 c6 c7 bn by bz c8 c9 ca cb cc"
       data-baseweb="header-navigation"
       role="navigation"
     >
       <div
-        className="ak ay az b0 b1 b2 b3 b4"
+        className="ar cd ce cf cg ch ci cj"
       >
         <div
-          className="b5 b1"
+          className="ck cg"
         >
           <h1
-            className="b6 ae"
+            className="cl c0"
             data-baseweb="block"
           >
             Next Movie
@@ -380,28 +217,28 @@ Array [
         </div>
       </div>
       <div
-        className="ak ay az b7 b1 b2 b8 b9"
+        className="ar cd ce cm cg ch cn co"
       />
       <div
-        className="ak ay az b0 b1 b2 ba bb"
+        className="ar cd ce cf cg ch cp cq"
       >
         <div
-          className="bc bd be bf"
+          className="bx cr cs ct"
           data-baseweb="block"
         >
           <div
-            className="ag bg ai bh bi ak bj"
+            className="ag bj bk bl cu ar ak"
             data-baseweb="input"
           >
             <div
-              className="bk ak bj bl bm bn bo bp bq br bs bt ag bg ai bh bi bu bv"
+              className="ay ar ak cv b0 cw cx cy b3 b5 b4 b6 ag bj bk bl cu cz d0"
               data-baseweb="base-input"
             >
               <div
-                className="ak bw bx"
+                className="ar d1 d2"
               >
                 <svg
-                  className="by bz c0 c1 c2"
+                  className="d3 d4 d5 d6 d7"
                   data-baseweb="icon"
                   viewBox="0 0 24 24"
                 >
@@ -422,7 +259,7 @@ Array [
                 aria-labelledby={null}
                 aria-required={false}
                 autoComplete="on"
-                className="bk ao c3 c4 c5 bj c6 c7 b6 c8 c9 ca cb ag bg ai bh bi cc cd"
+                className="ay d8 d9 da db ak bc dc cl dd de df dg ag bj bk bl cu dh di"
                 disabled={false}
                 inputMode="text"
                 name=""
@@ -442,10 +279,10 @@ Array [
           </div>
         </div>
         <div
-          className="b5 b1"
+          className="ck cg"
         >
           <button
-            className="ce bw b9 c3 c4 cf c5 cg ch bo bp ci cj ck cl cm cn co cp ag ah cq aj bs bt bq br c8 c9 bx cr cs ct cu cv cw"
+            className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv dw dx dy dz e0"
             data-baseweb="button"
             disabled={false}
             onClick={[Function]}
@@ -454,7 +291,7 @@ Array [
           </button>
         </div>
         <div
-          className="b5 b1"
+          className="ck cg"
         />
       </div>
     </nav>
@@ -471,48 +308,48 @@ Array [
     className=""
   >
     <div
-      className="bj"
+      className="ak"
     >
       <div
-        className="e5 bj eg d5"
+        className="bm ak e1 al"
       >
         <div
-          className="bj da e5 eh ei"
+          className="ak aq bm e2 e3"
         />
         <div
-          className="e5 ar as e6 ej ek"
+          className="bm by bz bo e4 e5"
         />
         <img
           alt="No backdrop"
-          className="bj da el"
+          className="ak aq e6"
           src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
         />
       </div>
       <div
-        className="ak d0 em b1 b2 cy cz"
+        className="ar ae e7 cg ch e8 e9"
       >
         <div
-          className="en bc eo d5 ep eq"
+          className="ea bx eb al ec ed"
         >
           <img
             alt="No poster"
-            className="bj er"
+            className="ak ee"
             src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
           />
         </div>
         <div
-          className="b7 ak es"
+          className="cm ar ef"
         >
           <div
             className=""
           >
             <h2
-              className="et ag eu cq ev e9"
+              className="eg ag eh du ei br"
             >
               Jumanji: The Next Level
             </h2>
             <h3
-              className="ew ag eb cq d4"
+              className="ej ag bt du aj"
             >
               December 12, 2019
             </h3>
@@ -520,16 +357,16 @@ Array [
               className=""
             >
               <button
-                className="ce bw b9 c3 c4 cf c5 cg ch bo bp ci cj ck cl cm cn co cp ag ah cq aj bs bt bq br c8 c9 bx cr cs ct cu cv cw"
+                className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv dw dx dy dz e0"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="ak ex"
+                  className="ar ek"
                 >
                   <svg
-                    className="by bz c0 ey ez"
+                    className="d3 d4 d5 el em"
                     data-baseweb="icon"
                     viewBox="0 0 24 24"
                   >
@@ -546,20 +383,20 @@ Array [
                 Watchlist
               </button>
               <div
-                className="f0 f1"
+                className="en eo"
                 data-baseweb="block"
               />
               <button
-                className="ce bw b9 c3 c4 cf c5 cg ch bo bp ci cj ck cl cm cn co cp ag ah cq aj bs bt bq br c8 c9 bx cr bi bv f2 f3 f4"
+                className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv cu d0 ep eq er"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="ak ex"
+                  className="ar ek"
                 >
                   <svg
-                    className="by bz c0 ey ez"
+                    className="d3 d4 d5 el em"
                     data-baseweb="icon"
                     viewBox="0 0 20 20"
                   >
@@ -576,70 +413,70 @@ Array [
             </div>
           </div>
           <div
-            className="f5 ak b5 f6 f7"
+            className="es ar ck et eu"
           >
             <button
-              className="e8 f8 ci d0 f9 fa fb fc fd"
+              className="bq ev b8 ae ew ex ax ey ez"
               onClick={[Function]}
             >
               <div
-                className="bj da e5 eh fe"
+                className="ak aq bm e2 f0"
               />
               <img
                 alt="No backdrop"
-                className="bj er"
+                className="ak ee"
                 src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
               />
             </button>
             <button
-              className="e8 f8 ci d0 f9 fa fb fc fd"
+              className="bq ev b8 ae ew ex ax ey ez"
               onClick={[Function]}
             >
               <div
-                className="bj da e5 eh ff"
+                className="ak aq bm e2 f1"
               />
               <img
                 alt="No backdrop"
-                className="bj er"
+                className="ak ee"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
             <button
-              className="e8 f8 ci d0 f9 fa fb fc fd"
+              className="bq ev b8 ae ew ex ax ey ez"
               onClick={[Function]}
             >
               <div
-                className="bj da e5 eh ff"
+                className="ak aq bm e2 f1"
               />
               <img
                 alt="No backdrop"
-                className="bj er"
+                className="ak ee"
                 src="https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg"
               />
             </button>
             <button
-              className="e8 f8 ci d0 f9 fa fb fc fd"
+              className="bq ev b8 ae ew ex ax ey ez"
               onClick={[Function]}
             >
               <div
-                className="bj da e5 eh ff"
+                className="ak aq bm e2 f1"
               />
               <img
                 alt="No backdrop"
-                className="bj er"
+                className="ak ee"
                 src="https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg"
               />
             </button>
             <button
-              className="e8 f8 ci d0 f9 fa fb fc fd"
+              className="bq ev b8 ae ew ex ax ey ez"
               onClick={[Function]}
             >
               <div
-                className="bj da e5 eh ff"
+                className="ak aq bm e2 f1"
               />
               <img
                 alt="No backdrop"
-                className="bj er"
+                className="ak ee"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>

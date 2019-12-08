@@ -1,5 +1,6 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import moviesReducer from './movies/index';
+import tvsReducer from './tvs/index';
 
 export {
     fetchUpcomingMovies,
@@ -12,8 +13,16 @@ export {
     queryMovieById
 } from './movies/index';
 
+export {
+    fetchPopularTvs,
+    fetchTvById,
+    queryPopularTvs,
+    queryTvById
+} from './tvs/index';
+
 const rootReducer = combineReducers({
-    movies: moviesReducer
+    movies: moviesReducer,
+    tvs: tvsReducer
 });
 
 export const store = configureStore({

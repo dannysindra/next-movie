@@ -1,32 +1,58 @@
 import React from 'react';
 import { Block } from 'baseui/block';
-import { number, string, shape, func, node, arrayOf } from 'prop-types';
+import {
+    number,
+    string,
+    shape,
+    func,
+    node,
+    oneOfType,
+    arrayOf
+} from 'prop-types';
 
 import { Card, Deck } from 'next-movie-components';
+
+const Meta = ({ title, children }) => (
+    <>
+        <Block
+            color="white"
+            overflow="hidden"
+            whiteSpace="nowrap"
+            textOverflow="ellipsis"
+        >
+            {title}
+        </Block>
+        <Block>{children}</Block>
+    </>
+);
 
 export const CardDeck = ({ label, data, onCardClick }) => {
     if (!data || data.length === 0) {
         return null;
     }
 
-    const mapped = data.map(({ id, headerImage, content }) => (
+    const mapped = data.map(({ id, headerImage, title, children }) => (
         <Card
             key={id}
             headerImage={headerImage}
-            title={content}
+            title={title}
             onClick={event => {
                 onCardClick(event, id);
             }}
-        />
+        >
+            {children}
+        </Card>
     ));
 
     return (
-        <Block position="relative" marginBottom="scale1000">
+        <Block position="relative">
             {label}
             <Deck>{mapped}</Deck>
         </Block>
     );
 };
+
+CardDeck.Meta = Meta;
 
 CardDeck.propTypes = {
     label: node,
@@ -34,7 +60,8 @@ CardDeck.propTypes = {
         shape({
             id: number.isRequired,
             headerImage: string.isRequired,
-            content: node
+            title: node,
+            children: oneOfType([node, arrayOf(node)])
         })
     ).isRequired,
     onCardClick: func.isRequired

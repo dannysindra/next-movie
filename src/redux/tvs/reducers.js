@@ -2,14 +2,14 @@ import { createReducer } from '@reduxjs/toolkit';
 import { normalize } from 'normalizr';
 
 import {
-    requestMovies,
-    receiveMovies,
-    receiveMoviesError,
-    requestMovieById,
-    receiveMovieById,
-    receiveMovieByIdError
+    requestTvs,
+    receiveTvs,
+    receiveTvsError,
+    requestTvById,
+    receiveTvById,
+    receiveTvByIdError
 } from './actions';
-import { movieSchema } from './schemas';
+import { tvSchema } from './schemas';
 
 const initialState = {
     data: {},
@@ -17,8 +17,8 @@ const initialState = {
     fetching: {}
 };
 
-const moviesReducer = createReducer(initialState, {
-    [requestMovies]: (state, { payload }) => {
+const tvsReducer = createReducer(initialState, {
+    [requestTvs]: (state, { payload }) => {
         const { namespace } = payload;
 
         return {
@@ -29,7 +29,7 @@ const moviesReducer = createReducer(initialState, {
             }
         };
     },
-    [receiveMoviesError]: (state, { payload }) => {
+    [receiveTvsError]: (state, { payload }) => {
         const { namespace, error } = payload;
 
         return {
@@ -44,14 +44,14 @@ const moviesReducer = createReducer(initialState, {
             }
         };
     },
-    [receiveMovies]: (state, { payload }) => {
+    [receiveTvs]: (state, { payload }) => {
         const { namespace, results } = payload;
-        const { entities, result } = normalize(results, [movieSchema]);
+        const { entities, result } = normalize(results, [tvSchema]);
 
         return {
             data: {
                 ...state.data,
-                movies: { ...state.data.movies, ...entities.movies },
+                tvs: { ...state.data.tvs, ...entities.tvs },
                 [namespace]: result
             },
             errors: {
@@ -64,14 +64,14 @@ const moviesReducer = createReducer(initialState, {
             }
         };
     },
-    [requestMovieById]: state => ({
+    [requestTvById]: state => ({
         ...state,
         fetching: {
             ...state.fetching,
             byId: true
         }
     }),
-    [receiveMovieByIdError]: (state, { payload }) => ({
+    [receiveTvByIdError]: (state, { payload }) => ({
         ...state,
         errors: {
             ...state.errors,
@@ -82,13 +82,13 @@ const moviesReducer = createReducer(initialState, {
             byId: false
         }
     }),
-    [receiveMovieById]: (state, { payload }) => {
-        const { entities } = normalize(payload, movieSchema);
+    [receiveTvById]: (state, { payload }) => {
+        const { entities } = normalize(payload, tvSchema);
 
         return {
             data: {
                 ...state.data,
-                movies: { ...state.data.movies, ...entities.movies }
+                tvs: { ...state.data.tvs, ...entities.tvs }
             },
             errors: {
                 ...state.errors,
@@ -102,4 +102,4 @@ const moviesReducer = createReducer(initialState, {
     }
 });
 
-export default moviesReducer;
+export default tvsReducer;

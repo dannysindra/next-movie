@@ -1,13 +1,13 @@
 {
   "name": "next-movie",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.0.4",
     "baseui": "^9.13.0",
     "bloodhound-js": "^1.2.3",
     "jquery": "^3.4.1",
-    "next-movie-components": "^0.3.1",
+    "next-movie-components": "^0.4.1",
     "normalizr": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
