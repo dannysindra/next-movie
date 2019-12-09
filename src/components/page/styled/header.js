@@ -109,7 +109,7 @@ const Subtitle = styled('h3', ({ $theme }) => {
     const { breakpoints, colors, typography } = $theme;
 
     return {
-        color: colors.mono200,
+        color: colors.mono400,
         ...typography.font250,
         [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
             ...typography.font350

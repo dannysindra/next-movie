@@ -8,12 +8,12 @@ const API_MOVIE_POPULAR = `${basePath}/movie/popular?${apiKey}&${region}`;
 const API_MOVIE_NOW_PLAYING = `${basePath}/movie/now_playing?${apiKey}&${region}`;
 
 const API_MOVIE_DETAILS = id =>
-    `${basePath}/movie/${id}?${apiKey}&append_to_response=videos,similar`;
+    `${basePath}/movie/${id}?${apiKey}&append_to_response=videos,credits,similar`;
 
 const API_TV_POPULAR = `${basePath}/tv/popular?${apiKey}&${region}`;
 
 const API_TV_DETAILS = id =>
-    `${basePath}/tv/${id}?${apiKey}&append_to_response=videos,similar`;
+    `${basePath}/tv/${id}?${apiKey}&append_to_response=videos,credits,similar`;
 
 export {
     API_MOVIE_SEARCH,

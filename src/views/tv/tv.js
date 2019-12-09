@@ -21,7 +21,12 @@ export const TV = () => {
                 controls={<WatchlistButton>Watchlist</WatchlistButton>}
             />
             <Page.Content>
-                <Page.Section label="Overview" data={tv.overview} />
+                <Page.Section label="Overview">
+                    <Page.Paragraph>{tv.overview}</Page.Paragraph>
+                </Page.Section>
+                <Page.Section label="Cast">
+                    <Page.Cast data={tv.cast} />
+                </Page.Section>
                 <Page.Similar
                     label="Similar TV series"
                     data={tv.similar}
