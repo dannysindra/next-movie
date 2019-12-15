@@ -1,6 +1,17 @@
 import { styled, withStyle } from 'baseui';
 import { StyledTable, StyledCell } from 'baseui/table';
 
+const containerStyle = ({ $theme }) => ({
+    paddingTop: $theme.sizing.scale200,
+    paddingBottom: $theme.sizing.scale200,
+    paddingLeft: 0,
+    paddingRight: 0,
+    display: 'flex'
+});
+
+// Container
+export const CreditContainer = styled('div', containerStyle);
+
 // Table
 export const AvatarContainer = styled('div', ({ $theme }) => {
     return {
@@ -19,13 +30,7 @@ export const InfoContainer = styled('div', ({ $theme }) => {
     };
 });
 
-export const StyledHeadingCell = withStyle(StyledCell, ({ $theme }) => ({
-    paddingTop: $theme.sizing.scale200,
-    paddingBottom: $theme.sizing.scale200,
-    paddingLeft: 0,
-    paddingRight: 0,
-    display: 'flex'
-}));
+export const StyledHeadingCell = withStyle(StyledCell, containerStyle);
 
 export const StyledHeadlessTable = withStyle(StyledTable, ({ $theme }) => ({
     backgroundColor: 'transparent',

@@ -6,6 +6,8 @@ import { Page, WatchlistButton } from '../../components';
 
 import { useFetchTvDetails } from './hooks';
 
+const notEmpty = data => data && data.length > 0;
+
 export const TV = () => {
     const history = useHistory();
     const tv = useFetchTvDetails();
@@ -24,9 +26,16 @@ export const TV = () => {
                 <Page.Section label="Overview">
                     <Page.Paragraph>{tv.overview}</Page.Paragraph>
                 </Page.Section>
-                <Page.Section label="Cast">
-                    <Page.Cast data={tv.cast} />
-                </Page.Section>
+                {notEmpty(tv.crew) && (
+                    <Page.Section label="Featured Crew">
+                        <Page.Crew data={tv.crew} />
+                    </Page.Section>
+                )}
+                {notEmpty(tv.cast) && (
+                    <Page.Section label="Cast">
+                        <Page.Cast data={tv.cast} />
+                    </Page.Section>
+                )}
                 <Page.Similar
                     label="Similar TV series"
                     data={tv.similar}

@@ -6,6 +6,8 @@ import { Page, WatchlistButton } from '../../components';
 
 import { useFetchMovieDetails } from './hooks';
 
+const notEmpty = data => data && data.length > 0;
+
 export const Movie = () => {
     const history = useHistory();
     const movie = useFetchMovieDetails();
@@ -24,9 +26,16 @@ export const Movie = () => {
                 <Page.Section label="Overview">
                     <Page.Paragraph>{movie.overview}</Page.Paragraph>
                 </Page.Section>
-                <Page.Section label="Cast">
-                    <Page.Cast data={movie.cast} />
-                </Page.Section>
+                {notEmpty(movie.crew) && (
+                    <Page.Section label="Featured Crew">
+                        <Page.Crew data={movie.crew} />
+                    </Page.Section>
+                )}
+                {notEmpty(movie.cast) && (
+                    <Page.Section label="Cast">
+                        <Page.Cast data={movie.cast} />
+                    </Page.Section>
+                )}
                 <Page.Similar
                     label="Similar movies"
                     data={movie.similar}

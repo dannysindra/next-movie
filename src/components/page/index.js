@@ -5,6 +5,7 @@ import { HeaderMovie } from './header-movie';
 import { HeaderTv } from './header-tv';
 import { Section } from './section';
 import { Cast } from './cast';
+import { Crew } from './crew';
 import { Similar } from './similar';
 import { Heading, Paragraph } from './typography';
 
@@ -17,4 +18,5 @@ Page.Heading = Heading;
 Page.Paragraph = Paragraph;
 Page.Section = Section;
 Page.Cast = Cast;
+Page.Crew = Crew;
 Page.Similar = Similar;

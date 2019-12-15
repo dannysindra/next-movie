@@ -69,12 +69,58 @@ export const toVideoUrl = videos => {
     return '';
 };
 
+export const toFeaturedCrew = credits => {
+    if (!credits || !credits.crew || credits.crew.length === 0) {
+        return [];
+    }
+
+    const featured = {
+        Director: 0,
+        Writer: 1,
+        Story: 2,
+        Screenplay: 3
+    };
+
+    const filtered = credits.crew
+        .filter(person => featured[person.job] !== undefined)
+        .reduce((res, person) => {
+            return {
+                ...res,
+                [person.id]: {
+                    ...person,
+                    job: res[person.id]
+                        ? `${res[person.id].job}, ${person.job}`
+                        : person.job,
+                    sortOrder: res[person.id]
+                        ? featured[person.job] < res[person.id].sortOrder
+                            ? featured[person.job]
+                            : res[person.id].sortOrder
+                        : featured[person.job]
+                }
+            };
+        }, {});
+
+    console.log('crew', filtered);
+
+    return Object.values(filtered)
+        .sort((a, b) => a.sortOrder - b.sortOrder)
+        .map(crew => ({
+            creditId: crew.credit_id,
+            id: crew.id,
+            name: crew.name,
+            department: crew.department,
+            job: crew.job,
+            profileImgUrl: toProfileImgUrl(crew.profile_path)
+        }));
+};
+
 export const toFeaturedCast = credits => {
     if (!credits || !credits.cast || credits.cast.length === 0) {
         return [];
     }
 
     return credits.cast.map(cast => ({
+        creditId: cast.credit_id,
         id: cast.id,
         name: cast.name,
         character: cast.character,

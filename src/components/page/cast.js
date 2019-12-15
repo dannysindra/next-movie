@@ -12,7 +12,7 @@ import {
     StyledHeadlessTable,
     StyledHeadingCell,
     PaginationContainer
-} from './styled/cast';
+} from './styled/credit';
 
 const PAGE_SIZE = 5;
 
