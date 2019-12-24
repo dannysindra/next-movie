@@ -10,7 +10,7 @@ import {
     arrayOf
 } from 'prop-types';
 
-import { Card, Deck } from 'next-movie-components';
+import { Card, CARD_KIND, Deck } from 'next-movie-components';
 
 const Meta = ({ title, children }) => (
     <>
@@ -26,7 +26,7 @@ const Meta = ({ title, children }) => (
     </>
 );
 
-export const CardDeck = ({ label, data, onCardClick }) => {
+export const CardDeck = ({ label, data, kind, onCardClick }) => {
     if (!data || data.length === 0) {
         return null;
     }
@@ -36,6 +36,7 @@ export const CardDeck = ({ label, data, onCardClick }) => {
             key={id}
             headerImage={headerImage}
             title={title}
+            kind={kind}
             onClick={event => {
                 onCardClick(event, id);
             }}
@@ -64,9 +65,11 @@ CardDeck.propTypes = {
             children: oneOfType([node, arrayOf(node)])
         })
     ).isRequired,
+    kind: string,
     onCardClick: func.isRequired
 };
 
 CardDeck.defaultProps = {
-    label: undefined
+    label: undefined,
+    kind: CARD_KIND.poster
 };

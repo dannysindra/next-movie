@@ -2,7 +2,10 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Block } from 'baseui/block';
 
-import { Page, WatchlistButton } from '../../components';
+import { Content, Section, P1 } from 'next-movie-components';
+
+import { Cast, Crew, HeaderTv, WatchlistButton } from '../../components';
+import { SimilarShowsDeck } from '../decks';
 
 import { useFetchTvDetails } from './hooks';
 
@@ -17,26 +20,26 @@ export const TV = () => {
     }
 
     return (
-        <Page>
-            <Page.HeaderTv
+        <Block>
+            <HeaderTv
                 data={tv}
                 controls={<WatchlistButton>Watchlist</WatchlistButton>}
             />
-            <Page.Content>
-                <Page.Section label="Overview">
-                    <Page.Paragraph>{tv.overview}</Page.Paragraph>
-                </Page.Section>
+            <Content>
+                <Section label="Overview">
+                    <P1>{tv.overview}</P1>
+                </Section>
                 {notEmpty(tv.crew) && (
-                    <Page.Section label="Featured Crew">
-                        <Page.Crew data={tv.crew} />
-                    </Page.Section>
+                    <Section label="Featured Crew">
+                        <Crew data={tv.crew} />
+                    </Section>
                 )}
                 {notEmpty(tv.cast) && (
-                    <Page.Section label="Cast">
-                        <Page.Cast data={tv.cast} />
-                    </Page.Section>
+                    <Section label="Cast">
+                        <Cast data={tv.cast} />
+                    </Section>
                 )}
-                <Page.Similar
+                <SimilarShowsDeck
                     label="Similar TV series"
                     data={tv.similar}
                     onCardClick={(event, id) => {
@@ -44,8 +47,8 @@ export const TV = () => {
                         history.push(`/tv/${id}`);
                     }}
                 />
-            </Page.Content>
+            </Content>
             <Block marginBottom="scale1000" />
-        </Page>
+        </Block>
     );
 };

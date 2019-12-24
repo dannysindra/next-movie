@@ -16,285 +16,210 @@ Array [
         Popular movies
       </h2>
       <div
-        className="ak al ae am"
+        className="ak al ae"
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
       >
         <ul
-          className="an ao ap ak aq ar as at au av aw"
+          className="am an ao ak ap aq ar as at au av"
         >
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  July 26
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  November 1
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  October 18
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  November 8
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/pIcV8XXIIvJCbtPoxF9qHMKdRr2.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  October 18
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  October 11
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
           <li
-            className="ax ay"
+            className="aw ax"
           >
             <div
-              className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b3 b4 bb bc"
+                className="b2 b3 ba bb b8 bc b9 bd"
                 src="https://image.tmdb.org/t/p/w500/jIbTPKCRWgmS2HaafKXeRaPHMGp.jpg"
               />
               <div
-                className="bd be bf bg"
+                className="be bf bg bh"
               >
+                <h1
+                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                >
+                  November 8
+                </h1>
                 <div
-                  className="bh bi ag bj bk bl"
+                  className="bx by ag bz c0 c1"
                 />
               </div>
             </div>
           </li>
         </ul>
         <button
-          className="bm bn bo b8 bp bq br bs bt bu bv bw bx by"
+          className="c2 c3 c4 b7 c5 c6 c7 c8 c9 ca cb cc cd ce"
           onClick={[Function]}
         >
           &lt;
         </button>
         <button
-          className="bm bn bo b8 bp bq br bs bt bu bv bw bx bz"
+          className="c2 c3 c4 b7 c5 c6 c7 c8 c9 ca cb cc cd cf"
           onClick={[Function]}
         >
           &gt;
         </button>
       </div>
     </div>
-  </div>,
-  <div
-    className=""
-  />,
-]
-`;
-
-exports[`Storyshots components|HeaderNavigation Base 1`] = `
-Array [
-  <div
-    className=""
-  >
-    <nav
-      className="ag c1 bk c2 ar c3 c4 c5 c6 c7 bn by bz c8 c9 ca cb cc"
-      data-baseweb="header-navigation"
-      role="navigation"
-    >
-      <div
-        className="ar cd ce cf cg ch ci cj"
-      >
-        <div
-          className="ck cg"
-        >
-          <h1
-            className="cl c0"
-            data-baseweb="block"
-          >
-            Next Movie
-          </h1>
-        </div>
-      </div>
-      <div
-        className="ar cd ce cm cg ch cn co"
-      />
-      <div
-        className="ar cd ce cf cg ch cp cq"
-      >
-        <div
-          className="bx cr cs ct"
-          data-baseweb="block"
-        >
-          <div
-            className="ag bj bk bl cu ar ak"
-            data-baseweb="input"
-          >
-            <div
-              className="ay ar ak cv b0 cw cx cy b3 b5 b4 b6 ag bj bk bl cu cz d0"
-              data-baseweb="base-input"
-            >
-              <div
-                className="ar d1 d2"
-              >
-                <svg
-                  className="d3 d4 d5 d6 d7"
-                  data-baseweb="icon"
-                  viewBox="0 0 24 24"
-                >
-                  <title>
-                    Search
-                  </title>
-                  <path
-                    clipRule="evenodd"
-                    d="M11 6C8.79086 6 7 7.79086 7 10C7 12.2091 8.79086 14 11 14C13.2091 14 15 12.2091 15 10C15 7.79086 13.2091 6 11 6ZM5 10C5 6.68629 7.68629 4 11 4C14.3137 4 17 6.68629 17 10C17 11.2958 16.5892 12.4957 15.8907 13.4765L19.7071 17.2929C20.0976 17.6834 20.0976 18.3166 19.7071 18.7071C19.3166 19.0976 18.6834 19.0976 18.2929 18.7071L14.4765 14.8907C13.4957 15.5892 12.2958 16 11 16C7.68629 16 5 13.3137 5 10Z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <input
-                aria-describedby={null}
-                aria-invalid={false}
-                aria-label={null}
-                aria-labelledby={null}
-                aria-required={false}
-                autoComplete="on"
-                className="ay d8 d9 da db ak bc dc cl dd de df dg ag bj bk bl cu dh di"
-                disabled={false}
-                inputMode="text"
-                name=""
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyPress={[Function]}
-                onKeyUp={[Function]}
-                pattern={null}
-                placeholder="Search a movie by title"
-                required={false}
-                rows={null}
-                type="text"
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="ck cg"
-        >
-          <button
-            className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv dw dx dy dz e0"
-            data-baseweb="button"
-            disabled={false}
-            onClick={[Function]}
-          >
-            Sign In
-          </button>
-        </div>
-        <div
-          className="ck cg"
-        />
-      </div>
-    </nav>
   </div>,
   <div
     className=""
@@ -311,45 +236,45 @@ Array [
       className="ak"
     >
       <div
-        className="bm ak hn al"
+        className="c2 ak ch al"
       >
         <div
-          className="ak aq bm ho hp"
+          className="ak ap c2 ci cj"
         />
         <div
-          className="bm by bz bo hq hr"
+          className="c2 ce cf c4 ck cl"
         />
         <img
           alt="No backdrop"
-          className="ak aq hs"
+          className="ak ap cm"
           src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
         />
       </div>
       <div
-        className="ar ae ht cg ch fo fp"
+        className="aq ae cn co cp cq cr"
       >
         <div
-          className="hu bx hv al hw hx"
+          className="cs cd ct al cu cv"
         >
           <img
             alt="No poster"
-            className="ak eb"
+            className="ak cw"
             src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
           />
         </div>
         <div
-          className="cm ar fq"
+          className="cx aq cy"
         >
           <div
             className=""
           >
             <h2
-              className="ey ag hy du hz br"
+              className="cz ag d0 bi d1 c7"
             >
               Jumanji: The Next Level
             </h2>
             <h3
-              className="f7 ag bt du aj"
+              className="d2 ag c9 bi aj"
             >
               December 12, 2019
             </h3>
@@ -357,16 +282,16 @@ Array [
               className=""
             >
               <button
-                className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv dw dx dy dz e0"
+                className="d3 d4 d5 d6 d7 d8 d9 da db dc dd b7 de df dg bk bl bm dh ag di bi dj b3 b5 b2 b4 dk dl dm dn do dp dq dr ds"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="ar fl"
+                  className="aq dt"
                 >
                   <svg
-                    className="d3 d4 d5 fm fn"
+                    className="du dv dw dx dy"
                     data-baseweb="icon"
                     viewBox="0 0 24 24"
                   >
@@ -383,20 +308,20 @@ Array [
                 Watchlist
               </button>
               <div
-                className="i0 hg"
+                className="dz e0"
                 data-baseweb="block"
               />
               <button
-                className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv cu d0 i1 i2 i3"
+                className="d3 d4 d5 d6 d7 d8 d9 da db dc dd b7 de df dg bk bl bm dh ag di bi dj b3 b5 b2 b4 dk dl dm dn e1 e2 e3 e4 e5"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="ar fl"
+                  className="aq dt"
                 >
                   <svg
-                    className="d3 d4 d5 fm fn"
+                    className="du dv dw dx dy"
                     data-baseweb="icon"
                     viewBox="0 0 20 20"
                   >
@@ -413,70 +338,70 @@ Array [
             </div>
           </div>
           <div
-            className="i4 ar ck h4 i5"
+            className="e6 aq e7 e8 e9"
           >
             <button
-              className="bq i6 b8 ae i7 i8 ax i9 ia"
+              className="c6 ea b7 ae eb ec aw ed ee"
               onClick={[Function]}
             >
               <div
-                className="ak aq bm ho ib"
+                className="ak ap c2 ci ef"
               />
               <img
                 alt="No backdrop"
-                className="ak eb"
+                className="ak cw"
                 src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
               />
             </button>
             <button
-              className="bq i6 b8 ae i7 i8 ax i9 ia"
+              className="c6 ea b7 ae eb ec aw ed ee"
               onClick={[Function]}
             >
               <div
-                className="ak aq bm ho ic"
+                className="ak ap c2 ci eg"
               />
               <img
                 alt="No backdrop"
-                className="ak eb"
+                className="ak cw"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
             <button
-              className="bq i6 b8 ae i7 i8 ax i9 ia"
+              className="c6 ea b7 ae eb ec aw ed ee"
               onClick={[Function]}
             >
               <div
-                className="ak aq bm ho ic"
+                className="ak ap c2 ci eg"
               />
               <img
                 alt="No backdrop"
-                className="ak eb"
+                className="ak cw"
                 src="https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg"
               />
             </button>
             <button
-              className="bq i6 b8 ae i7 i8 ax i9 ia"
+              className="c6 ea b7 ae eb ec aw ed ee"
               onClick={[Function]}
             >
               <div
-                className="ak aq bm ho ic"
+                className="ak ap c2 ci eg"
               />
               <img
                 alt="No backdrop"
-                className="ak eb"
+                className="ak cw"
                 src="https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg"
               />
             </button>
             <button
-              className="bq i6 b8 ae i7 i8 ax i9 ia"
+              className="c6 ea b7 ae eb ec aw ed ee"
               onClick={[Function]}
             >
               <div
-                className="ak aq bm ho ic"
+                className="ak ap c2 ci eg"
               />
               <img
                 alt="No backdrop"
-                className="ak eb"
+                className="ak cw"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
@@ -496,1916 +421,6 @@ Array [
   <div
     className=""
   />,
-  <div
-    className=""
-  />,
-]
-`;
-
-exports[`Storyshots components|Page Base 1`] = `
-Array [
-  <div
-    className=""
-  >
-    <div
-      className=""
-    >
-      <div
-        className="b7 ay ak e1 e2 e3 e4 e5 e6 e7"
-      >
-        <div
-          className="ar"
-        >
-          <div
-            className="e8 e9 ea bx cs"
-          >
-            <img
-              alt="No poster"
-              className="ak eb"
-              data-baseweb="block"
-              src="https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg"
-            />
-          </div>
-          <div
-            className="e8 e9 ec bx cs"
-          />
-          <div
-            className="ed e9 ee ef"
-          >
-            <div
-              style={
-                Object {
-                  "height": "100%",
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "display": undefined,
-                    "height": "100%",
-                    "width": "100%",
-                  }
-                }
-              >
-                <div />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ak ar eg eh ei ej cg ch ek el em en"
-        >
-          <div
-            className="e8 e9 eo ar ep eq er es et"
-          >
-            <div
-              className="eu ev"
-              data-baseweb="block"
-            >
-              <div
-                className="ew ag bk bj bl"
-                data-baseweb="block"
-              >
-                <svg
-                  color="#f9b248"
-                  fill="currentColor"
-                  height="0.8em"
-                  size="0.8em"
-                  stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": "#f9b248",
-                    }
-                  }
-                  viewBox="0 0 448 512"
-                  width="0.8em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"
-                  />
-                </svg>
-                 
-                Release
-              </div>
-              <div
-                className="ex ag bk bj bl"
-                data-baseweb="block"
-              >
-                December 17, 2019
-              </div>
-            </div>
-            <div
-              className="eu ev"
-              data-baseweb="block"
-            >
-              <div
-                className="ew ag bk bj bl"
-                data-baseweb="block"
-              >
-                <svg
-                  color="#e8d5b7"
-                  fill="currentColor"
-                  height="0.8em"
-                  size="0.8em"
-                  stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": "#e8d5b7",
-                    }
-                  }
-                  viewBox="0 0 512 512"
-                  width="0.8em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"
-                  />
-                </svg>
-                 
-                Duration
-              </div>
-              <div
-                className="ex ag bk bj bl"
-                data-baseweb="block"
-              >
-                141 minutes
-              </div>
-            </div>
-            <div
-              className="eu ev"
-              data-baseweb="block"
-            >
-              <div
-                className="ew ag bk bj bl"
-                data-baseweb="block"
-              >
-                <svg
-                  color="#3AA76D"
-                  fill="currentColor"
-                  height="0.8em"
-                  size="0.8em"
-                  stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": "#3AA76D",
-                    }
-                  }
-                  viewBox="0 0 288 512"
-                  width="0.8em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
-                  />
-                </svg>
-                 
-                Revenue
-              </div>
-              <div
-                className="ex ag bk bj bl"
-                data-baseweb="block"
-              >
-                N/A
-              </div>
-            </div>
-            <div
-              className="eu ev"
-              data-baseweb="block"
-            >
-              <div
-                className="ew ag bk bj bl"
-                data-baseweb="block"
-              >
-                <svg
-                  color="#fc3a52"
-                  fill="currentColor"
-                  height="0.8em"
-                  size="0.8em"
-                  stroke="currentColor"
-                  strokeWidth="0"
-                  style={
-                    Object {
-                      "color": "#fc3a52",
-                    }
-                  }
-                  viewBox="0 0 512 512"
-                  width="0.8em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                  />
-                </svg>
-                 
-                Votes
-              </div>
-              <div
-                className="ex ag bk bj bl"
-                data-baseweb="block"
-              >
-                5.1 / 10
-              </div>
-            </div>
-          </div>
-          <div
-            className="ed e9 ee"
-          >
-            <h2
-              className="ey br ag ah du aj ez f0 f1 f2 f3 f4 f5 f6"
-            >
-              Star Wars: The Rise of Skywalker
-            </h2>
-            <h3
-              className="f7 ag bj du bl ez f8 f1 f9 f3 fa f5 fb"
-            >
-              Every generation has a legend
-            </h3>
-            <button
-              className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag bj bk bl fc fd fe ff dd de d2 dv ex fg fh fi fj"
-              data-baseweb="button"
-              disabled={false}
-              onClick={[Function]}
-              style={
-                Object {
-                  "marginBottom": "6px",
-                  "marginRight": "6px",
-                }
-              }
-            >
-              Action
-            </button>
-            <button
-              className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag bj bk bl fc fd fe ff dd de d2 dv ex fg fh fi fj"
-              data-baseweb="button"
-              disabled={false}
-              onClick={[Function]}
-              style={
-                Object {
-                  "marginBottom": "6px",
-                  "marginRight": "6px",
-                }
-              }
-            >
-              Adventure
-            </button>
-            <button
-              className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag bj bk bl fc fd fe ff dd de d2 dv ex fg fh fi fj"
-              data-baseweb="button"
-              disabled={false}
-              onClick={[Function]}
-              style={
-                Object {
-                  "marginBottom": "6px",
-                  "marginRight": "6px",
-                }
-              }
-            >
-              Science Fiction
-            </button>
-            <div
-              className="fk"
-              data-baseweb="block"
-            />
-            <button
-              className="dj d1 co d9 da dk db dl dm cx cy b8 dn do dp dq dr ds dt ag c1 du c2 b4 b6 b3 b5 dd de d2 dv dw dx dy dz e0"
-              data-baseweb="button"
-              disabled={false}
-              onClick={[Function]}
-            >
-              <div
-                className="ar fl"
-              >
-                <svg
-                  className="d3 d4 d5 fm fn"
-                  data-baseweb="icon"
-                  viewBox="0 0 24 24"
-                >
-                  <title>
-                    Plus
-                  </title>
-                  <path
-                    clipRule="evenodd"
-                    d="M12 5C12.5523 5 13 5.44772 13 6V11L18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13L13 13V18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18V13L6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44771 11 6 11L11 11V6C11 5.44772 11.4477 5 12 5Z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-              Watchlist
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ei cg ch fo fp"
-      >
-        <div
-          className="ar fq ak ei ej ek"
-        >
-          <div
-            className="e8 e9 eo"
-          >
-            <h4
-              className="ag ah du aj fr fs ft ez f0 f1 f2 fu fv"
-            >
-              Overview
-            </h4>
-          </div>
-          <div
-            className="ed e9 ee"
-          >
-            <p
-              className="ag c1 bk c2 ex ez fw fx fy"
-            >
-              The next installment in the franchise and the conclusion of the “Star Wars“ sequel trilogy as well as the “Skywalker Saga.”
-            </p>
-          </div>
-        </div>
-        <div
-          className="ar fq ak ei ej ek"
-        >
-          <div
-            className="e8 e9 eo"
-          >
-            <h4
-              className="ag ah du aj fr fs ft ez f0 f1 f2 fu fv"
-            >
-              Featured Crew
-            </h4>
-          </div>
-          <div
-            className="ed e9 ee"
-          >
-            <div
-              className="ev"
-              data-baseweb="block"
-            >
-              <div
-                className="dd de fz g0 ar"
-              >
-                <div
-                  className="g1 g2 g3"
-                >
-                  <div
-                    aria-label={null}
-                    className="g4 g5 g6 g7 ay d3"
-                    data-baseweb="avatar"
-                    role={null}
-                  >
-                    <img
-                      alt="J.J. Abrams"
-                      className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                      onError={[Function]}
-                      src="https://image.tmdb.org/t/p/w185/h0o12c399M5hTKWl0qdgwhaddNt.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="e8 g2 gc gd"
-                >
-                  <div
-                    className="ge ag bk bt aj"
-                    data-baseweb="typo-p1"
-                  >
-                    J.J. Abrams
-                  </div>
-                  <div
-                    className="f7 ag du bj bl"
-                    data-baseweb="typo-label3"
-                  >
-                    Screenplay, Director, Story
-                  </div>
-                </div>
-              </div>
-              <div
-                className="dd de fz g0 ar"
-              >
-                <div
-                  className="g1 g2 g3"
-                >
-                  <div
-                    aria-label={null}
-                    className="g4 g5 g6 g7 ay d3"
-                    data-baseweb="avatar"
-                    role={null}
-                  >
-                    <img
-                      alt="Chris Terrio"
-                      className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                      onError={[Function]}
-                      src="https://image.tmdb.org/t/p/w185/oljJKka3NTgiQhqhDs1SaCtcWMW.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="e8 g2 gc gd"
-                >
-                  <div
-                    className="ge ag bk bt aj"
-                    data-baseweb="typo-p1"
-                  >
-                    Chris Terrio
-                  </div>
-                  <div
-                    className="f7 ag du bj bl"
-                    data-baseweb="typo-label3"
-                  >
-                    Screenplay, Story
-                  </div>
-                </div>
-              </div>
-              <div
-                className="dd de fz g0 ar"
-              >
-                <div
-                  className="g1 g2 g3"
-                >
-                  <div
-                    aria-label={null}
-                    className="g4 g5 g6 g7 ay d3"
-                    data-baseweb="avatar"
-                    role={null}
-                  >
-                    <img
-                      alt="Colin Trevorrow"
-                      className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                      onError={[Function]}
-                      src="https://image.tmdb.org/t/p/w185/i0HBClPMPKn3aq8QeQqyThS67EK.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="e8 g2 gc gd"
-                >
-                  <div
-                    className="ge ag bk bt aj"
-                    data-baseweb="typo-p1"
-                  >
-                    Colin Trevorrow
-                  </div>
-                  <div
-                    className="f7 ag du bj bl"
-                    data-baseweb="typo-label3"
-                  >
-                    Story
-                  </div>
-                </div>
-              </div>
-              <div
-                className="dd de fz g0 ar"
-              >
-                <div
-                  className="g1 g2 g3"
-                >
-                  <div
-                    aria-label={null}
-                    className="g4 g5 g6 g7 ay d3"
-                    data-baseweb="avatar"
-                    role={null}
-                  >
-                    <img
-                      alt="Derek Connolly"
-                      className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                      onError={[Function]}
-                      src="https://image.tmdb.org/t/p/w185/k1VQLCP4RAAkuXZ5HWrdL1NQnWR.jpg"
-                    />
-                  </div>
-                </div>
-                <div
-                  className="e8 g2 gc gd"
-                >
-                  <div
-                    className="ge ag bk bt aj"
-                    data-baseweb="typo-p1"
-                  >
-                    Derek Connolly
-                  </div>
-                  <div
-                    className="f7 ag du bj bl"
-                    data-baseweb="typo-label3"
-                  >
-                    Story
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ar fq ak ei ej ek"
-        >
-          <div
-            className="e8 e9 eo"
-          >
-            <h4
-              className="ag ah du aj fr fs ft ez f0 f1 f2 fu fv"
-            >
-              Cast
-            </h4>
-          </div>
-          <div
-            className="ed e9 ee"
-          >
-            <div>
-              <div
-                className="az b0 gf d8 gg gh gi gj ar fq aq gk be"
-              >
-                <div
-                  className="ak gl gm cm"
-                  role="rowgroup"
-                >
-                  <div
-                    className="ar d1"
-                    role="row"
-                  >
-                    <div
-                      className="ag bj bk bl c0 ar cm dd g0 de fz"
-                    >
-                      <div
-                        className="g1 g2 g3"
-                      >
-                        <div
-                          aria-label={null}
-                          className="g4 g5 g6 g7 ay d3"
-                          data-baseweb="avatar"
-                          role={null}
-                        >
-                          <img
-                            alt="Carrie Fisher"
-                            className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                            onError={[Function]}
-                            src="https://image.tmdb.org/t/p/w185/rfJtncHewKVnHjqpIZvjn24ESeC.jpg"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="e8 g2 gc gd"
-                      >
-                        <div
-                          className="ge ag bk bt aj"
-                          data-baseweb="typo-p1"
-                        >
-                          Carrie Fisher
-                        </div>
-                        <div
-                          className="f7 ag du bj bl"
-                          data-baseweb="typo-label3"
-                        >
-                          General Leia Organa
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="ar d1"
-                    role="row"
-                  >
-                    <div
-                      className="ag bj bk bl c0 ar cm dd g0 de fz"
-                    >
-                      <div
-                        className="g1 g2 g3"
-                      >
-                        <div
-                          aria-label={null}
-                          className="g4 g5 g6 g7 ay d3"
-                          data-baseweb="avatar"
-                          role={null}
-                        >
-                          <img
-                            alt="Mark Hamill"
-                            className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                            onError={[Function]}
-                            src="https://image.tmdb.org/t/p/w185/fk8OfdReNltKZqOk2TZgkofCUFq.jpg"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="e8 g2 gc gd"
-                      >
-                        <div
-                          className="ge ag bk bt aj"
-                          data-baseweb="typo-p1"
-                        >
-                          Mark Hamill
-                        </div>
-                        <div
-                          className="f7 ag du bj bl"
-                          data-baseweb="typo-label3"
-                        >
-                          Luke Skywalker
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="ar d1"
-                    role="row"
-                  >
-                    <div
-                      className="ag bj bk bl c0 ar cm dd g0 de fz"
-                    >
-                      <div
-                        className="g1 g2 g3"
-                      >
-                        <div
-                          aria-label={null}
-                          className="g4 g5 g6 g7 ay d3"
-                          data-baseweb="avatar"
-                          role={null}
-                        >
-                          <img
-                            alt="Adam Driver"
-                            className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                            onError={[Function]}
-                            src="https://image.tmdb.org/t/p/w185/rsjwgpV2OukxOJ9HEiEyf4qu1vR.jpg"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="e8 g2 gc gd"
-                      >
-                        <div
-                          className="ge ag bk bt aj"
-                          data-baseweb="typo-p1"
-                        >
-                          Adam Driver
-                        </div>
-                        <div
-                          className="f7 ag du bj bl"
-                          data-baseweb="typo-label3"
-                        >
-                          Kylo Ren
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="ar d1"
-                    role="row"
-                  >
-                    <div
-                      className="ag bj bk bl c0 ar cm dd g0 de fz"
-                    >
-                      <div
-                        className="g1 g2 g3"
-                      >
-                        <div
-                          aria-label={null}
-                          className="g4 g5 g6 g7 ay d3"
-                          data-baseweb="avatar"
-                          role={null}
-                        >
-                          <img
-                            alt="Daisy Ridley"
-                            className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                            onError={[Function]}
-                            src="https://image.tmdb.org/t/p/w185/oP7khxQ6BUNoGiPFUCI8dikN0ew.jpg"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="e8 g2 gc gd"
-                      >
-                        <div
-                          className="ge ag bk bt aj"
-                          data-baseweb="typo-p1"
-                        >
-                          Daisy Ridley
-                        </div>
-                        <div
-                          className="f7 ag du bj bl"
-                          data-baseweb="typo-label3"
-                        >
-                          Rey
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="ar d1"
-                    role="row"
-                  >
-                    <div
-                      className="ag bj bk bl c0 ar cm dd g0 de fz"
-                    >
-                      <div
-                        className="g1 g2 g3"
-                      >
-                        <div
-                          aria-label={null}
-                          className="g4 g5 g6 g7 ay d3"
-                          data-baseweb="avatar"
-                          role={null}
-                        >
-                          <img
-                            alt="John Boyega"
-                            className="g4 g5 g6 g7 ay g8 g9 ga gb"
-                            onError={[Function]}
-                            src="https://image.tmdb.org/t/p/w185/idr2vphzhidyMGOp0ky6RqUMah8.jpg"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="e8 g2 gc gd"
-                      >
-                        <div
-                          className="ge ag bk bt aj"
-                          data-baseweb="typo-p1"
-                        >
-                          John Boyega
-                        </div>
-                        <div
-                          className="f7 ag du bj bl"
-                          data-baseweb="typo-label3"
-                        >
-                          Finn
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="gn go ar"
-            >
-              <div
-                aria-label="pagination"
-                className="ar d1 cu ag c1 du c2"
-                data-baseweb="pagination"
-              >
-                <button
-                  className="dj d1 co d9 da dk db dl dm cx cy b8 dn gp dp dq dr ds dt ag c1 ai c2 b4 b6 b3 b5 dd de d2 dv gq d8 gr gs gt gu gv gw"
-                  data-baseweb="button"
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  &lt;
-                </button>
-                <div
-                  className="ae gd gx gy gz"
-                >
-                  <div
-                    aria-controls={null}
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    className="ag c1 bk c2 ay ae ak"
-                    data-baseweb="select"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="b3 b4 b6 b5 ay al ak ar eh b8 cv b0 h0 cx cy cu h1 d8 h2"
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                      onTouchEnd={[Function]}
-                      onTouchMove={[Function]}
-                      onTouchStart={[Function]}
-                    >
-                      <div
-                        className="ay ae e8 e9 ec ar d1 h3 al h4 h5 df g0"
-                      >
-                        <div
-                          aria-selected="true"
-                          className="c2 ay h6 aq bc al h7 h8 h9 ae ha hb hc dv cu ag c1 du"
-                          disabled={false}
-                          value={1}
-                        >
-                          1
-                        </div>
-                        <div
-                          aria-disabled={false}
-                          aria-expanded={false}
-                          aria-label={null}
-                          aria-labelledby={null}
-                          aria-required={null}
-                          className="ae d3 bc d8 bq h2 ay db dr dt dq ds ha hb fz g0 fm hd"
-                          onBlur={[Function]}
-                          onFocus={[Function]}
-                          tabIndex={0}
-                        />
-                      </div>
-                      <div
-                        className="ay ae ar g2 d1 he dv"
-                      >
-                        <svg
-                          className="d3 d4 cu fm fn b8"
-                          data-baseweb="icon"
-                          viewBox="0 0 24 24"
-                        >
-                          <title>
-                            open
-                          </title>
-                          <path
-                            d="M12.7071 15.2929L17.1464 10.8536C17.4614 10.5386 17.2383 10 16.7929 10L7.20711 10C6.76165 10 6.53857 10.5386 6.85355 10.8536L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929Z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <span
-                  aria-label="page 1 of 6"
-                  className="hf hg d8 gq"
-                >
-                  of 6
-                </span>
-                <button
-                  className="dj d1 co d9 da dk db dl dm cx cy b8 dn gp dp dq dr ds dt ag c1 ai c2 b4 b6 b3 b5 dd de d2 dv gq d8 gr gs gt gu gv gw"
-                  data-baseweb="button"
-                  disabled={false}
-                  onClick={[Function]}
-                >
-                  &gt;
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ae"
-          data-baseweb="block"
-        >
-          <h4
-            className="ag ah du aj fr fs ft ez f0 f1 f2 fu fv"
-          >
-            Similar movies
-          </h4>
-          <div
-            className="ak al ae am"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          >
-            <ul
-              className="an ao ap ak aq ar as at au av aw"
-            >
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/6u1fYtxG5eqjhtCPDx04pJphQRW.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        8.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/lrJWyjOVjPhghl4KyAMtOepAxs.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        8 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/2vcNFtrZXNwIcBgH5e2xXCmVR8t.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.5 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/weUSwMdQIa3NaXVzwUoIIcAi85d.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        8.2 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/tgr5Pdy7ehZYBqBkN2K7Q02xgOb.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.3 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/xd6yhmtS6mEURZLwUDT5raEMbf.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        5.8 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/ys5Sgpc27mVo3H5zYLPV9LWDq5.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/mLrQMqyZgLeP8FrT5LCobKAiqmK.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.7 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/41mhrXASAW3sdn7LBWF49uCX0xi.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/xPihqTMhCh6b8DHYzE61jrIiNMS.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.5 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/n8V09dDc02KsSN6Q4hC2BX6hN8X.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/qhVB8eUGwkdVvd8Fezk0AgcMPDH.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.2 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/kugwPq2E5IkzrgoxRycnoqqUS9H.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        5.7 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/n4TpLWPi062AofIq4kwmaPNBSvA.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.2 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/zaFa1NRZEnFgRTv5OVXkNIZO78O.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/kmcqlZGaSh20zpTbuoF0Cdn07dT.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        7.4 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li
-                className="ax ay"
-              >
-                <div
-                  className="az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba"
-                  data-baseweb="card"
-                  onClick={[Function]}
-                >
-                  <img
-                    className="b3 b4 bb bc"
-                    src="https://image.tmdb.org/t/p/w500/3IGbjc5ZC5yxim5W0sFING2kdcz.jpg"
-                  />
-                  <div
-                    className="bd be bf bg"
-                  >
-                    <h1
-                      className="ag ah du aj ge dq dr ds ft fz ha g0 hb hh hi hj hk hl"
-                    >
-                      <div
-                        className=""
-                        data-baseweb="block"
-                      >
-                        <svg
-                          color="#fc3a52"
-                          fill="currentColor"
-                          height="0.8em"
-                          size="0.8em"
-                          stroke="currentColor"
-                          strokeWidth="0"
-                          style={
-                            Object {
-                              "color": "#fc3a52",
-                            }
-                          }
-                          viewBox="0 0 512 512"
-                          width="0.8em"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                          />
-                        </svg>
-                         
-                        6.6 / 10
-                      </div>
-                    </h1>
-                    <div
-                      className="bh bi ag bj bk bl"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <button
-              className="bm bn bo b8 bp bq br bs bt bu bv bw bx by"
-              onClick={[Function]}
-            >
-              &lt;
-            </button>
-            <button
-              className="bm bn bo b8 bp bq br bs bt bu bv bw bx bz"
-              onClick={[Function]}
-            >
-              &gt;
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className="hm"
-        data-baseweb="block"
-      />
-    </div>
-  </div>,
   <div
     className=""
   />,

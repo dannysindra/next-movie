@@ -1,7 +1,7 @@
 import React from 'react';
 import { Block } from 'baseui/block';
 
-import { Page } from '../../components';
+import { Content } from 'next-movie-components';
 
 import { Hero } from '../hero';
 
@@ -14,9 +14,9 @@ import {
 
 export const Home = () => {
     return (
-        <Page>
+        <Block>
             <Hero />
-            <Page.Content>
+            <Content>
                 <NowPlayingMoviesDeck />
                 <Block marginBottom="scale900" />
                 <UpcomingMoviesDeck />
@@ -25,7 +25,7 @@ export const Home = () => {
                 <Block marginBottom="scale900" />
                 <PopularTvsDeck />
                 <Block marginBottom="scale900" />
-            </Page.Content>
-        </Page>
+            </Content>
+        </Block>
     );
 };

@@ -100,8 +100,6 @@ export const toFeaturedCrew = credits => {
             };
         }, {});
 
-    console.log('crew', filtered);
-
     return Object.values(filtered)
         .sort((a, b) => a.sortOrder - b.sortOrder)
         .map(crew => ({
@@ -127,6 +125,14 @@ export const toFeaturedCast = credits => {
         order: cast.order,
         profileImgUrl: toProfileImgUrl(cast.profile_path)
     }));
+};
+
+export const toReviews = reviews => {
+    if (!reviews || !reviews.results || reviews.results.length === 0) {
+        return [];
+    }
+
+    return reviews.results;
 };
 
 // movies

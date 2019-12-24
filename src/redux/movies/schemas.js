@@ -9,6 +9,7 @@ const processStrategy = entity => ({
     overview: entity.overview,
     cast: utils.toFeaturedCast(entity.credits),
     crew: utils.toFeaturedCrew(entity.credits),
+    reviews: utils.toReviews(entity.reviews),
     similar: utils.toSimilar(processStrategy)(entity.similar),
     genres: utils.toGenres(entity.genres),
     runtime: utils.toRuntime(entity.runtime),

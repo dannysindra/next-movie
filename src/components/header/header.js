@@ -89,7 +89,7 @@ export const Metadata = styled('div', ({ $theme }) => {
 });
 
 // Info
-const Title = styled('h2', ({ $theme }) => {
+const Title = styled('h1', ({ $theme }) => {
     const { breakpoints, typography } = $theme;
 
     return {
@@ -105,7 +105,7 @@ const Title = styled('h2', ({ $theme }) => {
     };
 });
 
-const Subtitle = styled('h3', ({ $theme }) => {
+const Subtitle = styled('h2', ({ $theme }) => {
     const { breakpoints, colors, typography } = $theme;
 
     return {

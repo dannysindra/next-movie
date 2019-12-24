@@ -17,7 +17,7 @@ const engine = new Styletron();
 const Root = () => {
     return (
         <StyletronProvider value={engine}>
-            <BaseProvider theme={NextMovieTheme}>
+            <BaseProvider theme={NextMovieTheme} zIndex={2}>
                 <ReduxProvider store={store}>
                     <App />
                 </ReduxProvider>

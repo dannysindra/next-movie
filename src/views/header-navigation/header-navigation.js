@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Block } from 'baseui/block';
+import { KIND } from 'baseui/button';
 
-import { Button } from 'next-movie-components';
+import { Button, Navigation } from 'next-movie-components';
 
-import { Login, Navigation } from '../../components';
+import { Login } from '../../components';
+import { useModal } from '../../hooks';
 
-import { useModal, useVisibility } from './hooks';
+import { useVisibility } from './hooks';
 import { Search } from './search';
 
 const NextMovieLink = () => (
@@ -22,12 +24,12 @@ const NextMovieLink = () => (
 );
 
 export const HeaderNavigation = () => {
-    const { isOpen, open, close } = useModal(false);
+    const { isOpen, onOpen, onClose } = useModal(false);
     const transparent = useVisibility();
 
     return (
         <>
-            <Login isOpen={isOpen} onClose={close} />
+            <Login isOpen={isOpen} onClose={onClose} />
             <Navigation
                 logo={<NextMovieLink />}
                 finder={
@@ -35,8 +37,8 @@ export const HeaderNavigation = () => {
                         <Search />
                     </Block>
                 }
-                loginButton={
-                    <Button onClick={open} variant="primary">
+                control={
+                    <Button onClick={onOpen} kind={KIND.primary}>
                         Sign In
                     </Button>
                 }

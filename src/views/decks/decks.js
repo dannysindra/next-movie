@@ -1,17 +1,21 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useStyletron } from 'baseui';
+import { Block } from 'baseui/block';
 import { FaHeart } from 'react-icons/fa';
+
+import { H2, H3, CARD_KIND } from 'next-movie-components';
 
 import { HERO_TOTAL_ITEMS } from '../../constants';
 import { CardDeck } from '../../components';
 
-import { Header, Meta } from './styled';
+import { Meta } from './styled';
 import { hasAllImages } from './utils';
 import {
     useFetchNowPlayingMovies,
     useFetchPopularMovies,
-    useFetchUpcomingMovies
+    useFetchUpcomingMovies,
+    useFetchPopularTvs
 } from './hooks';
 
 export const NowPlayingMoviesDeck = () => {
@@ -31,7 +35,7 @@ export const NowPlayingMoviesDeck = () => {
 
     return (
         <CardDeck
-            label={<Header>Now playing</Header>}
+            label={<H3>Now playing</H3>}
             data={data}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -61,8 +65,9 @@ export const UpcomingMoviesDeck = () => {
 
     return (
         <CardDeck
-            label={<Header>Upcoming movies</Header>}
+            label={<H3>Upcoming movies</H3>}
             data={data}
+            kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
                 history.push(`/movie/${id}`);
@@ -94,12 +99,76 @@ export const PopularMoviesDeck = () => {
 
     return (
         <CardDeck
-            label={<Header>Popular movies</Header>}
+            label={<H3>Popular movies</H3>}
             data={data}
+            kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
                 history.push(`/movie/${id}`);
             }}
+        />
+    );
+};
+
+export const PopularTvsDeck = () => {
+    const history = useHistory();
+    const [, theme] = useStyletron();
+    const tvs = useFetchPopularTvs();
+
+    // should handle null and []
+    if (!tvs) {
+        return null;
+    }
+
+    const data = tvs.filter(hasAllImages).map(tv => ({
+        id: tv.id,
+        headerImage: tv.thumbnailImgUrl,
+        children: (
+            <Meta title={tv.name}>
+                <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
+                {tv.votes}
+            </Meta>
+        )
+    }));
+
+    return (
+        <CardDeck
+            data={data}
+            label={<H3>Popular TV series</H3>}
+            kind={CARD_KIND.thumbnail}
+            onCardClick={(event, id) => {
+                event.stopPropagation();
+                history.push(`/tv/${id}`);
+            }}
+        />
+    );
+};
+
+export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
+    const [, theme] = useStyletron();
+
+    if (!data) {
+        return null;
+    }
+
+    const mapped = data
+        .filter(datum => datum.posterImgUrl !== '')
+        .map(datum => ({
+            id: datum.id,
+            headerImage: datum.posterImgUrl,
+            title: (
+                <Block>
+                    <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
+                    {datum.votes}
+                </Block>
+            )
+        }));
+
+    return (
+        <CardDeck
+            label={<H2>{label}</H2>}
+            data={mapped}
+            onCardClick={onCardClick}
         />
     );
 };

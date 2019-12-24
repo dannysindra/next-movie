@@ -2,29 +2,23 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { useStyletron } from 'baseui';
 import { Block } from 'baseui/block';
-import { FaHeart, FaCalendar, FaClock, FaTv } from 'react-icons/fa';
+import { FaHeart, FaCalendar, FaClock, FaDollarSign } from 'react-icons/fa';
 
-import { Genre } from 'next-movie-components';
+import { Tag } from 'next-movie-components';
 
-import {
-    Root,
-    Separator,
-    Media,
-    Details,
-    Metadata,
-    Info
-} from './styled/header';
-import { Meta } from './styled/meta';
+import { Root, Separator, Media, Details, Metadata, Info } from './header';
+import { Meta } from './meta';
 
-export const HeaderTv = ({ data, controls }) => {
+export const HeaderMovie = ({ data, controls }) => {
     const [, theme] = useStyletron();
     const {
         posterImgUrl,
-        name,
+        title,
+        tagline,
         genres,
-        lastAirDate,
+        releaseDate,
         runtime,
-        totalSeasons,
+        revenue,
         votes,
         videoUrl
     } = data;
@@ -60,8 +54,8 @@ export const HeaderTv = ({ data, controls }) => {
                                 size="0.8em"
                             />
                         }
-                        label={'Last air date'}
-                        value={lastAirDate}
+                        label={'Release'}
+                        value={releaseDate}
                     />
                     <Meta
                         icon={
@@ -70,15 +64,18 @@ export const HeaderTv = ({ data, controls }) => {
                                 size="0.8em"
                             />
                         }
-                        label={'Episode runtime'}
+                        label={'Duration'}
                         value={runtime}
                     />
                     <Meta
                         icon={
-                            <FaTv color={theme.colors.positive} size="0.8em" />
+                            <FaDollarSign
+                                color={theme.colors.positive}
+                                size="0.8em"
+                            />
                         }
-                        label="Number of seasons"
-                        value={totalSeasons}
+                        label={'Revenue'}
+                        value={revenue}
                     />
                     <Meta
                         icon={
@@ -92,9 +89,10 @@ export const HeaderTv = ({ data, controls }) => {
                     />
                 </Metadata>
                 <Info>
-                    <Info.Title>{name}</Info.Title>
+                    <Info.Title>{title}</Info.Title>
+                    <Info.Subtitle>{tagline}</Info.Subtitle>
                     {genres.map(({ id, name }) => (
-                        <Genre
+                        <Tag
                             key={id}
                             style={{
                                 marginRight: theme.sizing.scale200,
@@ -102,7 +100,7 @@ export const HeaderTv = ({ data, controls }) => {
                             }}
                         >
                             {name}
-                        </Genre>
+                        </Tag>
                     ))}
                     <Block as="div" height="scale900" />
                     {controls}

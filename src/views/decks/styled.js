@@ -8,20 +8,6 @@ export const KIND = {
 };
 
 // shared components
-export const Header = ({ children }) => (
-    <Block
-        as="h2"
-        color="colorSecondary"
-        marginBottom="scale400"
-        $style={({ $theme }) => ({
-            ...$theme.typography.font550,
-            fontWeight: 'bold'
-        })}
-    >
-        {children}
-    </Block>
-);
-
 export const Meta = ({ title, children }) => (
     <>
         <Block
