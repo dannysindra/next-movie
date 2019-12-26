@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "dev": "next-movie-dev",
+    "prod": "next-movie-prod"
+  }
+}
