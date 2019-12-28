@@ -21,6 +21,7 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
             <Backdrop>
                 <Backdrop.Mask />
                 <Backdrop.Vignette />
+                <Backdrop.Poster src={posterImgUrl} alt="No poster" />
                 <Backdrop.Image src={backdropImgUrl} alt="No backdrop" />
             </Backdrop>
             <Body>

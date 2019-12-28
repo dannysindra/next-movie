@@ -19,7 +19,7 @@ export const toThumbnailImgUrl = backdropPath =>
     backdropPath ? `https://image.tmdb.org/t/p/w300${backdropPath}` : '';
 
 export const toPosterImgUrl = posterPath =>
-    posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : '';
+    posterPath ? `https://image.tmdb.org/t/p/w780${posterPath}` : '';
 
 export const toBackdropImgUrl = backdropPath =>
     backdropPath ? `https://image.tmdb.org/t/p/original${backdropPath}` : '';
@@ -34,7 +34,7 @@ export const toLocaleDate = date =>
         ? 'N/A'
         : new Date(date).toLocaleDateString('en-US', {
               year: 'numeric',
-              month: 'long',
+              month: 'short',
               day: 'numeric'
           });
 

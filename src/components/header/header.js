@@ -56,6 +56,7 @@ export const Details = styled('div', ({ $theme }) => {
         display: 'flex',
         flexDirection: 'column-reverse',
         justifyContent: 'space-between',
+        boxSizing: 'border-box',
         paddingTop: sizing.scale800,
         paddingBottom: sizing.scale800,
         paddingLeft: sizing.scale800,
