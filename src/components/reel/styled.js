@@ -23,10 +23,31 @@ const BackdropVignette = styled('div', ({ $theme }) => ({
     background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, ${$theme.colors.background} 100%)`
 }));
 
-const BackdropImage = styled('img', {
-    width: '100%',
-    height: '100%',
-    minWidth: '1000px'
+const BackdropImage = styled('img', ({ $theme }) => {
+    const { breakpoints } = $theme;
+
+    return {
+        display: 'none',
+        [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
+            display: 'block',
+            width: '100%',
+            height: '100%',
+            minWidth: '1000px'
+        }
+    };
+});
+
+const BackdropPoster = styled('img', ({ $theme }) => {
+    const { breakpoints } = $theme;
+
+    return {
+        display: 'block',
+        width: '100%',
+        height: '100%',
+        [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
+            display: 'none'
+        }
+    };
 });
 
 export const Backdrop = styled('div', {
@@ -38,6 +59,7 @@ export const Backdrop = styled('div', {
 
 Backdrop.Mask = BackdropMask;
 Backdrop.Image = BackdropImage;
+Backdrop.Poster = BackdropPoster;
 Backdrop.Vignette = BackdropVignette;
 
 const BodyLeft = styled('div', ({ $theme }) => ({
@@ -144,11 +166,12 @@ export const Carousel = styled('div', ({ $theme }) => {
     const { sizing } = $theme;
 
     return {
-        marginTop: 'auto',
+        marginTop: sizing.scale800,
         display: 'flex',
-        alignSelf: 'center',
+        alignSelf: 'flex-start',
         paddingTop: sizing.scale400,
         [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+            marginTop: 'auto',
             alignSelf: 'flex-end'
         }
     };
