@@ -31,8 +31,7 @@ const BackdropImage = styled('img', ({ $theme }) => {
         [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
             display: 'block',
             width: '100%',
-            height: '100%',
-            minWidth: '1000px'
+            height: '100%'
         }
     };
 });

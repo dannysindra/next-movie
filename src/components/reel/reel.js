@@ -21,12 +21,15 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
             <Backdrop>
                 <Backdrop.Mask />
                 <Backdrop.Vignette />
-                <Backdrop.Poster src={posterImgUrl} alt="No poster" />
-                <Backdrop.Image src={backdropImgUrl} alt="No backdrop" />
+                <Backdrop.Poster src={posterImgUrl.larger} alt="No poster" />
+                <Backdrop.Image
+                    src={backdropImgUrl.original}
+                    alt="No backdrop"
+                />
             </Backdrop>
             <Body>
                 <Body.Left>
-                    <Poster src={posterImgUrl} alt="No poster" />
+                    <Poster src={posterImgUrl.medium} alt="No poster" />
                 </Body.Left>
                 <Body.Right>
                     <Metadata>
@@ -44,7 +47,7 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
                             >
                                 <Thumbnail.Mask $active={id === movie.id} />
                                 <Thumbnail.Image
-                                    src={movie.backdropImgUrl}
+                                    src={movie.backdropImgUrl.small}
                                     alt="No backdrop"
                                 />
                             </Thumbnail>
@@ -61,8 +64,8 @@ Reel.propTypes = {
     movies: arrayOf(
         shape({
             id: number.isRequired,
-            backdropImgUrl: string,
-            posterImgUrl: string,
+            backdropImgUrl: shape({}),
+            posterImgUrl: shape({}),
             title: string,
             tagline: string
         })

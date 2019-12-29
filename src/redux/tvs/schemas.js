@@ -17,7 +17,6 @@ const processStrategy = entity => ({
     totalEpisodes: utils.toTotalEpisodes(entity.number_of_episodes),
     votes: utils.toVote(entity.vote_average),
     posterImgUrl: utils.toPosterImgUrl(entity.poster_path),
-    thumbnailImgUrl: utils.toThumbnailImgUrl(entity.backdrop_path),
     backdropImgUrl: utils.toBackdropImgUrl(entity.backdrop_path),
     videoUrl: utils.toVideoUrl(entity.videos)
 });

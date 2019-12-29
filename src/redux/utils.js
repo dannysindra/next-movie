@@ -5,6 +5,8 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
     minimumFractionDigits: 0
 });
 
+const IMG_URL = 'https://image.tmdb.org/t/p/';
+
 // common
 export const toGenres = genres => genres || [];
 
@@ -13,16 +15,37 @@ export const toRuntime = runtime => (runtime ? `${runtime} minutes` : 'N/A');
 export const toVote = vote => (vote && vote > 0 ? `${vote} / 10` : 'N/A');
 
 export const toProfileImgUrl = profilePath =>
-    profilePath ? `https://image.tmdb.org/t/p/w185${profilePath}` : '';
-
-export const toThumbnailImgUrl = backdropPath =>
-    backdropPath ? `https://image.tmdb.org/t/p/w300${backdropPath}` : '';
+    !profilePath
+        ? ''
+        : {
+              small: `${IMG_URL}w45${profilePath}`,
+              medium: `${IMG_URL}w185${profilePath}`,
+              large: `${IMG_URL}h632${profilePath}`,
+              original: `${IMG_URL}original${profilePath}`
+          };
 
 export const toPosterImgUrl = posterPath =>
-    posterPath ? `https://image.tmdb.org/t/p/w780${posterPath}` : '';
+    !posterPath
+        ? ''
+        : {
+              tiny: `${IMG_URL}w92${posterPath}`,
+              smaller: `${IMG_URL}w154${posterPath}`,
+              small: `${IMG_URL}w185${posterPath}`,
+              medium: `${IMG_URL}w342${posterPath}`,
+              large: `${IMG_URL}w500${posterPath}`,
+              larger: `${IMG_URL}w780${posterPath}`,
+              original: `${IMG_URL}original${posterPath}`
+          };
 
 export const toBackdropImgUrl = backdropPath =>
-    backdropPath ? `https://image.tmdb.org/t/p/original${backdropPath}` : '';
+    !backdropPath
+        ? ''
+        : {
+              small: `${IMG_URL}w300${backdropPath}`,
+              medium: `${IMG_URL}w780${backdropPath}`,
+              large: `${IMG_URL}w1280${backdropPath}`,
+              original: `${IMG_URL}original${backdropPath}`
+          };
 
 export const toSimilar = processStrategy => similar =>
     !similar || !similar.results
@@ -108,7 +131,7 @@ export const toFeaturedCrew = credits => {
             name: crew.name,
             department: crew.department,
             job: crew.job,
-            profileImgUrl: toProfileImgUrl(crew.profile_path)
+            profileImgUrl: toProfileImgUrl(crew.profile_path).medium
         }));
 };
 
@@ -123,7 +146,7 @@ export const toFeaturedCast = credits => {
         name: cast.name,
         character: cast.character,
         order: cast.order,
-        profileImgUrl: toProfileImgUrl(cast.profile_path)
+        profileImgUrl: toProfileImgUrl(cast.profile_path).medium
     }));
 };
 

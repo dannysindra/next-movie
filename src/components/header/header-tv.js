@@ -29,7 +29,7 @@ export const HeaderTv = ({ data, controls }) => {
                     <Block
                         as="img"
                         alt="No poster"
-                        src={posterImgUrl}
+                        src={posterImgUrl.large}
                         width="100%"
                         height="auto"
                     />
