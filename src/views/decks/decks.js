@@ -29,7 +29,7 @@ export const NowPlayingMoviesDeck = () => {
 
     const data = movies.filter(hasAllImages).map(movie => ({
         id: movie.id,
-        headerImage: movie.posterImgUrl,
+        headerImage: movie.posterImgUrl.medium,
         title: movie.shortReleaseDate
     }));
 
@@ -59,7 +59,7 @@ export const UpcomingMoviesDeck = () => {
         .slice(HERO_TOTAL_ITEMS, movies.length)
         .map(movie => ({
             id: movie.id,
-            headerImage: movie.thumbnailImgUrl,
+            headerImage: movie.backdropImgUrl.small,
             children: <Meta title={movie.title}>{movie.releaseDate}</Meta>
         }));
 
@@ -88,7 +88,7 @@ export const PopularMoviesDeck = () => {
 
     const data = movies.filter(hasAllImages).map(movie => ({
         id: movie.id,
-        headerImage: movie.thumbnailImgUrl,
+        headerImage: movie.backdropImgUrl.small,
         children: (
             <Meta title={movie.title}>
                 <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
@@ -122,7 +122,7 @@ export const PopularTvsDeck = () => {
 
     const data = tvs.filter(hasAllImages).map(tv => ({
         id: tv.id,
-        headerImage: tv.thumbnailImgUrl,
+        headerImage: tv.backdropImgUrl.small,
         children: (
             <Meta title={tv.name}>
                 <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
@@ -155,7 +155,7 @@ export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
         .filter(datum => datum.posterImgUrl !== '')
         .map(datum => ({
             id: datum.id,
-            headerImage: datum.posterImgUrl,
+            headerImage: datum.posterImgUrl.medium,
             title: (
                 <Block>
                     <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
