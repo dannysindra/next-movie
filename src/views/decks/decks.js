@@ -3,31 +3,34 @@ import { useHistory } from 'react-router-dom';
 import { useStyletron } from 'baseui';
 import { Block } from 'baseui/block';
 import { FaHeart } from 'react-icons/fa';
+import { useQuery } from '@apollo/react-hooks';
 
 import { H2, H3, CARD_KIND } from 'next-movie-components';
 
+import {
+    GET_NOW_PLAYING_MOVIES,
+    GET_UPCOMING_MOVIES,
+    GET_POPULAR_MOVIES,
+    GET_POPULAR_TVS
+} from '../../apis';
 import { HERO_TOTAL_ITEMS } from '../../constants';
 import { CardDeck } from '../../components';
 
 import { Meta } from './styled';
 import { hasAllImages } from './utils';
-import {
-    useFetchNowPlayingMovies,
-    useFetchPopularMovies,
-    useFetchUpcomingMovies,
-    useFetchPopularTvs
-} from './hooks';
 
 export const NowPlayingMoviesDeck = () => {
     const history = useHistory();
-    const movies = useFetchNowPlayingMovies();
+    const { loading, error, data } = useQuery(GET_NOW_PLAYING_MOVIES);
 
     // should handle null and []
-    if (!movies) {
+    if (loading || error || !data) {
         return null;
     }
 
-    const data = movies.filter(hasAllImages).map(movie => ({
+    const { nowPlayingMovies: movies } = data;
+
+    const entries = movies.filter(hasAllImages).map(movie => ({
         id: movie.id,
         headerImage: movie.posterImgUrl.medium,
         title: movie.shortReleaseDate
@@ -36,7 +39,7 @@ export const NowPlayingMoviesDeck = () => {
     return (
         <CardDeck
             label={<H3>Now playing</H3>}
-            data={data}
+            data={entries}
             onCardClick={(event, id) => {
                 event.stopPropagation();
                 history.push(`/movie/${id}`);
@@ -47,14 +50,16 @@ export const NowPlayingMoviesDeck = () => {
 
 export const UpcomingMoviesDeck = () => {
     const history = useHistory();
-    const movies = useFetchUpcomingMovies();
+    const { loading, error, data } = useQuery(GET_UPCOMING_MOVIES);
 
     // should handle null and []
-    if (!movies) {
+    if (loading || error || !data) {
         return null;
     }
 
-    const data = movies
+    const { upcomingMovies: movies } = data;
+
+    const entries = movies
         .filter(hasAllImages)
         .slice(HERO_TOTAL_ITEMS, movies.length)
         .map(movie => ({
@@ -66,7 +71,7 @@ export const UpcomingMoviesDeck = () => {
     return (
         <CardDeck
             label={<H3>Upcoming movies</H3>}
-            data={data}
+            data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -79,14 +84,16 @@ export const UpcomingMoviesDeck = () => {
 export const PopularMoviesDeck = () => {
     const history = useHistory();
     const [, theme] = useStyletron();
-    const movies = useFetchPopularMovies();
+    const { loading, error, data } = useQuery(GET_POPULAR_MOVIES);
 
     // should handle null and []
-    if (!movies) {
+    if (loading || error || !data) {
         return null;
     }
 
-    const data = movies.filter(hasAllImages).map(movie => ({
+    const { popularMovies: movies } = data;
+
+    const entries = movies.filter(hasAllImages).map(movie => ({
         id: movie.id,
         headerImage: movie.backdropImgUrl.small,
         children: (
@@ -100,7 +107,7 @@ export const PopularMoviesDeck = () => {
     return (
         <CardDeck
             label={<H3>Popular movies</H3>}
-            data={data}
+            data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -113,14 +120,16 @@ export const PopularMoviesDeck = () => {
 export const PopularTvsDeck = () => {
     const history = useHistory();
     const [, theme] = useStyletron();
-    const tvs = useFetchPopularTvs();
+    const { loading, error, data } = useQuery(GET_POPULAR_TVS);
 
     // should handle null and []
-    if (!tvs) {
+    if (loading || error || !data) {
         return null;
     }
 
-    const data = tvs.filter(hasAllImages).map(tv => ({
+    const { popularTvs: tvs } = data;
+
+    const entries = tvs.filter(hasAllImages).map(tv => ({
         id: tv.id,
         headerImage: tv.backdropImgUrl.small,
         children: (
@@ -133,7 +142,7 @@ export const PopularTvsDeck = () => {
 
     return (
         <CardDeck
-            data={data}
+            data={entries}
             label={<H3>Popular TV series</H3>}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
