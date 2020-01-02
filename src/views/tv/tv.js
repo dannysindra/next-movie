@@ -1,23 +1,28 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { Block } from 'baseui/block';
+import { useQuery } from '@apollo/react-hooks';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
+import { GET_TV_BY_ID } from '../../apis';
 import { Cast, Crew, HeaderTv, WatchlistButton } from '../../components';
 import { SimilarShowsDeck } from '../decks';
-
-import { useFetchTvDetails } from './hooks';
 
 const notEmpty = data => data && data.length > 0;
 
 export const TV = () => {
     const history = useHistory();
-    const tv = useFetchTvDetails();
+    const { id } = useParams();
+    const { loading, error, data } = useQuery(GET_TV_BY_ID, {
+        variables: { id: parseInt(id) }
+    });
 
-    if (!tv) {
+    if (loading || error || !data) {
         return null;
     }
+
+    const { tv } = data;
 
     return (
         <Block>

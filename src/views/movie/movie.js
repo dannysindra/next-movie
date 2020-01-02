@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { Block } from 'baseui/block';
+import { useQuery } from '@apollo/react-hooks';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
+import { GET_MOVIE_BY_ID } from '../../apis';
 import {
     Cast,
     Crew,
@@ -15,19 +17,22 @@ import {
 import { useModal } from '../../hooks';
 import { SimilarShowsDeck } from '../decks';
 
-import { useFetchMovieDetails } from './hooks';
-
 const notEmpty = data => data && data.length > 0;
 
 export const Movie = () => {
     const history = useHistory();
-    const movie = useFetchMovieDetails();
+    const { id } = useParams();
+    const { loading, error, data } = useQuery(GET_MOVIE_BY_ID, {
+        variables: { id: parseInt(id) }
+    });
     const [review, setReview] = useState(null);
     const { isOpen, onOpen, onClose } = useModal();
 
-    if (!movie) {
+    if (loading || error || !data) {
         return null;
     }
+
+    const { movie } = data;
 
     return (
         <>
