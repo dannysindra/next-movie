@@ -11,6 +11,7 @@ export const Cast = ({ data }) => (
         pageSize={PAGE_SIZE}
         renderer={datum => (
             <Credit
+                id={datum.creditId}
                 name={datum.name}
                 description={datum.character}
                 imageUrl={datum.profileImgUrl}
@@ -29,6 +30,7 @@ export const Crew = ({ data }) => {
             {data.map(datum => (
                 <Credit
                     key={datum.creditId}
+                    id={datum.creditId}
                     name={datum.name}
                     description={datum.job}
                     imageUrl={datum.profileImgUrl}
