@@ -9,11 +9,11 @@ export const Cast = ({ data }) => (
     <PaginatedItems
         data={data}
         pageSize={PAGE_SIZE}
-        renderer={({ name, character, profileImgUrl }) => (
+        renderer={datum => (
             <Credit
-                name={name}
-                description={character}
-                imageUrl={profileImgUrl}
+                name={datum.name}
+                description={datum.character}
+                imageUrl={datum.profileImgUrl}
             />
         )}
     />
