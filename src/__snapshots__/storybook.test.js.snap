@@ -227,6 +227,517 @@ Array [
 ]
 `;
 
+exports[`Storyshots components|Credit Cast 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div>
+      <div
+        className="ay az cg ch ci cj ck cl aq cm ap cn bf"
+      >
+        <div
+          className="ak co cp cq"
+          role="rowgroup"
+        >
+          <div
+            className="aq cr"
+            role="row"
+          >
+            <div
+              className="ag bz c0 c1 cs aq cq bp bq br bo"
+            >
+              <div
+                className="ct cu bo bq aq"
+              >
+                <div
+                  className="cv cw cx"
+                >
+                  <div
+                    aria-label={null}
+                    className="cy cz d0 d1 ax d2"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Carrie Fisher"
+                      className="cy cz d0 d1 ax d3 d4 d5 d6"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/rfJtncHewKVnHjqpIZvjn24ESeC.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="d7 cw d8 d9"
+                >
+                  <div
+                    className="bj ag c0 c9 aj"
+                    data-baseweb="typo-p1"
+                  >
+                    Carrie Fisher
+                  </div>
+                  <div
+                    className="da ag bi bz c1"
+                    data-baseweb="typo-label3"
+                  >
+                    General Leia Organa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq cr"
+            role="row"
+          >
+            <div
+              className="ag bz c0 c1 cs aq cq bp bq br bo"
+            >
+              <div
+                className="ct cu bo bq aq"
+              >
+                <div
+                  className="cv cw cx"
+                >
+                  <div
+                    aria-label={null}
+                    className="cy cz d0 d1 ax d2"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Mark Hamill"
+                      className="cy cz d0 d1 ax d3 d4 d5 d6"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/fk8OfdReNltKZqOk2TZgkofCUFq.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="d7 cw d8 d9"
+                >
+                  <div
+                    className="bj ag c0 c9 aj"
+                    data-baseweb="typo-p1"
+                  >
+                    Mark Hamill
+                  </div>
+                  <div
+                    className="da ag bi bz c1"
+                    data-baseweb="typo-label3"
+                  >
+                    Luke Skywalker
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq cr"
+            role="row"
+          >
+            <div
+              className="ag bz c0 c1 cs aq cq bp bq br bo"
+            >
+              <div
+                className="ct cu bo bq aq"
+              >
+                <div
+                  className="cv cw cx"
+                >
+                  <div
+                    aria-label={null}
+                    className="cy cz d0 d1 ax d2"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Adam Driver"
+                      className="cy cz d0 d1 ax d3 d4 d5 d6"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/rsjwgpV2OukxOJ9HEiEyf4qu1vR.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="d7 cw d8 d9"
+                >
+                  <div
+                    className="bj ag c0 c9 aj"
+                    data-baseweb="typo-p1"
+                  >
+                    Adam Driver
+                  </div>
+                  <div
+                    className="da ag bi bz c1"
+                    data-baseweb="typo-label3"
+                  >
+                    Kylo Ren
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq cr"
+            role="row"
+          >
+            <div
+              className="ag bz c0 c1 cs aq cq bp bq br bo"
+            >
+              <div
+                className="ct cu bo bq aq"
+              >
+                <div
+                  className="cv cw cx"
+                >
+                  <div
+                    aria-label={null}
+                    className="cy cz d0 d1 ax d2"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Daisy Ridley"
+                      className="cy cz d0 d1 ax d3 d4 d5 d6"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/oP7khxQ6BUNoGiPFUCI8dikN0ew.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="d7 cw d8 d9"
+                >
+                  <div
+                    className="bj ag c0 c9 aj"
+                    data-baseweb="typo-p1"
+                  >
+                    Daisy Ridley
+                  </div>
+                  <div
+                    className="da ag bi bz c1"
+                    data-baseweb="typo-label3"
+                  >
+                    Rey
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq cr"
+            role="row"
+          >
+            <div
+              className="ag bz c0 c1 cs aq cq bp bq br bo"
+            >
+              <div
+                className="ct cu bo bq aq"
+              >
+                <div
+                  className="cv cw cx"
+                >
+                  <div
+                    aria-label={null}
+                    className="cy cz d0 d1 ax d2"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="John Boyega"
+                      className="cy cz d0 d1 ax d3 d4 d5 d6"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/idr2vphzhidyMGOp0ky6RqUMah8.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="d7 cw d8 d9"
+                >
+                  <div
+                    className="bj ag c0 c9 aj"
+                    data-baseweb="typo-p1"
+                  >
+                    John Boyega
+                  </div>
+                  <div
+                    className="da ag bi bz c1"
+                    data-baseweb="typo-label3"
+                  >
+                    Finn
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="db dc aq"
+    >
+      <div
+        aria-label="pagination"
+        className="aq cr dd ag de bi df"
+        data-baseweb="pagination"
+      >
+        <button
+          className="dg cr dh di dj dk dl dm dn do dp b7 dq dr ds bk bl bm dt ag c9 ai aj b3 b5 b2 b4 du dv dw dx da ch dy dz e0 e1 e2 e3"
+          data-baseweb="button"
+          disabled={false}
+          onClick={[Function]}
+        >
+          &lt;
+        </button>
+        <div
+          className="ae d9 e4 e5"
+        >
+          <div
+            aria-controls={null}
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="ag de c0 df ax ae ak"
+            data-baseweb="select"
+            onClick={[Function]}
+          >
+            <div
+              className="b2 b3 b5 b4 ax al ak aq e6 b7 e7 az e8 do dp dd e9 ch ea"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="ax ae d7 eb ec aq cr ed al ee ef eg bq"
+              >
+                <div
+                  aria-selected="true"
+                  className="df ax eh ap bb al ei ej ek ae bp br el em dd ag de bi"
+                  disabled={false}
+                  value={1}
+                >
+                  1
+                </div>
+                <div
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  aria-label={null}
+                  aria-labelledby={null}
+                  aria-required={null}
+                  className="ae d2 bb ch c6 ea ax dl bl dt bk bm bp br bo bq en eo"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
+                />
+              </div>
+              <div
+                className="ax ae aq cw cr ep em"
+              >
+                <svg
+                  className="d2 eq dd en er b7"
+                  data-baseweb="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    open
+                  </title>
+                  <path
+                    d="M12.7071 15.2929L17.1464 10.8536C17.4614 10.5386 17.2383 10 16.7929 10L7.20711 10C6.76165 10 6.53857 10.5386 6.85355 10.8536L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          aria-label="page 1 of 6"
+          className="es et ch da"
+        >
+          of 6
+        </span>
+        <button
+          className="dg cr dh di dj dk dl dm dn do dp b7 dq dr ds bk bl bm dt ag c9 ai aj b3 b5 b2 b4 du dv dw dx da ch dy dz e0 e1 e2 e3"
+          data-baseweb="button"
+          disabled={false}
+          onClick={[Function]}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Credit Crew 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="eu"
+      data-baseweb="block"
+    >
+      <div
+        className="ct cu bo bq aq"
+      >
+        <div
+          className="cv cw cx"
+        >
+          <div
+            aria-label={null}
+            className="cy cz d0 d1 ax d2"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="J.J. Abrams"
+              className="cy cz d0 d1 ax d3 d4 d5 d6"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/h0o12c399M5hTKWl0qdgwhaddNt.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="d7 cw d8 d9"
+        >
+          <div
+            className="bj ag c0 c9 aj"
+            data-baseweb="typo-p1"
+          >
+            J.J. Abrams
+          </div>
+          <div
+            className="da ag bi bz c1"
+            data-baseweb="typo-label3"
+          >
+            Screenplay, Director, Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="ct cu bo bq aq"
+      >
+        <div
+          className="cv cw cx"
+        >
+          <div
+            aria-label={null}
+            className="cy cz d0 d1 ax d2"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Chris Terrio"
+              className="cy cz d0 d1 ax d3 d4 d5 d6"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/oljJKka3NTgiQhqhDs1SaCtcWMW.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="d7 cw d8 d9"
+        >
+          <div
+            className="bj ag c0 c9 aj"
+            data-baseweb="typo-p1"
+          >
+            Chris Terrio
+          </div>
+          <div
+            className="da ag bi bz c1"
+            data-baseweb="typo-label3"
+          >
+            Screenplay, Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="ct cu bo bq aq"
+      >
+        <div
+          className="cv cw cx"
+        >
+          <div
+            aria-label={null}
+            className="cy cz d0 d1 ax d2"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Colin Trevorrow"
+              className="cy cz d0 d1 ax d3 d4 d5 d6"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/i0HBClPMPKn3aq8QeQqyThS67EK.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="d7 cw d8 d9"
+        >
+          <div
+            className="bj ag c0 c9 aj"
+            data-baseweb="typo-p1"
+          >
+            Colin Trevorrow
+          </div>
+          <div
+            className="da ag bi bz c1"
+            data-baseweb="typo-label3"
+          >
+            Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="ct cu bo bq aq"
+      >
+        <div
+          className="cv cw cx"
+        >
+          <div
+            aria-label={null}
+            className="cy cz d0 d1 ax d2"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Derek Connolly"
+              className="cy cz d0 d1 ax d3 d4 d5 d6"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/k1VQLCP4RAAkuXZ5HWrdL1NQnWR.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="d7 cw d8 d9"
+        >
+          <div
+            className="bj ag c0 c9 aj"
+            data-baseweb="typo-p1"
+          >
+            Derek Connolly
+          </div>
+          <div
+            className="da ag bi bz c1"
+            data-baseweb="typo-label3"
+          >
+            Story
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
 exports[`Storyshots components|Hero Base 1`] = `
 Array [
   <div
@@ -236,50 +747,50 @@ Array [
       className="ak"
     >
       <div
-        className="c2 ak ch al"
+        className="c2 ak ev al"
       >
         <div
-          className="ak ap c2 ci cj"
+          className="ak ap c2 ew ex"
         />
         <div
-          className="c2 ce cf c4 ck cl"
+          className="c2 ce cf c4 ey ez"
         />
         <img
           alt="No poster"
-          className="cm ak ap cn"
+          className="d3 ak ap f0"
           src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
         />
         <img
           alt="No backdrop"
-          className="cd co cp cq"
+          className="cd f1 f2 f3"
           src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
         />
       </div>
       <div
-        className="aq ae cr cs ct cu cv"
+        className="aq ae f4 f5 f6 f7 f8"
       >
         <div
-          className="cw cd cx al cy cz"
+          className="f9 cd fa al fb fc"
         >
           <img
             alt="No poster"
-            className="ak d0"
+            className="ak fd"
             src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
           />
         </div>
         <div
-          className="d1 aq d2"
+          className="cq aq cm"
         >
           <div
             className=""
           >
             <h2
-              className="d3 ag d4 bi d5 c7"
+              className="fe ag ff bi fg c7"
             >
               Jumanji: The Next Level
             </h2>
             <h3
-              className="d6 ag c9 bi aj"
+              className="fh ag c9 bi aj"
             >
               December 12, 2019
             </h3>
@@ -287,16 +798,16 @@ Array [
               className=""
             >
               <button
-                className="d7 d8 d9 da db dc dd de df dg dh b7 di dj dk bk bl bm dl ag dm bi dn b3 b5 b2 b4 do dp dq dr ds dt du dv dw"
+                className="dg cr dh di dj dk dl dm dn do dp b7 dq fi ds bk bl bm dt ag de bi df b3 b5 b2 b4 ct cu fj em fk fl fm fn fo"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="aq dx"
+                  className="aq fp"
                 >
                   <svg
-                    className="dy dz e0 e1 e2"
+                    className="d2 eq fq en er"
                     data-baseweb="icon"
                     viewBox="0 0 24 24"
                   >
@@ -313,20 +824,20 @@ Array [
                 Watchlist
               </button>
               <div
-                className="e3 e4"
+                className="fr et"
                 data-baseweb="block"
               />
               <button
-                className="d7 d8 d9 da db dc dd de df dg dh b7 di dj dk bk bl bm dl ag dm bi dn b3 b5 b2 b4 do dp dq dr e5 e6 e7 e8 e9"
+                className="dg cr dh di dj dk dl dm dn do dp b7 dq fi ds bk bl bm dt ag de bi df b3 b5 b2 b4 ct cu fj em dd fs ft fu fv"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
               >
                 <div
-                  className="aq dx"
+                  className="aq fp"
                 >
                   <svg
-                    className="dy dz e0 e1 e2"
+                    className="d2 eq fq en er"
                     data-baseweb="icon"
                     viewBox="0 0 20 20"
                   >
@@ -343,70 +854,70 @@ Array [
             </div>
           </div>
           <div
-            className="ea aq eb ec ed ee"
+            className="fw aq fx ee fy fz"
           >
             <button
-              className="c6 ef b7 ae eg eh aw ei ej"
+              className="c6 g0 b7 ae g1 g2 aw g3 g4"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci ek"
+                className="ak ap c2 ew g5"
               />
               <img
                 alt="No backdrop"
-                className="ak d0"
+                className="ak fd"
                 src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
               />
             </button>
             <button
-              className="c6 ef b7 ae eg eh aw ei ej"
+              className="c6 g0 b7 ae g1 g2 aw g3 g4"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci el"
+                className="ak ap c2 ew g6"
               />
               <img
                 alt="No backdrop"
-                className="ak d0"
+                className="ak fd"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
             <button
-              className="c6 ef b7 ae eg eh aw ei ej"
+              className="c6 g0 b7 ae g1 g2 aw g3 g4"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci el"
+                className="ak ap c2 ew g6"
               />
               <img
                 alt="No backdrop"
-                className="ak d0"
+                className="ak fd"
                 src="https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg"
               />
             </button>
             <button
-              className="c6 ef b7 ae eg eh aw ei ej"
+              className="c6 g0 b7 ae g1 g2 aw g3 g4"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci el"
+                className="ak ap c2 ew g6"
               />
               <img
                 alt="No backdrop"
-                className="ak d0"
+                className="ak fd"
                 src="https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg"
               />
             </button>
             <button
-              className="c6 ef b7 ae eg eh aw ei ej"
+              className="c6 g0 b7 ae g1 g2 aw g3 g4"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci el"
+                className="ak ap c2 ew g6"
               />
               <img
                 alt="No backdrop"
-                className="ak d0"
+                className="ak fd"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
