@@ -8,19 +8,22 @@ import { NextMovieTheme } from 'next-movie-components';
 
 import { client } from './apollo-client';
 import { engine } from './styletron-client';
+import { Firebase } from './utils';
 import { App } from './views/app';
 
 import './index.css';
 
 const Root = () => {
     return (
-        <StyletronProvider value={engine}>
-            <BaseProvider theme={NextMovieTheme} zIndex={2}>
-                <ApolloProvider client={client}>
-                    <App />
-                </ApolloProvider>
-            </BaseProvider>
-        </StyletronProvider>
+        <Firebase.Provider>
+            <ApolloProvider client={client}>
+                <StyletronProvider value={engine}>
+                    <BaseProvider theme={NextMovieTheme} zIndex={2}>
+                        <App />
+                    </BaseProvider>
+                </StyletronProvider>
+            </ApolloProvider>
+        </Firebase.Provider>
     );
 };
 
