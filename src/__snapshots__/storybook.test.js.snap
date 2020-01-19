@@ -931,14 +931,3 @@ Array [
   />,
 ]
 `;
-
-exports[`Storyshots components|Login Base 1`] = `
-Array [
-  <div
-    className=""
-  />,
-  <div
-    className=""
-  />,
-]
-`;

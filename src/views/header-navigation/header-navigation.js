@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Block } from 'baseui/block';
-import { KIND } from 'baseui/button';
 
-import { Button, Navigation } from 'next-movie-components';
+import { Navigation } from 'next-movie-components';
 
-import { Login } from '../../components';
+import { Login } from '../login';
 import { useModal } from '../../hooks';
 
+import { AuthButton } from './auth-button';
 import { useVisibility } from './hooks';
 import { Search } from './search';
 
@@ -37,11 +37,7 @@ export const HeaderNavigation = () => {
                         <Search />
                     </Block>
                 }
-                control={
-                    <Button onClick={onOpen} kind={KIND.primary}>
-                        Sign In
-                    </Button>
-                }
+                control={<AuthButton onClickLogin={onOpen} />}
                 $transparent={transparent}
             />
         </>

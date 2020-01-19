@@ -4,22 +4,24 @@ import { Modal as BaseModal } from 'next-movie-components';
 
 import { usePrimaryColor } from '../../styles';
 
-export const Login = props => {
+import { FirebaseUI } from './firebase-ui';
+
+export const Login = ({ onClose, ...rest }) => {
     const titleClass = usePrimaryColor({
         fontWeight: 'bold'
     });
 
     return (
         <BaseModal
-            {...props}
+            {...rest}
+            onClose={onClose}
             header={
                 <>
                     Sign In to <span className={titleClass}>Next Movie</span>
                 </>
             }
         >
-            Proin ut dui sed metus pharetra hend rerit vel non mi. Nulla ornare
-            faucibus ex, non facilisis nisl. Maecenas aliquet mauris ut tempus.
+            <FirebaseUI onLoginSuccess={onClose} />
         </BaseModal>
     );
 };
