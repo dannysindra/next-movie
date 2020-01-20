@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, number, arrayOf, shape, node, func } from 'prop-types';
+import { string, number, arrayOf, shape, node, func, bool } from 'prop-types';
 
 import { ReelSkeleton } from './reel-skeleton';
 
@@ -13,9 +13,13 @@ import {
     Thumbnail
 } from './styled';
 
-export const Reel = ({ index, movies, onReelItemClick, controls }) => {
-    if (!movies || movies.length === 0) {
+export const Reel = ({ loading, index, movies, onReelItemClick, controls }) => {
+    if (loading) {
         return <ReelSkeleton />;
+    }
+
+    if (!movies || movies.length === 0) {
+        return null;
     }
 
     const { id, backdropImgUrl, posterImgUrl, title, releaseDate } = movies[
@@ -70,6 +74,7 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
 };
 
 Reel.propTypes = {
+    loading: bool,
     index: number.isRequired,
     movies: arrayOf(
         shape({
@@ -85,6 +90,7 @@ Reel.propTypes = {
 };
 
 Reel.defaultProps = {
+    loading: false,
     movies: undefined,
     onReelItemClick: undefined,
     controls: undefined

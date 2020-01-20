@@ -12,7 +12,7 @@ import { CardDeck } from '../../components';
 import { Meta } from './styled';
 import { hasAllImages } from './utils';
 
-export const NowPlayingMoviesDeck = ({ data, error }) => {
+export const NowPlayingMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
     let entries;
 
@@ -31,6 +31,7 @@ export const NowPlayingMoviesDeck = ({ data, error }) => {
     return (
         <CardDeck
             label={<H3>Now playing</H3>}
+            loading={loading}
             data={entries}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -40,7 +41,7 @@ export const NowPlayingMoviesDeck = ({ data, error }) => {
     );
 };
 
-export const UpcomingMoviesDeck = ({ data, error }) => {
+export const UpcomingMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
     let entries;
 
@@ -62,6 +63,7 @@ export const UpcomingMoviesDeck = ({ data, error }) => {
     return (
         <CardDeck
             label={<H3>Upcoming movies</H3>}
+            loading={loading}
             data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
@@ -72,7 +74,7 @@ export const UpcomingMoviesDeck = ({ data, error }) => {
     );
 };
 
-export const PopularMoviesDeck = ({ data, error }) => {
+export const PopularMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
     const [, theme] = useStyletron();
     let entries;
@@ -97,6 +99,7 @@ export const PopularMoviesDeck = ({ data, error }) => {
     return (
         <CardDeck
             label={<H3>Popular movies</H3>}
+            loading={loading}
             data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
@@ -107,7 +110,7 @@ export const PopularMoviesDeck = ({ data, error }) => {
     );
 };
 
-export const PopularTvsDeck = ({ data, error }) => {
+export const PopularTvsDeck = ({ loading, data, error }) => {
     const history = useHistory();
     const [, theme] = useStyletron();
     let entries;
@@ -132,6 +135,7 @@ export const PopularTvsDeck = ({ data, error }) => {
     return (
         <CardDeck
             data={entries}
+            loading={loading}
             label={<H3>Popular TV series</H3>}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
@@ -145,7 +149,7 @@ export const PopularTvsDeck = ({ data, error }) => {
 export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
     const [, theme] = useStyletron();
 
-    if (!data) {
+    if (!data || data.length === 0) {
         return null;
     }
 

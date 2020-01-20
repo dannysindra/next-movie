@@ -1,13 +1,28 @@
 import React from 'react';
+import { KIND } from 'baseui/button';
 import { Block } from 'baseui/block';
+import Plus from 'baseui/icon/plus';
+import Show from 'baseui/icon/show';
 
-import { InfoButton, WatchlistButton } from '../button';
+import { Button } from 'next-movie-components';
 
 import { Reel } from './reel';
 
 export default {
     title: 'components|Hero'
 };
+
+const WatchlistButton = () => (
+    <Button startEnhancer={() => <Plus size={24} />} kind={KIND.primary}>
+        Watchlist
+    </Button>
+);
+
+const InfoButton = () => (
+    <Button startEnhancer={() => <Show size={24} />} kind={KIND.secondary}>
+        More Info
+    </Button>
+);
 
 const movies = [
     {
@@ -114,6 +129,7 @@ export const base = () => (
 export const loading = () => (
     <Reel
         index={0}
+        loading
         movies={[]}
         controls={
             <>

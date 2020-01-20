@@ -20,40 +20,61 @@ import {
 } from '../decks';
 
 export const Home = () => {
-    const { error: errorUpcomingMovies, data: dataUpcomingMovies } = useQuery(
-        GET_UPCOMING_MOVIES
-    );
+    const {
+        error: errorUpcomingMovies,
+        data: dataUpcomingMovies,
+        loading: loadingUpcomingMovies
+    } = useQuery(GET_UPCOMING_MOVIES);
+
     const {
         error: errorNowPlayingMovies,
-        data: dataNowPlayingMovies
+        data: dataNowPlayingMovies,
+        loading: loadingNowPlayingMovies
     } = useQuery(GET_NOW_PLAYING_MOVIES);
-    const { error: errorPopularMovies, data: dataPopularMovies } = useQuery(
-        GET_POPULAR_MOVIES
-    );
-    const { error: errorPopularTvs, data: dataPopularTvs } = useQuery(
-        GET_POPULAR_TVS
-    );
+
+    const {
+        error: errorPopularMovies,
+        data: dataPopularMovies,
+        loading: loadingPopularMovies
+    } = useQuery(GET_POPULAR_MOVIES);
+
+    const {
+        error: errorPopularTvs,
+        data: dataPopularTvs,
+        loading: loadingPopularTvs
+    } = useQuery(GET_POPULAR_TVS);
 
     return (
         <Block>
-            <Hero error={errorUpcomingMovies} data={dataUpcomingMovies} />
+            <Hero
+                data={dataUpcomingMovies}
+                error={errorUpcomingMovies}
+                loading={loadingUpcomingMovies}
+            />
             <Content>
                 <NowPlayingMoviesDeck
                     data={dataNowPlayingMovies}
                     error={errorNowPlayingMovies}
+                    loading={loadingNowPlayingMovies}
                 />
                 <Block marginBottom="scale900" />
                 <UpcomingMoviesDeck
                     data={dataUpcomingMovies}
                     error={errorUpcomingMovies}
+                    loading={loadingUpcomingMovies}
                 />
                 <Block marginBottom="scale900" />
                 <PopularMoviesDeck
                     data={dataPopularMovies}
                     error={errorPopularMovies}
+                    loading={loadingPopularMovies}
                 />
                 <Block marginBottom="scale900" />
-                <PopularTvsDeck data={dataPopularTvs} error={errorPopularTvs} />
+                <PopularTvsDeck
+                    data={dataPopularTvs}
+                    error={errorPopularTvs}
+                    loading={loadingPopularTvs}
+                />
                 <Block marginBottom="scale900" />
             </Content>
         </Block>
