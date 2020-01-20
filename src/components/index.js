@@ -2,6 +2,6 @@ export { InfoButton, WatchlistButton } from './button';
 export { CardDeck } from './card-deck';
 export { Cast, Crew } from './credit';
 export { HeaderMovie, HeaderTv } from './header';
-export { Reel } from './reel';
+export { Reel, ReelSkeleton } from './reel';
 export { Review } from './review';
 export { ReviewModal } from './review-modal';

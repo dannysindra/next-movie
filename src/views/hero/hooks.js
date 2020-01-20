@@ -1,25 +1,6 @@
-import { useEffect, useState, useRef } from 'react';
+import { useState } from 'react';
 
-const useInterval = (callback, delay, reset) => {
-    const savedCallback = useRef();
-
-    // Remember the latest callback.
-    useEffect(() => {
-        savedCallback.current = callback;
-    }, [callback]);
-
-    // Set up the interval.
-    useEffect(() => {
-        const tick = () => {
-            savedCallback.current();
-        };
-
-        if (delay !== null) {
-            let id = setInterval(tick, delay);
-            return () => clearInterval(id);
-        }
-    }, [delay, reset]);
-};
+import { useInterval } from '../../hooks';
 
 export const useReel = ({
     initialIndex = 0,

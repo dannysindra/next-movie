@@ -63,8 +63,8 @@ Backdrop.Vignette = BackdropVignette;
 
 const BodyLeft = styled('div', ({ $theme }) => ({
     width: '185px',
+    height: '270px',
     display: 'none',
-    maxHeight: '270px',
     overflow: 'hidden',
     [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
         display: 'block',
@@ -84,10 +84,11 @@ export const Body = styled('div', ({ $theme }) => {
     return {
         display: 'flex',
         position: 'relative',
-        paddingTop: '18vw',
+        paddingTop: '50vw',
         paddingLeft: sizing.scale800,
         paddingRight: sizing.scale800,
         [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+            paddingTop: '18vw',
             paddingLeft: sizing.scale1600,
             paddingRight: sizing.scale1600
         }
@@ -104,8 +105,12 @@ export const Poster = styled('img', {
 
 const MetadataTitle = styled('h2', ({ $theme }) => ({
     margin: '0 0 13px 0',
-    ...$theme.typography.font950,
-    color: 'white'
+    ...$theme.typography.font450,
+    color: 'white',
+    [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+        ...$theme.typography.font950,
+        color: 'white'
+    }
 }));
 
 const MetadataSubtitle = styled('h3', ({ $theme }) => {
@@ -113,7 +118,10 @@ const MetadataSubtitle = styled('h3', ({ $theme }) => {
 
     return {
         color: colors.mono400,
-        ...typography.font450
+        ...typography.font450,
+        [`@media screen and (max-width: ${POSTER_BREAKPOINT}px)`]: {
+            display: 'none'
+        }
     };
 });
 

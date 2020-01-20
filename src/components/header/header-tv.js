@@ -6,7 +6,7 @@ import { FaHeart, FaCalendar, FaClock, FaTv } from 'react-icons/fa';
 
 import { Tag } from 'next-movie-components';
 
-import { Root, Separator, Media, Details, Metadata, Info } from './header';
+import { Root, Separator, Media, Details, Metadata, Info } from './styled';
 import { Meta } from './meta';
 
 export const HeaderTv = ({ data, controls }) => {

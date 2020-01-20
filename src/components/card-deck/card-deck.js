@@ -12,6 +12,8 @@ import {
 
 import { Card, CARD_KIND, Deck } from 'next-movie-components';
 
+import { CardSkeleton } from './card-skeleton';
+
 const Meta = ({ title, children }) => (
     <>
         <Block
@@ -27,28 +29,33 @@ const Meta = ({ title, children }) => (
 );
 
 export const CardDeck = ({ label, data, kind, onCardClick }) => {
-    if (!data || data.length === 0) {
-        return null;
-    }
+    let deck;
 
-    const mapped = data.map(({ id, headerImage, title, children }) => (
-        <Card
-            key={id}
-            headerImage={headerImage}
-            title={title}
-            kind={kind}
-            onClick={event => {
-                onCardClick(event, id);
-            }}
-        >
-            {children}
-        </Card>
-    ));
+    // Render 7 skeleton entries if the data is still being fetched
+    if (!data || data.length === 0) {
+        deck = [0, 1, 2, 3, 4, 5, 6].map(el => (
+            <CardSkeleton key={el} kind={kind} />
+        ));
+    } else {
+        deck = data.map(({ id, headerImage, title, children }) => (
+            <Card
+                key={id}
+                headerImage={headerImage}
+                title={title}
+                kind={kind}
+                onClick={event => {
+                    onCardClick(event, id);
+                }}
+            >
+                {children}
+            </Card>
+        ));
+    }
 
     return (
         <Block position="relative">
             {label}
-            <Deck>{mapped}</Deck>
+            <Deck>{deck}</Deck>
         </Block>
     );
 };
@@ -64,12 +71,13 @@ CardDeck.propTypes = {
             title: node,
             children: oneOfType([node, arrayOf(node)])
         })
-    ).isRequired,
+    ),
     kind: string,
     onCardClick: func.isRequired
 };
 
 CardDeck.defaultProps = {
     label: undefined,
+    data: undefined,
     kind: CARD_KIND.poster
 };

@@ -110,3 +110,17 @@ export const base = () => (
         }
     />
 );
+
+export const loading = () => (
+    <Reel
+        index={0}
+        movies={[]}
+        controls={
+            <>
+                <WatchlistButton>Watchlist</WatchlistButton>
+                <Block display="inline" marginRight="scale600" />
+                <InfoButton>More Info</InfoButton>
+            </>
+        }
+    />
+);

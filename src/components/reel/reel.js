@@ -1,6 +1,8 @@
 import React from 'react';
 import { string, number, arrayOf, shape, node, func } from 'prop-types';
 
+import { ReelSkeleton } from './reel-skeleton';
+
 import {
     Root,
     Backdrop,
@@ -12,6 +14,10 @@ import {
 } from './styled';
 
 export const Reel = ({ index, movies, onReelItemClick, controls }) => {
+    if (!movies || movies.length === 0) {
+        return <ReelSkeleton />;
+    }
+
     const { id, backdropImgUrl, posterImgUrl, title, releaseDate } = movies[
         index
     ];
@@ -33,7 +39,11 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
                 </Body.Left>
                 <Body.Right>
                     <Metadata>
-                        <Metadata.Title>{title}</Metadata.Title>
+                        <Metadata.Title>
+                            {title.length > 30
+                                ? `${title.substring(0, 30)} ...`
+                                : title}
+                        </Metadata.Title>
                         <Metadata.Subtitle>{releaseDate}</Metadata.Subtitle>
                         <Metadata.Actions>{controls}</Metadata.Actions>
                     </Metadata>
@@ -69,12 +79,13 @@ Reel.propTypes = {
             title: string,
             tagline: string
         })
-    ).isRequired,
+    ),
     onReelItemClick: func,
     controls: node
 };
 
 Reel.defaultProps = {
+    movies: undefined,
     onReelItemClick: undefined,
     controls: undefined
 };
