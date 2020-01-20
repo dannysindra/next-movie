@@ -1,9 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { Block } from 'baseui/block';
-import { useQuery } from '@apollo/react-hooks';
+import { useHistory } from 'react-router-dom';
+import { arrayOf, shape } from 'prop-types';
 
-import { GET_UPCOMING_MOVIES } from '../../apis';
 import { HERO_TOTAL_ITEMS } from '../../constants';
 import { InfoButton, WatchlistButton, Reel } from '../../components';
 
@@ -15,21 +14,24 @@ const hasAllImages = movie =>
     movie.posterImgUrl.medium &&
     movie.posterImgUrl.larger;
 
-export const Hero = () => {
+export const Hero = ({ error, data }) => {
     const history = useHistory();
-    const { loading, error, data } = useQuery(GET_UPCOMING_MOVIES);
     const [index, onReelItemClick] = useReel({
         initialIndex: 0,
         numberOfItems: HERO_TOTAL_ITEMS,
         duration: 7000
     });
+    let entries;
 
-    if (loading || error || !data || data.upcomingMovies.length === 0) {
+    if (error) {
         return null;
     }
 
-    const { upcomingMovies: result } = data;
-    const movies = result.filter(hasAllImages).slice(0, HERO_TOTAL_ITEMS);
+    if (data && data.upcomingMovies.length > 0) {
+        entries = data.upcomingMovies
+            .filter(hasAllImages)
+            .slice(0, HERO_TOTAL_ITEMS);
+    }
 
     const watchlistButton = <WatchlistButton>Watchlist</WatchlistButton>;
 
@@ -37,7 +39,7 @@ export const Hero = () => {
         <InfoButton
             onClick={event => {
                 event.stopPropagation();
-                history.push(`/movie/${movies[index].id}`);
+                history.push(`/movie/${entries[index].id}`);
             }}
         >
             More Info
@@ -47,7 +49,7 @@ export const Hero = () => {
     return (
         <Reel
             index={index}
-            movies={movies}
+            movies={entries}
             onReelItemClick={onReelItemClick}
             controls={
                 <>
@@ -58,4 +60,14 @@ export const Hero = () => {
             }
         />
     );
+};
+
+Hero.propTypes = {
+    data: arrayOf(shape({})),
+    error: shape({})
+};
+
+Hero.defaultProps = {
+    data: undefined,
+    error: undefined
 };
