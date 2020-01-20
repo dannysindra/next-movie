@@ -6,11 +6,21 @@ import { FaHeart, FaCalendar, FaClock, FaDollarSign } from 'react-icons/fa';
 
 import { Tag } from 'next-movie-components';
 
+import { HeaderSkeleton } from './header-skeleton';
 import { Root, Separator, Media, Details, Metadata, Info } from './styled';
 import { Meta } from './meta';
 
-export const HeaderMovie = ({ data, controls }) => {
+export const HeaderMovie = ({ data, loading, controls }) => {
     const [, theme] = useStyletron();
+
+    if (loading) {
+        return <HeaderSkeleton />;
+    }
+
+    if (!data) {
+        return null;
+    }
+
     const {
         posterImgUrl,
         title,
