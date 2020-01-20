@@ -22,11 +22,11 @@ export const Movie = () => {
     const [review, setReview] = useState(null);
     const { isOpen, onOpen, onClose } = useModal();
 
-    if (loading || error || !data) {
+    if (error) {
         return null;
     }
 
-    const { movie } = data;
+    const movie = data ? data.movie : null;
 
     return (
         <>
@@ -38,6 +38,7 @@ export const Movie = () => {
             />
             <Block>
                 <HeaderMovie
+                    loading={loading}
                     data={movie}
                     controls={
                         <WatchlistButton id={parseInt(id)}>
@@ -45,43 +46,45 @@ export const Movie = () => {
                         </WatchlistButton>
                     }
                 />
-                <Content>
-                    <Section label="Overview">
-                        <P1>{movie.overview}</P1>
-                    </Section>
-                    {notEmpty(movie.crew) && (
-                        <Section label="Featured Crew">
-                            <Crew data={movie.crew} />
+                {movie && (
+                    <Content>
+                        <Section label="Overview">
+                            <P1>{movie.overview}</P1>
                         </Section>
-                    )}
-                    {notEmpty(movie.cast) && (
-                        <Section label="Cast">
-                            <Cast data={movie.cast} />
-                        </Section>
-                    )}
-                    {notEmpty(movie.reviews) && (
-                        <Section label="Reviews">
-                            <Review
-                                data={movie.reviews}
-                                onClickReview={(event, review) => {
+                        {notEmpty(movie.crew) && (
+                            <Section label="Featured Crew">
+                                <Crew data={movie.crew} />
+                            </Section>
+                        )}
+                        {notEmpty(movie.cast) && (
+                            <Section label="Cast">
+                                <Cast data={movie.cast} />
+                            </Section>
+                        )}
+                        {notEmpty(movie.reviews) && (
+                            <Section label="Reviews">
+                                <Review
+                                    data={movie.reviews}
+                                    onClickReview={(event, review) => {
+                                        event.stopPropagation();
+                                        setReview(review);
+                                        onOpen();
+                                    }}
+                                />
+                            </Section>
+                        )}
+                        {notEmpty(movie.similar) && (
+                            <SimilarShowsDeck
+                                label="Similar movies"
+                                data={movie.similar}
+                                onCardClick={(event, id) => {
                                     event.stopPropagation();
-                                    setReview(review);
-                                    onOpen();
+                                    history.push(`/movie/${id}`);
                                 }}
                             />
-                        </Section>
-                    )}
-                    {notEmpty(movie.similar) && (
-                        <SimilarShowsDeck
-                            label="Similar movies"
-                            data={movie.similar}
-                            onCardClick={(event, id) => {
-                                event.stopPropagation();
-                                history.push(`/movie/${id}`);
-                            }}
-                        />
-                    )}
-                </Content>
+                        )}
+                    </Content>
+                )}
                 <Block marginBottom="scale1000" />
             </Block>
         </>

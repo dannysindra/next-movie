@@ -19,47 +19,50 @@ export const TV = () => {
         variables: { id: parseInt(id) }
     });
 
-    if (loading || error || !data) {
+    if (error) {
         return null;
     }
 
-    const { tv } = data;
+    const tv = data ? data.tv : null;
 
     return (
         <Block>
             <HeaderTv
                 data={tv}
+                loading={loading}
                 controls={
                     <WatchlistButton id={parseInt(id)}>
                         Watchlist
                     </WatchlistButton>
                 }
             />
-            <Content>
-                <Section label="Overview">
-                    <P1>{tv.overview}</P1>
-                </Section>
-                {notEmpty(tv.crew) && (
-                    <Section label="Featured Crew">
-                        <Crew data={tv.crew} />
+            {tv && (
+                <Content>
+                    <Section label="Overview">
+                        <P1>{tv.overview}</P1>
                     </Section>
-                )}
-                {notEmpty(tv.cast) && (
-                    <Section label="Cast">
-                        <Cast data={tv.cast} />
-                    </Section>
-                )}
-                {notEmpty(tv.similar) && (
-                    <SimilarShowsDeck
-                        label="Similar TV series"
-                        data={tv.similar}
-                        onCardClick={(event, id) => {
-                            event.stopPropagation();
-                            history.push(`/tv/${id}`);
-                        }}
-                    />
-                )}
-            </Content>
+                    {notEmpty(tv.crew) && (
+                        <Section label="Featured Crew">
+                            <Crew data={tv.crew} />
+                        </Section>
+                    )}
+                    {notEmpty(tv.cast) && (
+                        <Section label="Cast">
+                            <Cast data={tv.cast} />
+                        </Section>
+                    )}
+                    {notEmpty(tv.similar) && (
+                        <SimilarShowsDeck
+                            label="Similar TV series"
+                            data={tv.similar}
+                            onCardClick={(event, id) => {
+                                event.stopPropagation();
+                                history.push(`/tv/${id}`);
+                            }}
+                        />
+                    )}
+                </Content>
+            )}
             <Block marginBottom="scale1000" />
         </Block>
     );

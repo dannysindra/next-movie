@@ -35,3 +35,11 @@ export const tv = () => (
         controls={<WatchlistButton>Watchlist</WatchlistButton>}
     />
 );
+
+export const loading = () => (
+    <HeaderMovie
+        data={null}
+        loading
+        controls={<WatchlistButton>Watchlist</WatchlistButton>}
+    />
+);

@@ -1042,6 +1042,93 @@ Array [
 ]
 `;
 
+exports[`Storyshots components|Header Loading 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="b6 ax ak ez f0 f1 f2 f3 f4 f5"
+    >
+      <div
+        className="aq"
+      >
+        <div
+          className="dc ef f6 cd f7"
+        >
+          <div
+            className="cd gw gx f7 gy ak gz"
+            data-baseweb="block"
+          />
+        </div>
+        <div
+          className="dc ef eg cd f7"
+        />
+        <div
+          className="f9 ef fa fb"
+        >
+          <div
+            className="cd gw gx f7 gy ak gz"
+            data-baseweb="block"
+          />
+        </div>
+      </div>
+      <div
+        className="ak aq fc ea ax fd fe ff fg fh fi fj fk"
+      >
+        <div
+          className="dc ef fl aq fm fn fo fp fq"
+        >
+          <div
+            className="ci h0 h1 gg"
+            data-baseweb="block"
+          />
+          <div
+            className="ci h2 h1"
+            data-baseweb="block"
+          />
+          <div
+            className="cj"
+            data-baseweb="block"
+          />
+          <div
+            className="ci h0 h1 gg"
+            data-baseweb="block"
+          />
+          <div
+            className="ci h2 h1"
+            data-baseweb="block"
+          />
+        </div>
+        <div
+          className="f9 ef fa"
+        >
+          <h1
+            className="fu c7 ag ah bi aj fv fw fx fy fz g0 g1 g2"
+          >
+            <div
+              className="ci h3 h4"
+              data-baseweb="block"
+            />
+          </h1>
+          <h2
+            className="g3 ag bz bi c1 fv g4 fx g5 fz g6 g1 g7"
+          >
+            <div
+              className="ci h2 h5"
+              data-baseweb="block"
+            />
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
 exports[`Storyshots components|Header Movie 1`] = `
 Array [
   <div
@@ -1648,30 +1735,30 @@ Array [
       className="ak"
     >
       <div
-        className="c2 ak gw al"
+        className="c2 ak h6 al"
       >
         <div
-          className="ak ap c2 gx gy"
+          className="ak ap c2 h7 h8"
         />
         <div
-          className="c2 ce cf c4 gz h0"
+          className="c2 ce cf c4 h9 ha"
         />
         <img
           alt="No poster"
-          className="d8 ak ap h1"
+          className="d8 ak ap hb"
           src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
         />
         <img
           alt="No backdrop"
-          className="cd f7 h2 h3"
+          className="cd f7 hc hd"
           src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
         />
       </div>
       <div
-        className="aq ae h4 ff fg h5 h6 h7"
+        className="aq ae he ff fg hf hg hh"
       >
         <div
-          className="h8 h9 cd al ha hb"
+          className="hi hj cd al hk hl"
         >
           <img
             alt="No poster"
@@ -1686,12 +1773,12 @@ Array [
             className=""
           >
             <h2
-              className="fu ag c9 bi aj c7 hc hd he hf hg"
+              className="fu ag c9 bi aj c7 hm hn ho hp hq"
             >
               Jumanji: The Next Level
             </h2>
             <h3
-              className="g3 ag c9 bi aj hh"
+              className="g3 ag c9 bi aj hr"
             >
               December 12, 2019
             </h3>
@@ -1725,11 +1812,11 @@ Array [
                 Watchlist
               </button>
               <div
-                className="hi ex"
+                className="hs ex"
                 data-baseweb="block"
               />
               <button
-                className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag di bi dj b3 b5 b2 b4 cy cz gl eq dh hj hk hl hm"
+                className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag di bi dj b3 b5 b2 b4 cy cz gl eq dh ht hu hv hw"
                 data-baseweb="button"
                 disabled={false}
                 onClick={[Function]}
@@ -1755,14 +1842,14 @@ Array [
             </div>
           </div>
           <div
-            className="hn aq ho ei hp hq"
+            className="hx aq hy ei hz i0"
           >
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 gx hw"
+                className="ak ap c2 h7 i6"
               />
               <img
                 alt="No backdrop"
@@ -1771,11 +1858,11 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 gx hx"
+                className="ak ap c2 h7 i7"
               />
               <img
                 alt="No backdrop"
@@ -1784,11 +1871,11 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 gx hx"
+                className="ak ap c2 h7 i7"
               />
               <img
                 alt="No backdrop"
@@ -1797,11 +1884,11 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 gx hx"
+                className="ak ap c2 h7 i7"
               />
               <img
                 alt="No backdrop"
@@ -1810,11 +1897,11 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 gx hx"
+                className="ak ap c2 h7 i7"
               />
               <img
                 alt="No backdrop"
@@ -1842,20 +1929,20 @@ Array [
       className="ak"
     >
       <div
-        className="c2 ak gw al"
+        className="c2 ak h6 al"
       >
         <div
-          className="ak ap c2 gx gy"
+          className="ak ap c2 h7 h8"
         />
         <div
-          className="c2 ce cf c4 gz h0"
+          className="c2 ce cf c4 h9 ha"
         />
       </div>
       <div
-        className="aq ae h4 ff fg h5 h6 h7"
+        className="aq ae he ff fg hf hg hh"
       >
         <div
-          className="h8 h9 cd al ha hb"
+          className="hi hj cd al hk hl"
         >
           <div
             className="ci ak ap"
@@ -1869,27 +1956,27 @@ Array [
             className=""
           >
             <h2
-              className="fu ag c9 bi aj c7 hc hd he hf hg"
+              className="fu ag c9 bi aj c7 hm hn ho hp hq"
             >
               <div
-                className="ci hy hz"
+                className="ci h3 h4"
                 data-baseweb="block"
               />
             </h2>
             <h3
-              className="g3 ag c9 bi aj hh"
+              className="g3 ag c9 bi aj hr"
             >
               <div
-                className="ci i0 i1"
+                className="ci h2 h5"
                 data-baseweb="block"
               />
             </h3>
           </div>
           <div
-            className="hn aq ho ei hp hq"
+            className="hx aq hy ei hz i0"
           >
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
             >
               <div
                 className="ci ak ap"
@@ -1897,7 +1984,7 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
             >
               <div
                 className="ci ak ap"
@@ -1905,7 +1992,7 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
             >
               <div
                 className="ci ak ap"
@@ -1913,7 +2000,7 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
             >
               <div
                 className="ci ak ap"
@@ -1921,7 +2008,7 @@ Array [
               />
             </button>
             <button
-              className="c6 hr b7 ae hs ht aw hu hv"
+              className="c6 i1 b7 ae i2 i3 aw i4 i5"
             >
               <div
                 className="ci ak ap"
@@ -1949,7 +2036,7 @@ Array [
       data-baseweb="block"
     >
       <div
-        className="i2 i3 cy dg bo bq"
+        className="i8 i9 cy dg bo bq"
       >
         <div
           className="cg ag bi bz c1"
@@ -1958,12 +2045,12 @@ Array [
           Vogel
         </div>
         <p
-          className="ag di c0 dj ft fv i4 i5 i6"
+          className="ag di c0 dj ft fv ia ib ic"
         >
           Well.. this was dull.
         </p>
         <button
-          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 i7 e4 i8 e6 i9"
+          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 id e4 ie e6 if"
           data-baseweb="button"
           disabled={false}
           onClick={[Function]}
@@ -1972,7 +2059,7 @@ Array [
         </button>
       </div>
       <div
-        className="i2 i3 cy dg bo bq"
+        className="i8 i9 cy dg bo bq"
       >
         <div
           className="cg ag bi bz c1"
@@ -1981,12 +2068,12 @@ Array [
           Olon
         </div>
         <p
-          className="ag di c0 dj ft fv i4 i5 i6"
+          className="ag di c0 dj ft fv ia ib ic"
         >
           Went to the first showing in town tonight.  I really enjoyed the film.  Although it leaned heavy on nostalgia, it should, since it is wrapping up 40 years.  I did not care for The Last Jedi, and was worried going in.  Will do a deeper dive after I have seen it a few times.
         </p>
         <button
-          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 i7 e4 i8 e6 i9"
+          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 id e4 ie e6 if"
           data-baseweb="button"
           disabled={false}
           onClick={[Function]}
@@ -1995,7 +2082,7 @@ Array [
         </button>
       </div>
       <div
-        className="i2 i3 cy dg bo bq"
+        className="i8 i9 cy dg bo bq"
       >
         <div
           className="cg ag bi bz c1"
@@ -2004,12 +2091,12 @@ Array [
           Sheldon Nylander
         </div>
         <p
-          className="ag di c0 dj ft fv i4 i5 i6"
+          className="ag di c0 dj ft fv ia ib ic"
         >
           It’s hard to write a review for this film without any major spoilers, so this might seem a little vague here and there. There will be very minor spoilers, primarily what’s revealed in the opening text crawl or the trailers, so not much, but if you want to go into this film completely virgin, stop here.
         </p>
         <button
-          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 i7 e4 i8 e6 i9"
+          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 id e4 ie e6 if"
           data-baseweb="button"
           disabled={false}
           onClick={[Function]}
@@ -2018,7 +2105,7 @@ Array [
         </button>
       </div>
       <div
-        className="i2 i3 cy dg bo bq"
+        className="i8 i9 cy dg bo bq"
       >
         <div
           className="cg ag bi bz c1"
@@ -2027,12 +2114,12 @@ Array [
           Luis_989
         </div>
         <p
-          className="ag di c0 dj ft fv i4 i5 i6"
+          className="ag di c0 dj ft fv ia ib ic"
         >
           When The Force Awakens was released the vast majority of fans liked it. They were practically watching a remake of A New Hope but it was enough for them. Although they never liked Rey. That damn feminist agenda right?
         </p>
         <button
-          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 i7 e4 i8 e6 i9"
+          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 id e4 ie e6 if"
           data-baseweb="button"
           disabled={false}
           onClick={[Function]}
@@ -2041,7 +2128,7 @@ Array [
         </button>
       </div>
       <div
-        className="ia ib cy dg bo bq"
+        className="ig ih cy dg bo bq"
       >
         <div
           className="cg ag bi bz c1"
@@ -2050,13 +2137,13 @@ Array [
           msbreviews
         </div>
         <p
-          className="ag di c0 dj ft fv i4 i5 i6"
+          className="ag di c0 dj ft fv ia ib ic"
         >
           If you enjoy reading my Spoiler-Free reviews, please follow my blog @
 
         </p>
         <button
-          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 i7 e4 i8 e6 i9"
+          className="dk cw dl dm dn do dp dq dr ds dt b7 du go dw bk bl bm dx ag c9 bi aj b3 b5 b2 b4 bp br bo bq cg cm e2 id e4 ie e6 if"
           data-baseweb="button"
           disabled={false}
           onClick={[Function]}
