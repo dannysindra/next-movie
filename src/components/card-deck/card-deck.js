@@ -7,7 +7,8 @@ import {
     func,
     node,
     oneOfType,
-    arrayOf
+    arrayOf,
+    bool
 } from 'prop-types';
 
 import { Card, CARD_KIND, Deck } from 'next-movie-components';
@@ -28,14 +29,18 @@ const Meta = ({ title, children }) => (
     </>
 );
 
-export const CardDeck = ({ label, data, kind, onCardClick }) => {
+export const CardDeck = ({ label, loading, data, kind, onCardClick }) => {
     let deck;
 
     // Render 7 skeleton entries if the data is still being fetched
-    if (!data || data.length === 0) {
+    if (loading) {
         deck = [0, 1, 2, 3, 4, 5, 6].map(el => (
             <CardSkeleton key={el} kind={kind} />
         ));
+    }
+    // Do not render anything if there is error
+    else if (!data || data.length === 0) {
+        return null;
     } else {
         deck = data.map(({ id, headerImage, title, children }) => (
             <Card
@@ -64,6 +69,7 @@ CardDeck.Meta = Meta;
 
 CardDeck.propTypes = {
     label: node,
+    loading: bool,
     data: arrayOf(
         shape({
             id: number.isRequired,
@@ -78,6 +84,7 @@ CardDeck.propTypes = {
 
 CardDeck.defaultProps = {
     label: undefined,
+    loading: false,
     data: undefined,
     kind: CARD_KIND.poster
 };

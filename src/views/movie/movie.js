@@ -6,15 +6,9 @@ import { useQuery } from '@apollo/react-hooks';
 import { Content, Section, P1 } from 'next-movie-components';
 
 import { GET_MOVIE_BY_ID } from '../../apis';
-import {
-    Cast,
-    Crew,
-    HeaderMovie,
-    Review,
-    ReviewModal,
-    WatchlistButton
-} from '../../components';
+import { Cast, Crew, HeaderMovie, Review, ReviewModal } from '../../components';
 import { useModal } from '../../hooks';
+import { WatchlistButton } from '../button';
 import { SimilarShowsDeck } from '../decks';
 
 const notEmpty = data => data && data.length > 0;
@@ -45,7 +39,11 @@ export const Movie = () => {
             <Block>
                 <HeaderMovie
                     data={movie}
-                    controls={<WatchlistButton>Watchlist</WatchlistButton>}
+                    controls={
+                        <WatchlistButton id={parseInt(id)}>
+                            Watchlist
+                        </WatchlistButton>
+                    }
                 />
                 <Content>
                     <Section label="Overview">
@@ -73,14 +71,16 @@ export const Movie = () => {
                             />
                         </Section>
                     )}
-                    <SimilarShowsDeck
-                        label="Similar movies"
-                        data={movie.similar}
-                        onCardClick={(event, id) => {
-                            event.stopPropagation();
-                            history.push(`/movie/${id}`);
-                        }}
-                    />
+                    {notEmpty(movie.similar) && (
+                        <SimilarShowsDeck
+                            label="Similar movies"
+                            data={movie.similar}
+                            onCardClick={(event, id) => {
+                                event.stopPropagation();
+                                history.push(`/movie/${id}`);
+                            }}
+                        />
+                    )}
                 </Content>
                 <Block marginBottom="scale1000" />
             </Block>

@@ -6,7 +6,8 @@ import { useQuery } from '@apollo/react-hooks';
 import { Content, Section, P1 } from 'next-movie-components';
 
 import { GET_TV_BY_ID } from '../../apis';
-import { Cast, Crew, HeaderTv, WatchlistButton } from '../../components';
+import { Cast, Crew, HeaderTv } from '../../components';
+import { WatchlistButton } from '../button';
 import { SimilarShowsDeck } from '../decks';
 
 const notEmpty = data => data && data.length > 0;
@@ -28,7 +29,11 @@ export const TV = () => {
         <Block>
             <HeaderTv
                 data={tv}
-                controls={<WatchlistButton>Watchlist</WatchlistButton>}
+                controls={
+                    <WatchlistButton id={parseInt(id)}>
+                        Watchlist
+                    </WatchlistButton>
+                }
             />
             <Content>
                 <Section label="Overview">
@@ -44,14 +49,16 @@ export const TV = () => {
                         <Cast data={tv.cast} />
                     </Section>
                 )}
-                <SimilarShowsDeck
-                    label="Similar TV series"
-                    data={tv.similar}
-                    onCardClick={(event, id) => {
-                        event.stopPropagation();
-                        history.push(`/tv/${id}`);
-                    }}
-                />
+                {notEmpty(tv.similar) && (
+                    <SimilarShowsDeck
+                        label="Similar TV series"
+                        data={tv.similar}
+                        onCardClick={(event, id) => {
+                            event.stopPropagation();
+                            history.push(`/tv/${id}`);
+                        }}
+                    />
+                )}
             </Content>
             <Block marginBottom="scale1000" />
         </Block>

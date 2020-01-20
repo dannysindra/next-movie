@@ -38,6 +38,7 @@ export const base = () => (
 export const loading = () => (
     <CardDeck
         {...actions}
+        loading
         label={
             <Block
                 as="h2"
