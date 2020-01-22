@@ -2,32 +2,63 @@ import React from 'react';
 import { KIND } from 'baseui/button';
 import Plus from 'baseui/icon/plus';
 import Minus from 'baseui/icon/check-indeterminate';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/react-hooks';
 
 import { Button } from 'next-movie-components';
 
-import { GET_WATCHLIST } from '../../apis';
+import {
+    GET_WATCHLIST,
+    ADD_TO_WATCHLIST,
+    REMOVE_FROM_WATCHLIST
+} from '../../apis';
 import { Firebase } from '../../utils';
 
-const AddToWatchlistButton = ({ children, ...rest }) => (
-    <Button
-        startEnhancer={() => <Plus size={24} />}
-        kind={KIND.primary}
-        {...rest}
-    >
-        {children}
-    </Button>
-);
+const AddToWatchlistButton = ({ children, id, ...rest }) => {
+    const [addToWatchlist, { loading }] = useMutation(ADD_TO_WATCHLIST);
 
-const RemoveFromWatchlistButton = ({ children, ...rest }) => (
-    <Button
-        startEnhancer={() => <Minus size={24} />}
-        kind={KIND.secondary}
-        {...rest}
-    >
-        {children}
-    </Button>
-);
+    return (
+        <Button
+            {...rest}
+            startEnhancer={() => <Plus size={24} />}
+            kind={KIND.primary}
+            isLoading={loading}
+            onClick={() => {
+                addToWatchlist({
+                    variables: {
+                        id
+                    }
+                });
+            }}
+        >
+            {children}
+        </Button>
+    );
+};
+
+const RemoveFromWatchlistButton = ({ children, id, ...rest }) => {
+    const [removeFromWatchlist, { loading }] = useMutation(
+        REMOVE_FROM_WATCHLIST,
+        {
+            variables: {
+                id
+            }
+        }
+    );
+
+    return (
+        <Button
+            {...rest}
+            startEnhancer={() => <Minus size={24} />}
+            kind={KIND.secondary}
+            isLoading={loading}
+            onClick={() => {
+                removeFromWatchlist();
+            }}
+        >
+            {children}
+        </Button>
+    );
+};
 
 export const WatchlistButton = ({ id, children, ...rest }) => {
     const { isLoggedIn } = Firebase.useFirebaseAuth();
@@ -40,20 +71,14 @@ export const WatchlistButton = ({ id, children, ...rest }) => {
 
     if (data.watchlist.results.includes(id)) {
         return (
-            <RemoveFromWatchlistButton
-                {...rest}
-                // onClick should perform mutation
-            >
+            <RemoveFromWatchlistButton {...rest} id={id}>
                 {children}
             </RemoveFromWatchlistButton>
         );
     }
 
     return (
-        <AddToWatchlistButton
-            {...rest}
-            // onClick should perform mutation
-        >
+        <AddToWatchlistButton {...rest} id={id}>
             {children}
         </AddToWatchlistButton>
     );

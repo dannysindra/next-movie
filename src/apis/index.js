@@ -8,4 +8,8 @@ export {
 
 export { GET_POPULAR_TVS, GET_TV_BY_ID } from './tvs';
 
-export { GET_WATCHLIST } from './watchlists';
+export {
+    GET_WATCHLIST,
+    ADD_TO_WATCHLIST,
+    REMOVE_FROM_WATCHLIST
+} from './watchlists';
