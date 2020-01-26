@@ -3,7 +3,7 @@ import { Block } from 'baseui/block';
 import { withRouter } from 'react-router-dom';
 
 import { InfoButton } from '../../components';
-import { WatchlistButton } from '../button';
+import { WatchlistButton } from '../watchlist-button';
 
 export const HeroControlsView = ({ id, history }) => {
     const onClickMore = () => {

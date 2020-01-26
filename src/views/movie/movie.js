@@ -1,34 +1,38 @@
 import React, { useState } from 'react';
-import { useHistory, useParams } from 'react-router-dom';
 import { Block } from 'baseui/block';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
 import { useModal } from '../../hooks';
-import { useQueryMovieById } from '../../utils/graphql';
 
 import { Cast, Crew, HeaderMovie, Review, ReviewModal } from '../../components';
-import { WatchlistButton } from '../button';
+import { WatchlistButton } from '../watchlist-button';
 import { SimilarShowsDeck } from '../decks';
+
+import { useMovie } from './hooks';
 
 const notEmpty = data => data && data.length > 0;
 
 export const Movie = () => {
-    const history = useHistory();
-    const { id } = useParams();
-    const { loading, error, data } = useQueryMovieById({
-        variables: {
-            id: parseInt(id)
-        }
-    });
+    const [result, navigateTo] = useMovie();
     const [review, setReview] = useState(null);
     const { isOpen, onOpen, onClose } = useModal();
 
-    if (error) {
+    const { id, data, error, loading } = result;
+
+    if (loading) {
+        return (
+            <Block>
+                <HeaderMovie loading={loading} />
+            </Block>
+        );
+    }
+
+    if (error || !data || !data.movie) {
         return null;
     }
 
-    const movie = data ? data.movie : null;
+    const { overview, crew, cast, reviews, similar } = data.movie;
 
     return (
         <>
@@ -40,53 +44,50 @@ export const Movie = () => {
             />
             <Block>
                 <HeaderMovie
-                    loading={loading}
-                    data={movie}
+                    data={data.movie}
                     controls={
                         <WatchlistButton id={parseInt(id)}>
                             Watchlist
                         </WatchlistButton>
                     }
                 />
-                {movie && (
-                    <Content>
-                        <Section label="Overview">
-                            <P1>{movie.overview}</P1>
+                <Content>
+                    <Section label="Overview">
+                        <P1>{overview}</P1>
+                    </Section>
+                    {notEmpty(crew) && (
+                        <Section label="Featured Crew">
+                            <Crew data={crew} />
                         </Section>
-                        {notEmpty(movie.crew) && (
-                            <Section label="Featured Crew">
-                                <Crew data={movie.crew} />
-                            </Section>
-                        )}
-                        {notEmpty(movie.cast) && (
-                            <Section label="Cast">
-                                <Cast data={movie.cast} />
-                            </Section>
-                        )}
-                        {notEmpty(movie.reviews) && (
-                            <Section label="Reviews">
-                                <Review
-                                    data={movie.reviews}
-                                    onClickReview={(event, review) => {
-                                        event.stopPropagation();
-                                        setReview(review);
-                                        onOpen();
-                                    }}
-                                />
-                            </Section>
-                        )}
-                        {notEmpty(movie.similar) && (
-                            <SimilarShowsDeck
-                                label="Similar movies"
-                                data={movie.similar}
-                                onCardClick={(event, id) => {
+                    )}
+                    {notEmpty(cast) && (
+                        <Section label="Cast">
+                            <Cast data={cast} />
+                        </Section>
+                    )}
+                    {notEmpty(reviews) && (
+                        <Section label="Reviews">
+                            <Review
+                                data={reviews}
+                                onClickReview={(event, review) => {
                                     event.stopPropagation();
-                                    history.push(`/movie/${id}`);
+                                    setReview(review);
+                                    onOpen();
                                 }}
                             />
-                        )}
-                    </Content>
-                )}
+                        </Section>
+                    )}
+                    {notEmpty(similar) && (
+                        <SimilarShowsDeck
+                            label="Similar movies"
+                            data={similar}
+                            onCardClick={(event, id) => {
+                                event.stopPropagation();
+                                navigateTo(id);
+                            }}
+                        />
+                    )}
+                </Content>
                 <Block marginBottom="scale1000" />
             </Block>
         </>
