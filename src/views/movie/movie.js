@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { Block } from 'baseui/block';
-import { useQuery } from '@apollo/react-hooks';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
-import { GET_MOVIE_BY_ID } from '../../apis';
-import { Cast, Crew, HeaderMovie, Review, ReviewModal } from '../../components';
 import { useModal } from '../../hooks';
+import { useQueryMovieById } from '../../utils/graphql';
+
+import { Cast, Crew, HeaderMovie, Review, ReviewModal } from '../../components';
 import { WatchlistButton } from '../button';
 import { SimilarShowsDeck } from '../decks';
 
@@ -16,8 +16,10 @@ const notEmpty = data => data && data.length > 0;
 export const Movie = () => {
     const history = useHistory();
     const { id } = useParams();
-    const { loading, error, data } = useQuery(GET_MOVIE_BY_ID, {
-        variables: { id: parseInt(id) }
+    const { loading, error, data } = useQueryMovieById({
+        variables: {
+            id: parseInt(id)
+        }
     });
     const [review, setReview] = useState(null);
     const { isOpen, onOpen, onClose } = useModal();

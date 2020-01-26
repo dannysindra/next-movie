@@ -1,6 +1,7 @@
 import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
 
-export const GET_POPULAR_TVS = gql`
+const GET_POPULAR_TVS = gql`
     {
         popularTvs {
             id
@@ -16,7 +17,7 @@ export const GET_POPULAR_TVS = gql`
     }
 `;
 
-export const GET_TV_BY_ID = gql`
+const GET_TV_BY_ID = gql`
     query getTvById($id: Int!) {
         tv(id: $id) {
             id
@@ -73,3 +74,11 @@ export const GET_TV_BY_ID = gql`
         }
     }
 `;
+
+export const useQueryPopularTvs = (opts = {}) => {
+    return useQuery(GET_POPULAR_TVS, opts);
+};
+
+export const useQueryTvById = (opts = {}) => {
+    return useQuery(GET_TV_BY_ID, opts);
+};

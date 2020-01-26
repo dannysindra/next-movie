@@ -3,8 +3,7 @@ import React from 'react';
 import { Modal as BaseModal } from 'next-movie-components';
 
 import { usePrimaryColor } from '../../styles';
-
-import { FirebaseUI } from './firebase-ui';
+import { AuthUI } from '../../utils/auth';
 
 export const Login = ({ onClose, ...rest }) => {
     const titleClass = usePrimaryColor({
@@ -21,7 +20,7 @@ export const Login = ({ onClose, ...rest }) => {
                 </>
             }
         >
-            <FirebaseUI onLoginSuccess={onClose} />
+            <AuthUI onLoginSuccess={onClose} />
         </BaseModal>
     );
 };
