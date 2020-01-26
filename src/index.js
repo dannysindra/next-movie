@@ -8,14 +8,14 @@ import { NextMovieTheme } from 'next-movie-components';
 
 import { client } from './apollo-client';
 import { engine } from './styletron-client';
-import { Firebase } from './utils';
+import { firebase, AuthProvider } from './utils/auth';
 import { App } from './views/app';
 
 import './index.css';
 
 const Root = () => {
     return (
-        <Firebase.Provider>
+        <AuthProvider value={firebase}>
             <ApolloProvider client={client}>
                 <StyletronProvider value={engine}>
                     <BaseProvider theme={NextMovieTheme} zIndex={2}>
@@ -23,7 +23,7 @@ const Root = () => {
                     </BaseProvider>
                 </StyletronProvider>
             </ApolloProvider>
-        </Firebase.Provider>
+        </AuthProvider>
     );
 };
 

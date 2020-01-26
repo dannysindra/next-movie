@@ -2,19 +2,22 @@ import React from 'react';
 import { KIND } from 'baseui/button';
 import Plus from 'baseui/icon/plus';
 import Minus from 'baseui/icon/check-indeterminate';
-import { useQuery, useMutation } from '@apollo/react-hooks';
 
 import { Button } from 'next-movie-components';
 
+import { useAuth } from '../../utils/auth';
 import {
-    GET_WATCHLIST,
-    ADD_TO_WATCHLIST,
-    REMOVE_FROM_WATCHLIST
-} from '../../apis';
-import { Firebase } from '../../utils';
+    useQueryWatchlist,
+    useMutationAddToWatchlist,
+    useMutationRemoveFromWatchlist
+} from '../../utils/graphql';
 
 const AddToWatchlistButton = ({ children, id, ...rest }) => {
-    const [addToWatchlist, { loading }] = useMutation(ADD_TO_WATCHLIST);
+    const [addToWatchlist, { loading }] = useMutationAddToWatchlist({
+        variables: {
+            id: parseInt(id)
+        }
+    });
 
     return (
         <Button
@@ -23,11 +26,7 @@ const AddToWatchlistButton = ({ children, id, ...rest }) => {
             kind={KIND.primary}
             isLoading={loading}
             onClick={() => {
-                addToWatchlist({
-                    variables: {
-                        id
-                    }
-                });
+                addToWatchlist();
             }}
         >
             {children}
@@ -36,14 +35,11 @@ const AddToWatchlistButton = ({ children, id, ...rest }) => {
 };
 
 const RemoveFromWatchlistButton = ({ children, id, ...rest }) => {
-    const [removeFromWatchlist, { loading }] = useMutation(
-        REMOVE_FROM_WATCHLIST,
-        {
-            variables: {
-                id
-            }
+    const [removeFromWatchlist, { loading }] = useMutationRemoveFromWatchlist({
+        variables: {
+            id: parseInt(id)
         }
-    );
+    });
 
     return (
         <Button
@@ -61,8 +57,8 @@ const RemoveFromWatchlistButton = ({ children, id, ...rest }) => {
 };
 
 export const WatchlistButton = ({ id, children, ...rest }) => {
-    const { isLoggedIn } = Firebase.useFirebaseAuth();
-    const { data, error } = useQuery(GET_WATCHLIST, { skip: !isLoggedIn });
+    const { isLoggedIn } = useAuth();
+    const { data, error } = useQueryWatchlist({ skip: !isLoggedIn });
 
     // Do not render anything if user has not logged in, or there is an error
     if (!isLoggedIn || !data || error) {

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Block } from 'baseui/block';
-import { useQuery } from '@apollo/react-hooks';
 
 import { Content } from 'next-movie-components';
 
 import {
-    GET_NOW_PLAYING_MOVIES,
-    GET_UPCOMING_MOVIES,
-    GET_POPULAR_MOVIES,
-    GET_POPULAR_TVS
-} from '../../apis';
+    useQueryNowPlayingMovies,
+    useQueryPopularMovies,
+    useQueryUpcomingMovies,
+    useQueryPopularTvs
+} from '../../utils/graphql';
+
 import { Hero } from '../hero';
 
 import {
@@ -24,25 +24,25 @@ export const Home = () => {
         error: errorUpcomingMovies,
         data: dataUpcomingMovies,
         loading: loadingUpcomingMovies
-    } = useQuery(GET_UPCOMING_MOVIES);
+    } = useQueryUpcomingMovies();
 
     const {
         error: errorNowPlayingMovies,
         data: dataNowPlayingMovies,
         loading: loadingNowPlayingMovies
-    } = useQuery(GET_NOW_PLAYING_MOVIES);
+    } = useQueryNowPlayingMovies();
 
     const {
         error: errorPopularMovies,
         data: dataPopularMovies,
         loading: loadingPopularMovies
-    } = useQuery(GET_POPULAR_MOVIES);
+    } = useQueryPopularMovies();
 
     const {
         error: errorPopularTvs,
         data: dataPopularTvs,
         loading: loadingPopularTvs
-    } = useQuery(GET_POPULAR_TVS);
+    } = useQueryPopularTvs();
 
     return (
         <Block>

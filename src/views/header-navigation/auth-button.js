@@ -3,10 +3,10 @@ import { KIND } from 'baseui/button';
 
 import { Button } from 'next-movie-components';
 
-import { Firebase } from '../../utils';
+import { useAuth } from '../../utils/auth';
 
 export const AuthButton = ({ onClickLogin }) => {
-    const { isLoggedIn, logout } = Firebase.useFirebaseAuth();
+    const { isLoggedIn, logout } = useAuth();
 
     return isLoggedIn ? (
         <Button kind={KIND.secondary} onClick={() => logout()}>
