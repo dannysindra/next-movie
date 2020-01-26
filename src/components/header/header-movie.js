@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import { useStyletron } from 'baseui';
 import { Block } from 'baseui/block';
 import { FaHeart, FaCalendar, FaClock, FaDollarSign } from 'react-icons/fa';
+import { shape, bool, node } from 'prop-types';
 
 import { Tag } from 'next-movie-components';
 
@@ -118,4 +119,16 @@ export const HeaderMovie = ({ data, loading, controls }) => {
             </Details>
         </Root>
     );
+};
+
+HeaderMovie.propTypes = {
+    data: shape({}),
+    loading: bool,
+    controls: node
+};
+
+HeaderMovie.defaultProps = {
+    data: undefined,
+    loading: false,
+    controls: undefined
 };
