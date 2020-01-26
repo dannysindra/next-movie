@@ -19,43 +19,24 @@ export const AuthProvider = ({ children, value }) => (
 );
 
 export const withAuth = () => Component => {
-    const firebase = useFirebase();
+    const WithAuth = props => {
+        const firebase = useFirebase();
+        const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    class WithAuth extends React.Component {
-        constructor(props) {
-            super(props);
-            this.state = {
-                isLoggedIn: false
-            };
-            this.logout = this.logout.bind(this);
-        }
+        useEffect(() => {
+            return firebase.auth().onAuthStateChanged(user => {
+                setIsLoggedIn(!!user);
+            });
+        }, [firebase]);
 
-        componentDidMount() {
-            this.unregisterAuthObserver = firebase
-                .auth()
-                .onAuthStateChanged(user => {
-                    this.setState({ isLoggedIn: !!user });
-                });
-        }
-
-        componentWillUnmount() {
-            this.unregisterAuthObserver();
-        }
-
-        logout() {
-            firebase.auth().signOut();
-        }
-
-        render() {
-            return (
-                <Component
-                    {...this.props}
-                    isLoggedIn={this.state.isLoggedIn}
-                    logout={this.logout}
-                />
-            );
-        }
-    }
+        return (
+            <Component
+                {...props}
+                isLoggedIn={isLoggedIn}
+                logout={() => firebase.auth().signOut()}
+            />
+        );
+    };
 
     return WithAuth;
 };
