@@ -1,3 +1,8 @@
+export {
+    AddToWatchlistButton,
+    RemoveFromWatchlistButton,
+    InfoButton
+} from './button';
 export { CardDeck } from './card-deck';
 export { Cast, Crew } from './credit';
 export { HeaderMovie, HeaderTv } from './header';

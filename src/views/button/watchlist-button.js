@@ -1,9 +1,4 @@
 import React from 'react';
-import { KIND } from 'baseui/button';
-import Plus from 'baseui/icon/plus';
-import Minus from 'baseui/icon/check-indeterminate';
-
-import { Button } from 'next-movie-components';
 
 import { useAuth } from '../../utils/auth';
 import {
@@ -11,6 +6,11 @@ import {
     useMutationAddToWatchlist,
     useMutationRemoveFromWatchlist
 } from '../../utils/graphql';
+
+import {
+    AddToWatchlistButton as Add,
+    RemoveFromWatchlistButton as Remove
+} from '../../components';
 
 const AddToWatchlistButton = ({ children, id, ...rest }) => {
     const [addToWatchlist, { loading }] = useMutationAddToWatchlist({
@@ -20,17 +20,9 @@ const AddToWatchlistButton = ({ children, id, ...rest }) => {
     });
 
     return (
-        <Button
-            {...rest}
-            startEnhancer={() => <Plus size={24} />}
-            kind={KIND.primary}
-            isLoading={loading}
-            onClick={() => {
-                addToWatchlist();
-            }}
-        >
+        <Add {...rest} isLoading={loading} onClick={addToWatchlist}>
             {children}
-        </Button>
+        </Add>
     );
 };
 
@@ -42,17 +34,9 @@ const RemoveFromWatchlistButton = ({ children, id, ...rest }) => {
     });
 
     return (
-        <Button
-            {...rest}
-            startEnhancer={() => <Minus size={24} />}
-            kind={KIND.secondary}
-            isLoading={loading}
-            onClick={() => {
-                removeFromWatchlist();
-            }}
-        >
+        <Remove {...rest} isLoading={loading} onClick={removeFromWatchlist}>
             {children}
-        </Button>
+        </Remove>
     );
 };
 
@@ -65,15 +49,11 @@ export const WatchlistButton = ({ id, children, ...rest }) => {
         return null;
     }
 
-    if (data.watchlist.results.includes(id)) {
-        return (
-            <RemoveFromWatchlistButton {...rest} id={id}>
-                {children}
-            </RemoveFromWatchlistButton>
-        );
-    }
-
-    return (
+    return data.watchlist.results.includes(id) ? (
+        <RemoveFromWatchlistButton {...rest} id={id}>
+            {children}
+        </RemoveFromWatchlistButton>
+    ) : (
         <AddToWatchlistButton {...rest} id={id}>
             {children}
         </AddToWatchlistButton>

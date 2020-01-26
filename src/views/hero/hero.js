@@ -1,12 +1,11 @@
 import React from 'react';
-import { Block } from 'baseui/block';
 import { arrayOf, shape } from 'prop-types';
 
 import { HERO_TOTAL_ITEMS } from '../../constants';
 import { Reel } from '../../components';
-import { InfoButton, WatchlistButton } from '../button';
 
 import { useReel } from './hooks';
+import { HeroControls } from './hero-controls';
 
 const hasAllImages = movie =>
     movie.backdropImgUrl.small &&
@@ -32,17 +31,7 @@ export const Hero = ({ loading, error, data }) => {
             .filter(hasAllImages)
             .slice(0, HERO_TOTAL_ITEMS);
 
-        controls = (
-            <>
-                <InfoButton id={entries[index].id} kind="movie">
-                    More Info
-                </InfoButton>
-                <Block display="inline" marginRight="scale600" />
-                <WatchlistButton id={entries[index].id}>
-                    Watchlist
-                </WatchlistButton>
-            </>
-        );
+        controls = <HeroControls id={entries[index].id} />;
     }
 
     return (
