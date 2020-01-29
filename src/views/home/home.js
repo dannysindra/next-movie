@@ -10,7 +10,7 @@ import {
     useQueryPopularTvs
 } from '../../utils/graphql';
 
-import { Hero } from '../hero';
+import { Hero } from './hero';
 
 import {
     PopularMoviesDeck,

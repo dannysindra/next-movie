@@ -5,6 +5,20 @@ import { Button } from 'next-movie-components';
 
 import { useAuth } from '../../utils/auth';
 
+export const LoginButton = props => {
+    const { isLoggedIn } = useAuth();
+
+    if (!isLoggedIn) {
+        return null;
+    }
+
+    return (
+        <Button {...props} kind={KIND.primary}>
+            Sign In
+        </Button>
+    );
+};
+
 export const AuthButton = ({ onClickLogin }) => {
     const { isLoggedIn, logout } = useAuth();
 
