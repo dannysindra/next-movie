@@ -1,8 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { useStyletron } from 'baseui';
-import { Block } from 'baseui/block';
-import { FaHeart } from 'react-icons/fa';
 
 import { H2, H3, CARD_KIND } from 'next-movie-components';
 
@@ -24,7 +21,13 @@ export const NowPlayingMoviesDeck = ({ loading, data, error }) => {
         entries = data.nowPlayingMovies.filter(hasAllImages).map(movie => ({
             id: movie.id,
             headerImage: movie.posterImgUrl.medium,
-            title: movie.shortReleaseDate
+            children: (
+                <Meta
+                    title={movie.title}
+                    votes={movie.votes}
+                    voteCount={movie.voteCount}
+                />
+            )
         }));
     }
 
@@ -56,7 +59,9 @@ export const UpcomingMoviesDeck = ({ loading, data, error }) => {
             .map(movie => ({
                 id: movie.id,
                 headerImage: movie.backdropImgUrl.small,
-                children: <Meta title={movie.title}>{movie.releaseDate}</Meta>
+                children: (
+                    <Meta title={movie.title} releaseDate={movie.releaseDate} />
+                )
             }));
     }
 
@@ -76,7 +81,6 @@ export const UpcomingMoviesDeck = ({ loading, data, error }) => {
 
 export const PopularMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const [, theme] = useStyletron();
     let entries;
 
     if (error) {
@@ -88,10 +92,11 @@ export const PopularMoviesDeck = ({ loading, data, error }) => {
             id: movie.id,
             headerImage: movie.backdropImgUrl.small,
             children: (
-                <Meta title={movie.title}>
-                    <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                    {movie.votes}
-                </Meta>
+                <Meta
+                    title={movie.title}
+                    votes={movie.votes}
+                    voteCount={movie.voteCount}
+                />
             )
         }));
     }
@@ -112,7 +117,6 @@ export const PopularMoviesDeck = ({ loading, data, error }) => {
 
 export const PopularTvsDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const [, theme] = useStyletron();
     let entries;
 
     if (error) {
@@ -124,10 +128,11 @@ export const PopularTvsDeck = ({ loading, data, error }) => {
             id: tv.id,
             headerImage: tv.backdropImgUrl.small,
             children: (
-                <Meta title={tv.name}>
-                    <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                    {tv.votes}
-                </Meta>
+                <Meta
+                    title={tv.name}
+                    votes={tv.votes}
+                    voteCount={tv.voteCount}
+                />
             )
         }));
     }
@@ -147,8 +152,6 @@ export const PopularTvsDeck = ({ loading, data, error }) => {
 };
 
 export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
-    const [, theme] = useStyletron();
-
     if (!data || data.length === 0) {
         return null;
     }
@@ -158,11 +161,12 @@ export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
         .map(datum => ({
             id: datum.id,
             headerImage: datum.posterImgUrl.medium,
-            title: (
-                <Block>
-                    <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                    {datum.votes}
-                </Block>
+            children: (
+                <Meta
+                    title={datum.title || datum.name || ''}
+                    votes={datum.votes}
+                    voteCount={datum.voteCount}
+                />
             )
         }));
 

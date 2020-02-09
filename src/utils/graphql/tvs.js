@@ -7,6 +7,7 @@ const GET_POPULAR_TVS = gql`
             id
             name
             votes
+            voteCount
             posterImgUrl {
                 medium
             }
@@ -75,10 +76,7 @@ const GET_TV_BY_ID = gql`
     }
 `;
 
-export const useQueryPopularTvs = (opts = {}) => {
-    return useQuery(GET_POPULAR_TVS, opts);
-};
+export const useQueryPopularTvs = (opts = {}) =>
+    useQuery(GET_POPULAR_TVS, opts);
 
-export const useQueryTvById = (opts = {}) => {
-    return useQuery(GET_TV_BY_ID, opts);
-};
+export const useQueryTvById = (opts = {}) => useQuery(GET_TV_BY_ID, opts);

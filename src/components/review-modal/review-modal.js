@@ -22,6 +22,7 @@ const Dialog = {
 export const ReviewModal = ({ header, body, onClose, ...rest }) => (
     <Modal
         {...rest}
+        unstable_ModalBackdropScroll
         header={header}
         footer={
             <Button kind={KIND.secondary} onClick={onClose}>
