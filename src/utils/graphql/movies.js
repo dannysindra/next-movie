@@ -5,6 +5,9 @@ const GET_NOW_PLAYING_MOVIES = gql`
     {
         nowPlayingMovies {
             id
+            title
+            votes
+            voteCount
             shortReleaseDate
             posterImgUrl {
                 medium
@@ -22,6 +25,7 @@ const GET_POPULAR_MOVIES = gql`
             id
             title
             votes
+            voteCount
             posterImgUrl {
                 medium
             }
@@ -85,6 +89,7 @@ const GET_MOVIE_BY_ID = gql`
                     medium
                 }
                 votes
+                voteCount
             }
             genres {
                 id
@@ -95,6 +100,7 @@ const GET_MOVIE_BY_ID = gql`
             releaseDate
             shortReleaseDate
             votes
+            voteCount
             posterImgUrl {
                 medium
                 large
@@ -109,18 +115,13 @@ const GET_MOVIE_BY_ID = gql`
     }
 `;
 
-export const useQueryNowPlayingMovies = (opts = {}) => {
-    return useQuery(GET_NOW_PLAYING_MOVIES, opts);
-};
+export const useQueryNowPlayingMovies = (opts = {}) =>
+    useQuery(GET_NOW_PLAYING_MOVIES, opts);
 
-export const useQueryUpcomingMovies = (opts = {}) => {
-    return useQuery(GET_UPCOMING_MOVIES, opts);
-};
+export const useQueryUpcomingMovies = (opts = {}) =>
+    useQuery(GET_UPCOMING_MOVIES, opts);
 
-export const useQueryPopularMovies = (opts = {}) => {
-    return useQuery(GET_POPULAR_MOVIES, opts);
-};
+export const useQueryPopularMovies = (opts = {}) =>
+    useQuery(GET_POPULAR_MOVIES, opts);
 
-export const useQueryMovieById = (opts = {}) => {
-    return useQuery(GET_MOVIE_BY_ID, opts);
-};
+export const useQueryMovieById = (opts = {}) => useQuery(GET_MOVIE_BY_ID, opts);

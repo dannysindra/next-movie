@@ -13,6 +13,7 @@ export const Login = ({ onClose, ...rest }) => {
     return (
         <BaseModal
             {...rest}
+            unstable_ModalBackdropScroll
             onClose={onClose}
             header={
                 <>
