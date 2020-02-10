@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { withStyle } from 'baseui';
 import { Block } from 'baseui/block';
 import {
@@ -53,16 +53,31 @@ const MediumNavigationItem = withStyle(StyledNavigationItem, ({ $theme }) => {
     };
 });
 
-const NextMovieLink = () => (
-    <Link to="/" style={{ textDecoration: 'none' }}>
+const AppLink = ({ children, to }) => (
+    <Link to={to} style={{ textDecoration: 'none' }}>
         <Block
             as="h1"
             margin={0}
             $style={({ $theme }) => ({ color: $theme.colors.colorPrimary })}
         >
-            Next Movie
+            {children}
         </Block>
     </Link>
+);
+
+const HeaderNavLink = ({ children, to }) => (
+    <NavLink
+        to={to}
+        activeStyle={{
+            fontWeight: 'bold'
+        }}
+        style={{
+            color: 'white',
+            textDecoration: 'none'
+        }}
+    >
+        {children}
+    </NavLink>
 );
 
 const Finder = () => (
@@ -85,7 +100,7 @@ export const HeaderNavigation = () => {
             >
                 <StyledNavigationList $align={ALIGN.left}>
                     <StyledNavigationItem>
-                        <NextMovieLink />
+                        <AppLink to="/">Next Movie</AppLink>
                     </StyledNavigationItem>
                     <MediumNavigationItem />
                     <MediumNavigationItem />
@@ -96,8 +111,10 @@ export const HeaderNavigation = () => {
                 <StyledNavigationList $align={ALIGN.center} />
                 <StyledNavigationList $align={ALIGN.right}>
                     {!isLoggedIn ? null : (
-                        <StyledNavigationItem $style={{ color: 'white' }}>
-                            Watchlist
+                        <StyledNavigationItem>
+                            <HeaderNavLink to="/watchlist">
+                                Watchlist
+                            </HeaderNavLink>
                         </StyledNavigationItem>
                     )}
                     <StyledNavigationItem>
