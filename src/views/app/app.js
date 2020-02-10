@@ -10,6 +10,7 @@ import { HeaderNavigation } from '../header-navigation';
 import { Home } from '../home';
 import { Movie } from '../movie';
 import { TV } from '../tv';
+import { Watchlist } from '../watchlist';
 
 // https://reacttraining.com/react-router/web/guides/scroll-restoration
 const ScrollToTop = () => {
@@ -28,6 +29,9 @@ export const App = () => {
             <ScrollToTop />
             <HeaderNavigation />
             <Switch>
+                <Route path="/watchlist">
+                    <Watchlist />
+                </Route>
                 <Route path="/movie/:id">
                     <Movie />
                 </Route>

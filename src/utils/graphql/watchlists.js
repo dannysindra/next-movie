@@ -14,7 +14,13 @@ const GET_WATCHLIST_ENTRIES = gql`
     {
         watchlistEntries {
             id
-            results
+            results {
+                id
+                title
+                backdropImgUrl {
+                    small
+                }
+            }
         }
     }
 `;

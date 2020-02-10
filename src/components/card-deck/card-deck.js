@@ -13,7 +13,7 @@ import {
 
 import { Card, CARD_KIND, Deck } from 'next-movie-components';
 
-import { CardSkeleton } from './card-skeleton';
+import { CardSkeleton } from '../card-skeleton';
 
 const Meta = ({ title, children }) => (
     <>

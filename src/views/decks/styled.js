@@ -39,14 +39,16 @@ export const Meta = ({ title, releaseDate, votes, voteCount }) => {
                             color={theme.colors.colorPrimary}
                             size="0.8em"
                         />
-                        &nbsp;{votes}&nbsp;
+                        &nbsp;
+                        {votes}
                     </>
                 )}
                 {voteCount && (
                     <>
-                        &nbsp;
+                        &nbsp; &nbsp;
                         <Show />
-                        &nbsp;{formatVoteCount(voteCount)}
+                        &nbsp;
+                        {formatVoteCount(voteCount)}
                     </>
                 )}
             </Block>

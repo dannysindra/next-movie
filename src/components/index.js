@@ -4,6 +4,7 @@ export {
     InfoButton
 } from './button';
 export { CardDeck } from './card-deck';
+export { CardSkeleton } from './card-skeleton';
 export { Cast, Crew } from './credit';
 export { HeaderMovie, HeaderTv } from './header';
 export { Reel, ReelSkeleton } from './reel';
