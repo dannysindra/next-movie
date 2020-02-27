@@ -86,7 +86,7 @@ const Finder = () => (
     </Block>
 );
 
-export const HeaderNavigation = () => {
+export const Navigation = () => {
     const { isLoggedIn, logout } = useAuth();
     const { isOpen, onOpen, onClose } = useModal(false);
     const transparent = useVisibility();

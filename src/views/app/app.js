@@ -6,7 +6,8 @@ import {
     useLocation
 } from 'react-router-dom';
 
-import { HeaderNavigation } from '../header-navigation';
+import { Footer } from '../../components';
+import { Navigation } from '../navigation';
 import { Home } from '../home';
 import { Movie } from '../movie';
 import { TV } from '../tv';
@@ -27,7 +28,7 @@ export const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <HeaderNavigation />
+            <Navigation />
             <Switch>
                 <Route path="/watchlist">
                     <Watchlist />
@@ -42,6 +43,7 @@ export const App = () => {
                     <Home />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     );
 };
