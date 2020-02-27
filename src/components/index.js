@@ -6,6 +6,7 @@ export {
 export { CardDeck } from './card-deck';
 export { CardSkeleton } from './card-skeleton';
 export { Cast, Crew } from './credit';
+export { Footer } from './footer';
 export { HeaderMovie, HeaderTv } from './header';
 export { Reel, ReelSkeleton } from './reel';
 export { Review } from './review';
