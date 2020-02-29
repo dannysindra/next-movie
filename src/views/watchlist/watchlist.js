@@ -47,7 +47,18 @@ export const Watchlist = () => {
         <Root>
             <Content>
                 <H3>My Watchlist</H3>
-                <Grid gridGutters={0} gridMargins={0}>
+                <Grid
+                    gridGutters={0}
+                    gridMargins={0}
+                    overrides={{
+                        Grid: {
+                            style: {
+                                marginLeft: 0,
+                                marginRight: 0
+                            }
+                        }
+                    }}
+                >
                     {entries}
                 </Grid>
             </Content>

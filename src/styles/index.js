@@ -1,2 +1,2 @@
 export { GlobalStyles } from './global-styles';
-export { usePrimaryColor } from './hooks';
+export { usePrimaryColor, usePulseAnimation } from './hooks';
