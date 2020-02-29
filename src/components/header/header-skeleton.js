@@ -37,28 +37,28 @@ export const HeaderSkeleton = () => {
                         backgroundColor="mono700"
                         className={pulseClass}
                         marginBottom="5px"
-                        width="80px"
-                        height="15px"
+                        width="scale2400"
+                        height="scale600"
                     />
                     <Block
                         backgroundColor="mono700"
                         className={pulseClass}
                         width="200px"
-                        height="15px"
+                        height="scale600"
                     />
-                    <Block height="10px" />
+                    <Block height="scale600" />
                     <Block
                         backgroundColor="mono700"
                         className={pulseClass}
                         marginBottom="5px"
-                        width="80px"
-                        height="15px"
+                        width="scale2400"
+                        height="scale600"
                     />
                     <Block
                         backgroundColor="mono700"
                         className={pulseClass}
                         width="200px"
-                        height="15px"
+                        height="scale600"
                     />
                 </Metadata>
                 <Info>
@@ -75,7 +75,7 @@ export const HeaderSkeleton = () => {
                             backgroundColor="mono700"
                             className={pulseClass}
                             width="200px"
-                            height="20px"
+                            height="scale700"
                         />
                     </Info.Subtitle>
                     <Block width="100%" height="150px" />

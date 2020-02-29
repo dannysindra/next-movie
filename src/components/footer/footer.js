@@ -8,9 +8,9 @@ const StyledFooter = styled('footer', ({ $theme }) => {
 
     return {
         backgroundColor: colors.primary800,
-        marginTop: sizing.scale1600,
-        paddingTop: sizing.scale1000,
-        paddingBottom: sizing.scale1000,
+        marginTop: sizing.scale1400,
+        paddingTop: sizing.scale1200,
+        paddingBottom: sizing.scale1200,
         color: colors.mono500,
         textAlign: 'center'
     };
@@ -26,7 +26,7 @@ export const Footer = () => (
             <TmdbLogo title="powered by TMDB" width="6em" />
         </StyledLink>
         <Block height="scale600" />
-        Designed and developed by{' '}
+        &copy; Copyright{` ${new Date().getFullYear()} `}
         <StyledLink href="https://github.com/dannysindra" target="_blank">
             Danny Sindra
         </StyledLink>
