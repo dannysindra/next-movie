@@ -25,18 +25,18 @@ export const CardSkeleton = ({ kind, ...rest }) => {
                 backgroundColor="mono700"
                 className={pulseClass}
                 width="100%"
-                height="10px"
+                height="scale400"
             />
 
             {/* Space between lines */}
-            <Block height="10px" />
+            <Block height="scale400" />
 
             {/* 2nd text-line placeholder */}
             <Block
                 backgroundColor="mono700"
                 className={pulseClass}
                 width="70%"
-                height="10px"
+                height="scale400"
             />
         </Card>
     );
