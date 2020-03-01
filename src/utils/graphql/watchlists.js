@@ -49,13 +49,7 @@ export const useQueryWatchlistEntries = (opts = {}) =>
     useQuery(GET_WATCHLIST_ENTRIES, opts);
 
 export const useMutationAddToWatchlist = (opts = {}) =>
-    useMutation(ADD_TO_WATCHLIST, {
-        ...opts,
-        refetchQueries: [{ query: GET_WATCHLIST_ENTRIES }]
-    });
+    useMutation(ADD_TO_WATCHLIST, opts);
 
 export const useMutationRemoveFromWatchlist = (opts = {}) =>
-    useMutation(REMOVE_FROM_WATCHLIST, {
-        ...opts,
-        refetchQueries: [{ query: GET_WATCHLIST_ENTRIES }]
-    });
+    useMutation(REMOVE_FROM_WATCHLIST, opts);
