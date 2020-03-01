@@ -12,6 +12,7 @@ import { Root, Entry, EntrySkeleton } from './styled';
 export const Watchlist = () => {
     const { isLoggedIn } = useAuth();
     const { data, error, loading } = useQueryWatchlistEntries({
+        fetchPolicy: 'network-only',
         skip: !isLoggedIn
     });
     const history = useHistory();
