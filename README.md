@@ -1,11 +1,9 @@
-# Next Movie
-
 <div align="center">
 
   [![Next Movie](./public/screenshot.png)](https://nextmovie.us)
 
-  ### Find and save your next movie.
-
 </div>
 
-The codebase for [Next Movie](https://nextmovie.us) web application.
+# [Next Movie](https://nextmovie.us)
+
+Find and save the movies that you want to watch. It is free and easy.
