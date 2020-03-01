@@ -1,16 +1,19 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
-import { fetchMovieById, queryMovieById } from '../../redux';
+import { useQueryMovieById } from '../../utils/graphql';
 
-export const useFetchMovieDetails = () => {
+export const useMovie = () => {
+    const history = useHistory();
     const { id } = useParams();
-    const dispatch = useDispatch();
+    const result = useQueryMovieById({
+        variables: {
+            id: parseInt(id)
+        }
+    });
 
-    useEffect(() => {
-        dispatch(fetchMovieById(id));
-    }, [id, dispatch]);
+    const navigateTo = movieId => {
+        history.push(`/movie/${movieId}`);
+    };
 
-    return useSelector(queryMovieById(id));
+    return [{ ...result, id }, navigateTo];
 };

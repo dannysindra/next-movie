@@ -1,9 +1,1 @@
-export {
-    API_MOVIE_SEARCH,
-    API_MOVIE_UPCOMING,
-    API_MOVIE_POPULAR,
-    API_MOVIE_NOW_PLAYING,
-    API_MOVIE_DETAILS,
-    API_TV_POPULAR,
-    API_TV_DETAILS
-} from './tmdb';
+export { API_MOVIE_SEARCH } from './movies';

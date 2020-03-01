@@ -1,33 +1,38 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import { Block } from 'baseui/block';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
-import {
-    Cast,
-    Crew,
-    HeaderMovie,
-    Review,
-    ReviewModal,
-    WatchlistButton
-} from '../../components';
 import { useModal } from '../../hooks';
+
+import { Cast, Crew, HeaderMovie, Review, ReviewModal } from '../../components';
+import { WatchlistButton } from '../watchlist-button';
 import { SimilarShowsDeck } from '../decks';
 
-import { useFetchMovieDetails } from './hooks';
+import { useMovie } from './hooks';
 
 const notEmpty = data => data && data.length > 0;
 
 export const Movie = () => {
-    const history = useHistory();
-    const movie = useFetchMovieDetails();
+    const [result, navigateTo] = useMovie();
     const [review, setReview] = useState(null);
     const { isOpen, onOpen, onClose } = useModal();
 
-    if (!movie) {
+    const { id, data, error, loading } = result;
+
+    if (loading) {
+        return (
+            <Block>
+                <HeaderMovie loading={loading} />
+            </Block>
+        );
+    }
+
+    if (error || !data || !data.movie) {
         return null;
     }
+
+    const { overview, crew, cast, reviews, similar } = data.movie;
 
     return (
         <>
@@ -39,27 +44,31 @@ export const Movie = () => {
             />
             <Block>
                 <HeaderMovie
-                    data={movie}
-                    controls={<WatchlistButton>Watchlist</WatchlistButton>}
+                    data={data.movie}
+                    controls={
+                        <WatchlistButton id={parseInt(id)}>
+                            Watchlist
+                        </WatchlistButton>
+                    }
                 />
                 <Content>
                     <Section label="Overview">
-                        <P1>{movie.overview}</P1>
+                        <P1>{overview}</P1>
                     </Section>
-                    {notEmpty(movie.crew) && (
+                    {notEmpty(crew) && (
                         <Section label="Featured Crew">
-                            <Crew data={movie.crew} />
+                            <Crew data={crew} />
                         </Section>
                     )}
-                    {notEmpty(movie.cast) && (
+                    {notEmpty(cast) && (
                         <Section label="Cast">
-                            <Cast data={movie.cast} />
+                            <Cast data={cast} />
                         </Section>
                     )}
-                    {notEmpty(movie.reviews) && (
+                    {notEmpty(reviews) && (
                         <Section label="Reviews">
                             <Review
-                                data={movie.reviews}
+                                data={reviews}
                                 onClickReview={(event, review) => {
                                     event.stopPropagation();
                                     setReview(review);
@@ -68,14 +77,16 @@ export const Movie = () => {
                             />
                         </Section>
                     )}
-                    <SimilarShowsDeck
-                        label="Similar movies"
-                        data={movie.similar}
-                        onCardClick={(event, id) => {
-                            event.stopPropagation();
-                            history.push(`/movie/${id}`);
-                        }}
-                    />
+                    {notEmpty(similar) && (
+                        <SimilarShowsDeck
+                            label="Similar movies"
+                            data={similar}
+                            onCardClick={(event, id) => {
+                                event.stopPropagation();
+                                navigateTo(id);
+                            }}
+                        />
+                    )}
                 </Content>
                 <Block marginBottom="scale1000" />
             </Block>

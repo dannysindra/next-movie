@@ -9,11 +9,12 @@ export const Cast = ({ data }) => (
     <PaginatedItems
         data={data}
         pageSize={PAGE_SIZE}
-        renderer={({ name, character, profileImgUrl }) => (
+        renderer={datum => (
             <Credit
-                name={name}
-                description={character}
-                imageUrl={profileImgUrl}
+                id={datum.creditId}
+                name={datum.name}
+                description={datum.character}
+                imageUrl={datum.profileImgUrl}
             />
         )}
     />
@@ -29,6 +30,7 @@ export const Crew = ({ data }) => {
             {data.map(datum => (
                 <Credit
                     key={datum.creditId}
+                    id={datum.creditId}
                     name={datum.name}
                     description={datum.job}
                     imageUrl={datum.profileImgUrl}

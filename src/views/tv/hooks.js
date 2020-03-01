@@ -1,16 +1,19 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
-import { fetchTvById, queryTvById } from '../../redux';
+import { useQueryTvById } from '../../utils/graphql';
 
-export const useFetchTvDetails = () => {
+export const useTv = () => {
+    const history = useHistory();
     const { id } = useParams();
-    const dispatch = useDispatch();
+    const result = useQueryTvById({
+        variables: {
+            id: parseInt(id)
+        }
+    });
 
-    useEffect(() => {
-        dispatch(fetchTvById(id));
-    }, [id, dispatch]);
+    const navigateTo = tvId => {
+        history.push(`/tv/${tvId}`);
+    };
 
-    return useSelector(queryTvById(id));
+    return [{ ...result, id }, navigateTo];
 };

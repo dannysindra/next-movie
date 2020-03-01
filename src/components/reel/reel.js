@@ -1,5 +1,7 @@
 import React from 'react';
-import { string, number, arrayOf, shape, node, func } from 'prop-types';
+import { string, number, arrayOf, shape, node, func, bool } from 'prop-types';
+
+import { ReelSkeleton } from './reel-skeleton';
 
 import {
     Root,
@@ -11,7 +13,15 @@ import {
     Thumbnail
 } from './styled';
 
-export const Reel = ({ index, movies, onReelItemClick, controls }) => {
+export const Reel = ({ loading, index, movies, onReelItemClick, controls }) => {
+    if (loading) {
+        return <ReelSkeleton />;
+    }
+
+    if (!movies || movies.length === 0) {
+        return null;
+    }
+
     const { id, backdropImgUrl, posterImgUrl, title, releaseDate } = movies[
         index
     ];
@@ -21,15 +31,23 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
             <Backdrop>
                 <Backdrop.Mask />
                 <Backdrop.Vignette />
-                <Backdrop.Image src={backdropImgUrl} alt="No backdrop" />
+                <Backdrop.Poster src={posterImgUrl.larger} alt="No poster" />
+                <Backdrop.Image
+                    src={backdropImgUrl.original}
+                    alt="No backdrop"
+                />
             </Backdrop>
             <Body>
                 <Body.Left>
-                    <Poster src={posterImgUrl} alt="No poster" />
+                    <Poster src={posterImgUrl.medium} alt="No poster" />
                 </Body.Left>
                 <Body.Right>
                     <Metadata>
-                        <Metadata.Title>{title}</Metadata.Title>
+                        <Metadata.Title>
+                            {title.length > 30
+                                ? `${title.substring(0, 30)} ...`
+                                : title}
+                        </Metadata.Title>
                         <Metadata.Subtitle>{releaseDate}</Metadata.Subtitle>
                         <Metadata.Actions>{controls}</Metadata.Actions>
                     </Metadata>
@@ -43,7 +61,7 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
                             >
                                 <Thumbnail.Mask $active={id === movie.id} />
                                 <Thumbnail.Image
-                                    src={movie.backdropImgUrl}
+                                    src={movie.backdropImgUrl.small}
                                     alt="No backdrop"
                                 />
                             </Thumbnail>
@@ -56,21 +74,24 @@ export const Reel = ({ index, movies, onReelItemClick, controls }) => {
 };
 
 Reel.propTypes = {
+    loading: bool,
     index: number.isRequired,
     movies: arrayOf(
         shape({
             id: number.isRequired,
-            backdropImgUrl: string,
-            posterImgUrl: string,
+            backdropImgUrl: shape({}),
+            posterImgUrl: shape({}),
             title: string,
             tagline: string
         })
-    ).isRequired,
+    ),
     onReelItemClick: func,
     controls: node
 };
 
 Reel.defaultProps = {
+    loading: false,
+    movies: undefined,
     onReelItemClick: undefined,
     controls: undefined
 };

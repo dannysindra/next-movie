@@ -6,11 +6,21 @@ import { FaHeart, FaCalendar, FaClock, FaTv } from 'react-icons/fa';
 
 import { Tag } from 'next-movie-components';
 
-import { Root, Separator, Media, Details, Metadata, Info } from './header';
+import { HeaderSkeleton } from './header-skeleton';
+import { Root, Separator, Media, Details, Metadata, Info } from './styled';
 import { Meta } from './meta';
 
-export const HeaderTv = ({ data, controls }) => {
+export const HeaderTv = ({ data, loading, controls }) => {
     const [, theme] = useStyletron();
+
+    if (loading) {
+        return <HeaderSkeleton />;
+    }
+
+    if (!data) {
+        return null;
+    }
+
     const {
         posterImgUrl,
         name,
@@ -29,7 +39,7 @@ export const HeaderTv = ({ data, controls }) => {
                     <Block
                         as="img"
                         alt="No poster"
-                        src={posterImgUrl}
+                        src={posterImgUrl.large}
                         width="100%"
                         height="auto"
                     />

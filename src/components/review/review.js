@@ -20,7 +20,7 @@ export const Review = ({ data, onClickReview }) => {
                     key={datum.id}
                     author={datum.author}
                     content={datum.content}
-                    last={index === data.length - 1}
+                    last={index === Math.min(LIMIT, data.length) - 1}
                     onClick={e => {
                         onClickReview(e, datum);
                     }}

@@ -23,10 +23,30 @@ const BackdropVignette = styled('div', ({ $theme }) => ({
     background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, ${$theme.colors.background} 100%)`
 }));
 
-const BackdropImage = styled('img', {
-    width: '100%',
-    height: '100%',
-    minWidth: '1000px'
+const BackdropImage = styled('img', ({ $theme }) => {
+    const { breakpoints } = $theme;
+
+    return {
+        display: 'none',
+        [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
+            display: 'block',
+            width: '100%',
+            height: '100%'
+        }
+    };
+});
+
+const BackdropPoster = styled('img', ({ $theme }) => {
+    const { breakpoints } = $theme;
+
+    return {
+        display: 'block',
+        width: '100%',
+        height: '100%',
+        [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
+            display: 'none'
+        }
+    };
 });
 
 export const Backdrop = styled('div', {
@@ -38,12 +58,13 @@ export const Backdrop = styled('div', {
 
 Backdrop.Mask = BackdropMask;
 Backdrop.Image = BackdropImage;
+Backdrop.Poster = BackdropPoster;
 Backdrop.Vignette = BackdropVignette;
 
 const BodyLeft = styled('div', ({ $theme }) => ({
     width: '185px',
+    height: '270px',
     display: 'none',
-    maxHeight: '270px',
     overflow: 'hidden',
     [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
         display: 'block',
@@ -63,10 +84,11 @@ export const Body = styled('div', ({ $theme }) => {
     return {
         display: 'flex',
         position: 'relative',
-        paddingTop: '18vw',
+        paddingTop: '50vw',
         paddingLeft: sizing.scale800,
         paddingRight: sizing.scale800,
         [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+            paddingTop: '18vw',
             paddingLeft: sizing.scale1600,
             paddingRight: sizing.scale1600
         }
@@ -83,8 +105,12 @@ export const Poster = styled('img', {
 
 const MetadataTitle = styled('h2', ({ $theme }) => ({
     margin: '0 0 13px 0',
-    ...$theme.typography.font950,
-    color: 'white'
+    ...$theme.typography.font450,
+    color: 'white',
+    [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+        ...$theme.typography.font950,
+        color: 'white'
+    }
 }));
 
 const MetadataSubtitle = styled('h3', ({ $theme }) => {
@@ -92,7 +118,10 @@ const MetadataSubtitle = styled('h3', ({ $theme }) => {
 
     return {
         color: colors.mono400,
-        ...typography.font450
+        ...typography.font450,
+        [`@media screen and (max-width: ${POSTER_BREAKPOINT}px)`]: {
+            display: 'none'
+        }
     };
 });
 
@@ -144,11 +173,12 @@ export const Carousel = styled('div', ({ $theme }) => {
     const { sizing } = $theme;
 
     return {
-        marginTop: 'auto',
+        marginTop: sizing.scale800,
         display: 'flex',
-        alignSelf: 'center',
+        alignSelf: 'flex-start',
         paddingTop: sizing.scale400,
         [`@media screen and (min-width: ${POSTER_BREAKPOINT}px)`]: {
+            marginTop: 'auto',
             alignSelf: 'flex-end'
         }
     };

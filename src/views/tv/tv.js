@@ -1,52 +1,60 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { Block } from 'baseui/block';
 
 import { Content, Section, P1 } from 'next-movie-components';
 
-import { Cast, Crew, HeaderTv, WatchlistButton } from '../../components';
+import { Cast, Crew, HeaderTv } from '../../components';
 import { SimilarShowsDeck } from '../decks';
 
-import { useFetchTvDetails } from './hooks';
+import { useTv } from './hooks';
 
 const notEmpty = data => data && data.length > 0;
 
 export const TV = () => {
-    const history = useHistory();
-    const tv = useFetchTvDetails();
+    const [result, navigateTo] = useTv();
+    const { data, error, loading } = result;
 
-    if (!tv) {
+    if (loading) {
+        return (
+            <Block>
+                <HeaderTv loading={loading} />
+            </Block>
+        );
+    }
+
+    if (error || !data || !data.tv) {
         return null;
     }
 
+    const { overview, crew, cast, similar } = data.tv;
+
     return (
         <Block>
-            <HeaderTv
-                data={tv}
-                controls={<WatchlistButton>Watchlist</WatchlistButton>}
-            />
+            <HeaderTv data={data.tv} />
             <Content>
                 <Section label="Overview">
-                    <P1>{tv.overview}</P1>
+                    <P1>{overview}</P1>
                 </Section>
-                {notEmpty(tv.crew) && (
+                {notEmpty(crew) && (
                     <Section label="Featured Crew">
-                        <Crew data={tv.crew} />
+                        <Crew data={crew} />
                     </Section>
                 )}
-                {notEmpty(tv.cast) && (
+                {notEmpty(cast) && (
                     <Section label="Cast">
-                        <Cast data={tv.cast} />
+                        <Cast data={cast} />
                     </Section>
                 )}
-                <SimilarShowsDeck
-                    label="Similar TV series"
-                    data={tv.similar}
-                    onCardClick={(event, id) => {
-                        event.stopPropagation();
-                        history.push(`/tv/${id}`);
-                    }}
-                />
+                {notEmpty(similar) && (
+                    <SimilarShowsDeck
+                        label="Similar TV series"
+                        data={similar}
+                        onCardClick={(event, id) => {
+                            event.stopPropagation();
+                            navigateTo(id);
+                        }}
+                    />
+                )}
             </Content>
             <Block marginBottom="scale1000" />
         </Block>

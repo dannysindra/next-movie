@@ -1,4 +1,2 @@
 export const hasAllImages = show =>
-    show.backdropImgUrl !== '' &&
-    show.posterImgUrl !== '' &&
-    show.thumbnailImgUrl !== '';
+    show.backdropImgUrl.small && show.posterImgUrl.medium;

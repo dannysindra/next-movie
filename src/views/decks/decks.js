@@ -1,8 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { useStyletron } from 'baseui';
-import { Block } from 'baseui/block';
-import { FaHeart } from 'react-icons/fa';
 
 import { H2, H3, CARD_KIND } from 'next-movie-components';
 
@@ -11,32 +8,34 @@ import { CardDeck } from '../../components';
 
 import { Meta } from './styled';
 import { hasAllImages } from './utils';
-import {
-    useFetchNowPlayingMovies,
-    useFetchPopularMovies,
-    useFetchUpcomingMovies,
-    useFetchPopularTvs
-} from './hooks';
 
-export const NowPlayingMoviesDeck = () => {
+export const NowPlayingMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const movies = useFetchNowPlayingMovies();
+    let entries;
 
-    // should handle null and []
-    if (!movies) {
+    if (error) {
         return null;
     }
 
-    const data = movies.filter(hasAllImages).map(movie => ({
-        id: movie.id,
-        headerImage: movie.posterImgUrl,
-        title: movie.shortReleaseDate
-    }));
+    if (data && data.nowPlayingMovies) {
+        entries = data.nowPlayingMovies.filter(hasAllImages).map(movie => ({
+            id: movie.id,
+            headerImage: movie.posterImgUrl.medium,
+            children: (
+                <Meta
+                    title={movie.title}
+                    votes={movie.votes}
+                    voteCount={movie.voteCount}
+                />
+            )
+        }));
+    }
 
     return (
         <CardDeck
             label={<H3>Now playing</H3>}
-            data={data}
+            loading={loading}
+            data={entries}
             onCardClick={(event, id) => {
                 event.stopPropagation();
                 history.push(`/movie/${id}`);
@@ -45,28 +44,32 @@ export const NowPlayingMoviesDeck = () => {
     );
 };
 
-export const UpcomingMoviesDeck = () => {
+export const UpcomingMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const movies = useFetchUpcomingMovies();
+    let entries;
 
-    // should handle null and []
-    if (!movies) {
+    if (error) {
         return null;
     }
 
-    const data = movies
-        .filter(hasAllImages)
-        .slice(HERO_TOTAL_ITEMS, movies.length)
-        .map(movie => ({
-            id: movie.id,
-            headerImage: movie.thumbnailImgUrl,
-            children: <Meta title={movie.title}>{movie.releaseDate}</Meta>
-        }));
+    if (data && data.upcomingMovies) {
+        entries = data.upcomingMovies
+            .filter(hasAllImages)
+            .slice(HERO_TOTAL_ITEMS, data.upcomingMovies.length)
+            .map(movie => ({
+                id: movie.id,
+                headerImage: movie.backdropImgUrl.small,
+                children: (
+                    <Meta title={movie.title} releaseDate={movie.releaseDate} />
+                )
+            }));
+    }
 
     return (
         <CardDeck
             label={<H3>Upcoming movies</H3>}
-            data={data}
+            loading={loading}
+            data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -76,31 +79,33 @@ export const UpcomingMoviesDeck = () => {
     );
 };
 
-export const PopularMoviesDeck = () => {
+export const PopularMoviesDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const [, theme] = useStyletron();
-    const movies = useFetchPopularMovies();
+    let entries;
 
-    // should handle null and []
-    if (!movies) {
+    if (error) {
         return null;
     }
 
-    const data = movies.filter(hasAllImages).map(movie => ({
-        id: movie.id,
-        headerImage: movie.thumbnailImgUrl,
-        children: (
-            <Meta title={movie.title}>
-                <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                {movie.votes}
-            </Meta>
-        )
-    }));
+    if (data && data.popularMovies) {
+        entries = data.popularMovies.filter(hasAllImages).map(movie => ({
+            id: movie.id,
+            headerImage: movie.backdropImgUrl.small,
+            children: (
+                <Meta
+                    title={movie.title}
+                    votes={movie.votes}
+                    voteCount={movie.voteCount}
+                />
+            )
+        }));
+    }
 
     return (
         <CardDeck
             label={<H3>Popular movies</H3>}
-            data={data}
+            loading={loading}
+            data={entries}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
                 event.stopPropagation();
@@ -110,30 +115,32 @@ export const PopularMoviesDeck = () => {
     );
 };
 
-export const PopularTvsDeck = () => {
+export const PopularTvsDeck = ({ loading, data, error }) => {
     const history = useHistory();
-    const [, theme] = useStyletron();
-    const tvs = useFetchPopularTvs();
+    let entries;
 
-    // should handle null and []
-    if (!tvs) {
+    if (error) {
         return null;
     }
 
-    const data = tvs.filter(hasAllImages).map(tv => ({
-        id: tv.id,
-        headerImage: tv.thumbnailImgUrl,
-        children: (
-            <Meta title={tv.name}>
-                <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                {tv.votes}
-            </Meta>
-        )
-    }));
+    if (data && data.popularTvs) {
+        entries = data.popularTvs.filter(hasAllImages).map(tv => ({
+            id: tv.id,
+            headerImage: tv.backdropImgUrl.small,
+            children: (
+                <Meta
+                    title={tv.name}
+                    votes={tv.votes}
+                    voteCount={tv.voteCount}
+                />
+            )
+        }));
+    }
 
     return (
         <CardDeck
-            data={data}
+            data={entries}
+            loading={loading}
             label={<H3>Popular TV series</H3>}
             kind={CARD_KIND.thumbnail}
             onCardClick={(event, id) => {
@@ -145,9 +152,7 @@ export const PopularTvsDeck = () => {
 };
 
 export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
-    const [, theme] = useStyletron();
-
-    if (!data) {
+    if (!data || data.length === 0) {
         return null;
     }
 
@@ -155,12 +160,13 @@ export const SimilarShowsDeck = ({ label, data, onCardClick }) => {
         .filter(datum => datum.posterImgUrl !== '')
         .map(datum => ({
             id: datum.id,
-            headerImage: datum.posterImgUrl,
-            title: (
-                <Block>
-                    <FaHeart color={theme.colors.colorPrimary} size="0.8em" />{' '}
-                    {datum.votes}
-                </Block>
+            headerImage: datum.posterImgUrl.medium,
+            children: (
+                <Meta
+                    title={datum.title || datum.name || ''}
+                    votes={datum.votes}
+                    voteCount={datum.voteCount}
+                />
             )
         }));
 

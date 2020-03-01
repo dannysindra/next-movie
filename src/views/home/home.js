@@ -3,7 +3,14 @@ import { Block } from 'baseui/block';
 
 import { Content } from 'next-movie-components';
 
-import { Hero } from '../hero';
+import {
+    useQueryNowPlayingMovies,
+    useQueryPopularMovies,
+    useQueryUpcomingMovies,
+    useQueryPopularTvs
+} from '../../utils/graphql';
+
+import { Hero } from './hero';
 
 import {
     PopularMoviesDeck,
@@ -13,17 +20,22 @@ import {
 } from '../decks';
 
 export const Home = () => {
+    const upcomingMovies = useQueryUpcomingMovies();
+    const nowPlayingMovies = useQueryNowPlayingMovies();
+    const popularMovies = useQueryPopularMovies();
+    const popularTvs = useQueryPopularTvs();
+
     return (
         <Block>
-            <Hero />
+            <Hero {...upcomingMovies} />
             <Content>
-                <NowPlayingMoviesDeck />
+                <NowPlayingMoviesDeck {...nowPlayingMovies} />
                 <Block marginBottom="scale900" />
-                <UpcomingMoviesDeck />
+                <UpcomingMoviesDeck {...upcomingMovies} />
                 <Block marginBottom="scale900" />
-                <PopularMoviesDeck />
+                <PopularMoviesDeck {...popularMovies} />
                 <Block marginBottom="scale900" />
-                <PopularTvsDeck />
+                <PopularTvsDeck {...popularTvs} />
                 <Block marginBottom="scale900" />
             </Content>
         </Block>

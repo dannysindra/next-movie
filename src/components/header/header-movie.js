@@ -3,14 +3,25 @@ import ReactPlayer from 'react-player';
 import { useStyletron } from 'baseui';
 import { Block } from 'baseui/block';
 import { FaHeart, FaCalendar, FaClock, FaDollarSign } from 'react-icons/fa';
+import { shape, bool, node } from 'prop-types';
 
 import { Tag } from 'next-movie-components';
 
-import { Root, Separator, Media, Details, Metadata, Info } from './header';
+import { HeaderSkeleton } from './header-skeleton';
+import { Root, Separator, Media, Details, Metadata, Info } from './styled';
 import { Meta } from './meta';
 
-export const HeaderMovie = ({ data, controls }) => {
+export const HeaderMovie = ({ data, loading, controls }) => {
     const [, theme] = useStyletron();
+
+    if (loading) {
+        return <HeaderSkeleton />;
+    }
+
+    if (!data) {
+        return null;
+    }
+
     const {
         posterImgUrl,
         title,
@@ -30,7 +41,7 @@ export const HeaderMovie = ({ data, controls }) => {
                     <Block
                         as="img"
                         alt="No poster"
-                        src={posterImgUrl}
+                        src={posterImgUrl.large}
                         width="100%"
                         height="auto"
                     />
@@ -108,4 +119,16 @@ export const HeaderMovie = ({ data, controls }) => {
             </Details>
         </Root>
     );
+};
+
+HeaderMovie.propTypes = {
+    data: shape({}),
+    loading: bool,
+    controls: node
+};
+
+HeaderMovie.defaultProps = {
+    data: undefined,
+    loading: false,
+    controls: undefined
 };

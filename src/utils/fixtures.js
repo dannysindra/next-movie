@@ -379,6 +379,64 @@ export const movie = {
                 'https://image.tmdb.org/t/p/w185/k1VQLCP4RAAkuXZ5HWrdL1NQnWR.jpg'
         }
     ],
+    reviews: [
+        {
+            author: 'Vogel',
+            content:
+                'Well.. this was dull.\r\n\r\nLet me give you a little context to understand better how I felt during this movie. Firstly: I\'m NOT a big Star Wars fan. I like the movies and see them as a "good" franchise, but I wouldn\'t put any of them on my personal top lists.\r\n\r\nI enjoy the art of the franchise way more than the story. I LOVE the music, the design of ships and the visual world building. I like some aspects of the overall story more than others of course, but none really come to mind when I think of what I like about the movies in general.\r\n\r\nThat being said, I felt "The Force Awakens" was really boring. Just a generic movie trying to do "the Star Wars things". It was fine but not in any way memorable to me.\r\n\r\n"The Last Jedi" on the other hand really tried ignoring the big "Star Wars cult" and therefore entertained me the most of all the 9 movies. I prefered the focus on using the "Star Wars" world to tell a story rather then to tell another "Star Wars"-version.\r\n\r\n"The Rise of Skywalker" now is at best as boring as "The Force Awakens" and very often a big punch in the face to everything I liked about "The Last Jedi". Obviously the higher ups at Disney decided to take notes on everything "the fans" disliked about the 8th movie and do some sort of "damage control" according to that feedback.\r\n\r\nThe movie hast way too much going on for reasons which are often non-existant or just plainly bad. Since the movie couldn\'t grab my focus I just happened to think more about the big plotholes and started nitpicking and sometimes even mocking the movie for certain decisions which I don\'t want to spoil here.\r\n\r\nIt\'s really a shame. I hope Disney will use the name in the future to do standalone movies of different genres, for example a racing movie in space would be great or a good action flick with one or two of the beloved characters.\r\n\r\nIf I had to give it a rating I would probably give the movie a 4-6/10. I only REALLY enjoyed one scene because I hoped for it to happen most of the movie, but that didn\'t save the rest.',
+            id: '5dfbc0ea26dac100145c1e4f',
+            url: 'https://www.themoviedb.org/review/5dfbc0ea26dac100145c1e4f'
+        },
+        {
+            author: 'Olon',
+            content:
+                'Went to the first showing in town tonight.  I really enjoyed the film.  Although it leaned heavy on nostalgia, it should, since it is wrapping up 40 years.  I did not care for The Last Jedi, and was worried going in.  Will do a deeper dive after I have seen it a few times.',
+            id: '5dfc767326dac100175d49c7',
+            url: 'https://www.themoviedb.org/review/5dfc767326dac100175d49c7'
+        },
+        {
+            author: 'Sheldon Nylander',
+            content:
+                'It’s hard to write a review for this film without any major spoilers, so this might seem a little vague here and there. There will be very minor spoilers, primarily what’s revealed in the opening text crawl or the trailers, so not much, but if you want to go into this film completely virgin, stop here.\r\n\r\nThe film starts off with things already underway. A transmission has been sent out that contains the voice of Emperor Palpatine. Kylo Ren, now Supreme Leader of the First Order, goes to seek out Palpatine as a potential threat to his power. In the meantime, the Resistance is still in shambles after the events of “The Last Jedi,” and they are busy doing scouting missions and regrouping.\r\n\r\nAll of this is revealed in the opening crawl of the movie, which is where the problems begin. It violates a cardinal rule of storytelling: Show, don’t tell. It wouldn’t have taken much to have this done on screen in more dramatic and effective fashion. Instead, this has the effect of making it feel like we either missed something important or that we’re watching an entirely different movie with a different story. This makes things confusing. It doesn’t help that I was already thinking that J.J. Abrams probably needs to go back to Screenwriting 101 during the opening crawl. Not a good way to start.\r\n\r\nOther things happen during the course of the movie that make no sense. Why does Kylo Ren reforge his helmet? We never really find that out. He just does. The Knights of Ren do appear in this film finally. Who are they? If you’re expecting an answer of any kind, you’ll be disappointed. Why is there this strange connection between Rey and Kylo Ren? One of the mysteries of the Force, I suppose. Characters who we don’t know appear from nowhere having been significant to the goings on even though we’ve never seen them before. Other characters take bizarre and up to now not even hints at character arcs. It becomes a horrendously confusing mess.\r\n\r\nI liked some of the more controversial aspects of “The Last Jedi.” Rey being a nobody with no significant parentage? Great idea! The galaxy is a big place. Why does everyone have to be related? Well, this is adjusted slightly. I won’t go into details, but it was disappointing what they did, in my opinion. Leia’s story arc in this film is...weird. I’m going to allow that it’s due to the loss of Carrie Fisher and having to use archival footage (one scene that shows a young Luke and Leia using computer effects is freaky at best). But it’s off-putting and feels tacked on for convenience. It was nice to see Lando return, although even that felt more like throwing a bone to the fans. He could have potentially been replaced by any character with flying skills. Speaking of such, Wedge does make finally make an appearance, but it’s a blink-and-you’ll-miss-it moment.\r\n\r\nHere’s how I would sum it up spoiler-free: As I said, I liked “The Last Jedi” a lot, including parts that many didn’t like or found weird as I stated above, but at the same time it was not a problem-free movie for me. “The Rise of Skywalker” is the exact opposite. It definitely has some really cool moments, but feels so sloppy and makes so many storytelling mistakes that, on the whole, I have to say that it’s a bad movie. I’ve said this about just about everything I’ve seen come from J.J. Abrams, that he’s great at coming up with interesting imagery. He gets these pictures in his head of something that would be really interesting to see on film, like flashes one might remember from a dream. For example, there’s a great scene near the end that finally corrects what many consider a great injustice done in an earlier movie. But couching these images in a cohesive story is not his strong suit. In fact, he’s downright terrible at it. This problem seemed to be going in full force in “The Rise of Skywalker.”\r\n\r\nWere some of my complaints addressed in some expanded material? I don’t know, but even if they were it would still make it bad storytelling. Star Wars has always been fairly good about keeping things self-contained. Expanded material adds extra background to enhance the enjoyment of the main material, like adding seasoning, but shouldn’t be necessary to appreciate the meal.\r\n\r\nOverall, you need to see this movie to close out the Skywalker Saga, but that’s really the only reason. Don’t go into this expecting a good or even decent film, or for every question to be answered. Ultimately, it’s a disappointing end to Star Wars, and I say this as a Star Wars fan.',
+            id: '5dfcb04f65686e001390cd34',
+            url: 'https://www.themoviedb.org/review/5dfcb04f65686e001390cd34'
+        },
+        {
+            author: 'Luis_989',
+            content:
+                "When The Force Awakens was released the vast majority of fans liked it. They were practically watching a remake of A New Hope but it was enough for them. Although they never liked Rey. That damn feminist agenda right?\r\n\r\nThe Last Jedi took that from them, it got away from the formula and they went crazy.\r\nWho was that Rian Johnson and how he dare to change the characters that only they know how they should act?\r\n\r\nThey did not give them what they wanted and that annoyed them and it's ironic because many times they have complained about the saga and its direction and if something has become clear to me it's that the great majority only want the same, like in the original trilogy. And what does that mean? Fan service. And that's what Star Wars has become.\r\n\r\nYou don't believe me? Ask fans about the scene they liked the most about Rogue One.\r\nVader's scene. A fan service scene. \r\n\r\nAnd the fear of losing the ''fans'' forced Disney to undo what they were creating, they also threw Johnson and his film under the bus and they practically announced this new film like the one that came to fix the disaster. A shame and an insult to the director's work.\r\n\r\nRise of Skywalker in my opinion represents a setback and it doesn't matter that this is supposed to be the ending. It's a setback because they decided to play it safe and submit to the whims of the audience.\r\nWhile that does not translate into poor quality, it doesn't represent something worth mentioning either. \r\n\r\nStar Wars represents pure and good entertainment but when it lacks surprises and feels so safe and predictable it means that you're sacrificing any emotional resonance and when it comes to the end of the 9 episodes, that emotion is simply not there.\r\nThat shot of Rey looking at the two suns should have felt overwhelming and thrilling and I don't know about you but I didn't feel it and that was a huge letdown. \r\n\r\nAnd that's what separates this ending from Return of The Jedi and Revenge of the Sith, even though it was known what would happen in Episode III, despite the mistakes there was emotion, here was like finishing the business. \r\n\r\nI don't consider myself a die-hard fanatic of Star Wars but I do like the saga a lot, yet in order to survive, even of its toxic fandom, they have to dare to try new stuff and forget about the original trilogy because to live in the past is to die in the present and for the saga to have a future, looking forward is the only way. \r\n\r\nIt's a very well made and entertaining film and it was a decent ending for this trilogy but quite an underwhelming conclusion for the saga as a whole.\r\n\r\nAnd the Knights of Ren? What a fucking disappointment.",
+            id: '5dfed8b465686e0013949278',
+            url: 'https://www.themoviedb.org/review/5dfed8b465686e0013949278'
+        },
+        {
+            author: 'msbreviews',
+            content:
+                'If you enjoy reading my Spoiler-Free reviews, please follow my blog @\r\nhttps://www.msbreviews.com\r\n\r\nIf you don’t know by now, I’m a massive Star Wars fan. I love the original trilogy, but the prequels… not so much. However, Disney’s sequel trilogy has delivered two of my favorite movies of the whole franchise, so its conclusion was obviously one of my most anticipated moments of the year. If that wasn’t enough to leave everyone excited, add the fact that it also means the end of the Skywalker Saga, and the pressure suddenly becomes 10x heavier. I went in with moderately high expectations, with not even a glimpse of any trailer or TV spot, just like I did with Avengers: Endgame. The latter surpassed my expectations and delivered a near-perfect conclusion to the Infinity Saga…\r\n\r\nThe Rise of Skywalker is a tremendous letdown. I won’t sugarcoat it. If someone told me at the beginning of the year that J.J. Abrams wouldn’t be able to offer a satisfying end to the nine-episode story, I would laugh like crazy. It disappointed me so much that I don’t even want to extend this review more than the usual. I know that a lot of people hated The Last Jedi, but for better or worse, that film exists. Rian Johnson’s decisions were made. Some people received them well, some didn’t. But all of us got to watch and experience his narrative.\r\n\r\nThere’s something called artistic integrity, which J.J. Abrams and Chris Terrio completely forgot about. The lack of respect for the saga’s previous installment is baffling. The structure-less screenplay is so unbelievably convoluted that it reaches a point where evident logical issues come into play. Major plot points occur due to some genuinely hard-to-believe events, and even the characters seem to have no path whatsoever. It’s entertainment for the sake of entertainment.\r\n\r\nOf course, there are a lot of visually jaw-dropping action sequences. The cinematography (Dan Mindel) is some of the best I’ve seen in the franchise and in this year. John Williams’ score is emotionally compelling, and it definitely elevates a lot of important moments, being a big source for the chills down my body. And yes, there are a bunch of epic scenes. However, throughout the whole runtime, the frustration was always there. Major threads and character backstories were answered in The Last Jedi, but The Rise of Skywalker feels more like another sequel to The Force Awakens than to Rian Johnson’s flick.\r\n\r\nIf there’s one undeniable aspect about this trilogy that this last movie proves is that there was no plan. No roadmap. No overall structure. Whether you love or hate each or every installment, this is indisputable. Disney screwed up this time. Creative freedom is essential to filmmakers, but the production team behind a franchise needs to have a well-organized structure. The simple fact that J.J. Abrams directed the first film, left and returned to do the third one, is already weird and uncommon by itself.\r\n\r\nBesides the lack of artistic integrity, there’s this feeling of constant disappointment throughout the movie. On several occasions, The Rise of Skywalker is so close to delivering a perfect sequence. A chill-inducing moment. An incredibly emotional scene. Almost every time, it fails at the last second, at the last line of dialogue, or at the last action movement. Some moments are still captivating, and they don’t lose that much impact. Nevertheless, some are totally destroyed by the most ridiculous, cringe-worthy choices I’ve witnessed in the saga.\r\n\r\nThe first act is devoid of any thought. Characters go to places to get something they need to another place so that in that place, they find something else that leads them into another place… It’s frenetic, out-of-control pacing. The desperation to set up so many different side stories in time is so prominent that it’s visible from another galaxy. From the second act on, things get a bit more clear, and in the third act, all the threads blend decently. It’s in the last 30 minutes that the resemblances to Avengers: Endgame come into play. The only difference is that it doesn’t have 1/10 of the emotional impact due to the questionable decisions I mentioned above.\r\n\r\nOnly one character got his arc complete without detours or significant changes: Kylo Ren. J.J. set him up, Rian Johnson continued his journey, and J.J. closed his arc pretty well. Every other character either got their arcs complete with major changes throughout, or they didn’t come close to finish their own story. There’s one exception, though, and that’s Carrie Fischer’s Leia. It would be extremely disrespectful and unfair for someone to criticize the filmmakers about her. They inserted her reasonably well in the scenes (please, if someone complains about visual effects, just get lost), and they did the absolute best they could under the known circumstances. I might be extremely disappointed, but I do have to send the team my congrats for closing her arc in the most dignified way possible.\r\n\r\nAs for everyone else… well, the cast has been outstanding from the very beginning. Adam Driver, I have no words for him. He’s so perfect as Kylo Ren that I even defend his character as a villain more layered and emotionally complex than Darth Vader. I love Daisy Ridley as Rey, and she does a phenomenal job in this last film, even when her dialogue doesn’t entirely suit her. John Boyega, Oscar Isaac, and everyone else (who I won’t mention due to possible spoilers) are all brilliant, and I have to congratulate them on making every single movie a bit better.\r\n\r\nI don’t know what more should I write. I have very mixed feelings about it. I love a lot of the epic moments, the film looks absolutely stunning, and the action sequences are genuinely jaw-dropping. However, I strongly disagree with some decisions made by J.J. Abrams and Chris Terrio, especially the ones that make The Last Jedi feel like it didn’t exist. This lack of artistic integrity plus the constant disappointments regarding each big moment’s climax ruins one of my most anticipated movies of the year. Despite the brilliant performances from the cast, only Kylo Ren got his arc complete without significant changes. The Force Awakens set up some mysterious questions. The Last Jedi answered them. The Rise of Skywalker… also answered them. It’s one of my biggest letdowns ever, but I’ll still save the Skywalker Saga close to my heart. Next time, just build a roadmap, Disney…\r\n\r\nRating: C',
+            id: '5e00e9a826dac10012644d3b',
+            url: 'https://www.themoviedb.org/review/5e00e9a826dac10012644d3b'
+        },
+        {
+            author: 'Wehrmacht',
+            content:
+                "5 reasons **you'll** love this movie:\r\n\r\n**You** can't spoil the plot to anyone who hasn't seen it, because it doesn't HAVE a plot.  Sure, stuff happens, and if you blab about it, you'll get asked \"Who did what? When? Why?\", and you won't be able to answer because you won't know either.\r\n\r\nIt validates **your** blind optimism over everyone else's cool deliberation, because our so-called heroes just blunder their way through every peril imaginable without any logic, strategy or preparedness, yet they come out unscathed for [reasons].  Often using guesswork, or was that \"The Force\"?\r\n\r\nNo need for **you** to remember any complicated story arcs, bothersome subtle clues or dramatic prophecy drops from throughout the series, because this final movie just makes up completely new stuff that you couldn't possibly have seen coming because it never existed before.\r\n\r\nIt's ridiculously easy to re-enact the movie at **your** next cosplay gathering, because the characterisations are so shallow and vapid that all you need to do is ad-lib the actors' lines, and you'll probably get a better script.\r\n\r\nAll that junk **you've** accumulated over the years will come in damn handy one day, just like it did for our so-called heroes.  They managed to have everything they need on hand.  So much so, that vitally important junk literally materialises right in front of them, and usually from places that makes you wonder why they never noticed it years ago.",
+            id: '5e072a4feda4b700172b83b1',
+            url: 'https://www.themoviedb.org/review/5e072a4feda4b700172b83b1'
+        },
+        {
+            author: 'TheJordanFaulkner',
+            content:
+                'This movie is really awesome. It took me two viewings to truly cement the way I truly feel about this film. But upon second viewing this film was not just an entertaining blast from start to finish but to be honest a perfect conclusion to the Skywalker story. The film traverses the stories of the previous films in order to bring all those stories together for a culmination that is truly satisfying. The cinematography and visual effects as usual are outstanding in the film but this film seems to have a unique feel that adds to the foreboding tone kept consistent throughout. Adam Driver and Daisy Ridley as Rey and Kylo truly shine in this film and are both giving their a - game and prove that they are both incredible actors and extremely emotionally flexible (particularly Ridley). The Arc of Kylo Ren is by far the highlight of this trilogy and in this film and the conclusion of said arc is immensely satisfying, Reys story also takes a surprising turn which I found immensely satisfying in hindsight. As a conclusion to my favourite series of all time I was left immensely pleased with the final sequence of the film which brings all of this lore together in a way I couldn’t predict to be this poignant. This film overall was a wonderful farewell to this saga that was so satisfying and enjoyable that I will look back on this saga with great nostalgia and adoration that I hope to show my children as a whole nine part saga and I am immensely honoured to have been part of this moment in pop culture and to get to view this conclusion is a truly wonderful thing for me. It’s with this i farewell the galaxy far far away with immense satisfaction.',
+            id: '5e07d6044c1d9a0013e29638',
+            url: 'https://www.themoviedb.org/review/5e07d6044c1d9a0013e29638'
+        },
+        {
+            author: 'Gimly',
+            content:
+                "This is some bullshit. You know it, I know it. _Rise of Skywalker_ is not just a bad movie contained within itself, it's also a **very** bad sequel to _Last Jedi_. But that didn't stop me from having a really great time at the cinema with _Episode IX_. Twice.\r\n\r\nOriginally I started writing my review for it by writing two lists, one of all the dumb crap I didn't like, and one of all the dumb crap I did like, but A) it contained a lot of spoilers, and B) there's a lot of lists of the dumb crap in _Rise of Skywalker_ out there already, so all I'll say is just this: The majority of complaints that people are making about _Rise of Skywalker_ are fair and accurate, and whether you are a _Star Wars_ fan or not, there is a very real chance you will not enjoy this movie. But between 2017 and 2019 I watched over 1500 movies, and I thought that this movie was one of the better ones.\r\n\r\n_Final rating:★★★½ - I really liked it. Would strongly recommend you give it your time._",
+            id: '5e09a1614b9bae0012d4857f',
+            url: 'https://www.themoviedb.org/review/5e09a1614b9bae0012d4857f'
+        }
+    ],
     similar: [
         {
             id: 1891,
@@ -836,15 +894,64 @@ export const movie = {
         }
     ],
     runtime: '141 minutes',
-    revenue: 'N/A',
+    revenue: '$956,030,690',
     releaseDate: 'December 17, 2019',
     shortReleaseDate: 'December 17',
     votes: '5.1 / 10',
-    posterImgUrl:
-        'https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg',
-    thumbnailImgUrl:
-        'https://image.tmdb.org/t/p/w300/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg',
-    backdropImgUrl:
-        'https://image.tmdb.org/t/p/original/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg',
+    posterImgUrl: {
+        medium:
+            'https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg',
+        large:
+            'https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg',
+        larger:
+            'https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg'
+    },
+    backdropImgUrl: {
+        small:
+            'https://image.tmdb.org/t/p/original/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg',
+        original:
+            'https://image.tmdb.org/t/p/original/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg'
+    },
     videoUrl: 'https://www.youtube.com/watch?v=8Qn_spdM5Zg'
+};
+
+export const tv = {
+    id: 1399,
+    name: 'Game of Thrones',
+    overview:
+        "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+    cast: [],
+    crew: [],
+    reviews: [],
+    lastAirDate: 'May 19, 2019',
+    shortLastAirDate: 'May 19',
+    totalSeasons: '8 season(s)',
+    similar: [],
+    genres: [
+        {
+            id: 10765,
+            name: 'Sci-Fi & Fantasy'
+        },
+        {
+            id: 18,
+            name: 'Drama'
+        }
+    ],
+    runtime: '60 minutes',
+    votes: '8.2 / 10',
+    posterImgUrl: {
+        medium:
+            'https://image.tmdb.org/t/p/w342/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg',
+        large:
+            'https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg',
+        larger:
+            'https://image.tmdb.org/t/p/w780/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg'
+    },
+    backdropImgUrl: {
+        small:
+            'https://image.tmdb.org/t/p/w300/suopoADq0k8YZr4dQXcU6pToj6s.jpg',
+        original:
+            'https://image.tmdb.org/t/p/original/suopoADq0k8YZr4dQXcU6pToj6s.jpg'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=bjqEWgDVPe0'
 };

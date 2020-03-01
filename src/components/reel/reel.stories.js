@@ -1,7 +1,10 @@
 import React from 'react';
+import { KIND } from 'baseui/button';
 import { Block } from 'baseui/block';
+import Plus from 'baseui/icon/plus';
+import Show from 'baseui/icon/show';
 
-import { InfoButton, WatchlistButton } from '../button';
+import { Button } from 'next-movie-components';
 
 import { Reel } from './reel';
 
@@ -9,49 +12,101 @@ export default {
     title: 'components|Hero'
 };
 
+const WatchlistButton = () => (
+    <Button startEnhancer={() => <Plus size={24} />} kind={KIND.primary}>
+        Watchlist
+    </Button>
+);
+
+const InfoButton = () => (
+    <Button startEnhancer={() => <Show size={24} />} kind={KIND.secondary}>
+        More Info
+    </Button>
+);
+
 const movies = [
     {
         id: 0,
-        backdropImgUrl:
-            'https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg',
-        posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg',
+        backdropImgUrl: {
+            small:
+                'https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg',
+            original:
+                'https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg'
+        },
+        posterImgUrl: {
+            medium:
+                'https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg',
+            larger:
+                'https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg'
+        },
         title: 'Jumanji: The Next Level',
         releaseDate: 'December 12, 2019'
     },
     {
         id: 1,
-        backdropImgUrl:
-            'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg',
-        posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
+        backdropImgUrl: {
+            small:
+                'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg',
+            original:
+                'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg'
+        },
+        posterImgUrl: {
+            medium:
+                'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
+            larger:
+                'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg'
+        },
         title: 'Midway',
         releaseDate: 'November 5, 2019'
     },
     {
         id: 2,
-        backdropImgUrl:
-            'https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg',
-        posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/4Fc3UkAyXIKWW8jrCQpvOkTE1gy.jpg',
+        backdropImgUrl: {
+            small:
+                'https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg',
+            original:
+                'https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg'
+        },
+        posterImgUrl: {
+            medium:
+                'https://image.tmdb.org/t/p/w500/4Fc3UkAyXIKWW8jrCQpvOkTE1gy.jpg',
+            larger:
+                'https://image.tmdb.org/t/p/w500/4Fc3UkAyXIKWW8jrCQpvOkTE1gy.jpg'
+        },
         title: 'The Irishman',
         releaseDate: 'October 31, 2019'
     },
     {
         id: 3,
-        backdropImgUrl:
-            'https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg',
-        posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg',
+        backdropImgUrl: {
+            small:
+                'https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg',
+            original:
+                'https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg'
+        },
+        posterImgUrl: {
+            medium:
+                'https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg',
+            larger:
+                'https://image.tmdb.org/t/p/w500/6ApDtO7xaWAfPqfi2IARXIzj8QS.jpg'
+        },
         title: 'Ford v Ferrari',
         releaseDate: 'November 12, 2019'
     },
     {
         id: 4,
-        backdropImgUrl:
-            'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg',
-        posterImgUrl:
-            'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
+        backdropImgUrl: {
+            small:
+                'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg',
+            original:
+                'https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg'
+        },
+        posterImgUrl: {
+            medium:
+                'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg',
+            larger:
+                'https://image.tmdb.org/t/p/w500/xL1yNzwGSXfassYpt13hXADpz6R.jpg'
+        },
         title: 'Midway',
         releaseDate: 'November 5, 2019'
     }
@@ -61,6 +116,21 @@ export const base = () => (
     <Reel
         index={0}
         movies={movies}
+        controls={
+            <>
+                <WatchlistButton>Watchlist</WatchlistButton>
+                <Block display="inline" marginRight="scale600" />
+                <InfoButton>More Info</InfoButton>
+            </>
+        }
+    />
+);
+
+export const loading = () => (
+    <Reel
+        index={0}
+        loading
+        movies={[]}
         controls={
             <>
                 <WatchlistButton>Watchlist</WatchlistButton>

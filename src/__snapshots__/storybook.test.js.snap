@@ -26,198 +26,1721 @@ Array [
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   July 26
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   November 1
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/tBuabjEqxzoUBHfbyNbd8ulgy5j.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   October 18
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   November 8
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/pIcV8XXIIvJCbtPoxF9qHMKdRr2.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   October 18
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   October 11
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
           <li
             className="aw ax"
           >
-            <div
-              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9"
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be"
               data-baseweb="card"
               onClick={[Function]}
             >
               <img
-                className="b2 b3 ba bb b8 bc b9 bd"
+                className="b7 b8 bf bg bd bh be bi"
                 src="https://image.tmdb.org/t/p/w500/jIbTPKCRWgmS2HaafKXeRaPHMGp.jpg"
               />
               <div
-                className="be bf bg bh"
+                className="bj bk bl bm"
               >
                 <h1
-                  className="ag ah bi aj bj bk bl bm bn bo bp bq br bs bt bu bv bw"
+                  className="ag bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3"
                 >
                   November 8
                 </h1>
                 <div
-                  className="bx by ag bz c0 c1"
+                  className="c4 c5 ag c6 c7 c8"
                 />
               </div>
-            </div>
+            </section>
           </li>
         </ul>
         <button
-          className="c2 c3 c4 b7 c5 c6 c7 c8 c9 ca cb cc cd ce"
+          className="c9 ca cb bc cc cd ce cf cg ch ci cj ck cl"
           onClick={[Function]}
         >
           &lt;
         </button>
         <button
-          className="c2 c3 c4 b7 c5 c6 c7 c8 c9 ca cb cc cd cf"
+          className="c9 ca cb bc cc cd ce cf cg ch ci cj ck cm"
           onClick={[Function]}
         >
           &gt;
         </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|CardDeck Loading 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="ae"
+      data-baseweb="block"
+    >
+      <h2
+        className="af ag ah ai aj"
+        data-baseweb="block"
+      >
+        Popular movies
+      </h2>
+      <div
+        className="ak al ae"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <ul
+          className="am an ao ak ap aq ar as at au av"
+        >
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+          <li
+            className="aw ax"
+          >
+            <section
+              className="ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bd be"
+              data-baseweb="card"
+            >
+              <div
+                className="bj bk bl bm"
+              >
+                <div
+                  className="c4 c5 ag c6 c7 c8"
+                >
+                  <div
+                    className="c4 cs ag c6 c7 c8"
+                  >
+                    <div
+                      className="ak bh ct bi"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu ak cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cv"
+                      data-baseweb="block"
+                    />
+                    <div
+                      className="cn co cp cq cr cu cw cv"
+                      data-baseweb="block"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+        <button
+          className="c9 ca cb bc cc cd ce cf cg ch ci cj ck cl"
+          onClick={[Function]}
+        >
+          &lt;
+        </button>
+        <button
+          className="c9 ca cb bc cc cd ce cf cg ch ci cj ck cm"
+          onClick={[Function]}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Credit Cast 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div>
+      <div
+        className="cx cy cz d0 d1 d2 d3 d4 aq d5 ap ar bk"
+      >
+        <div
+          className="ak d6 d7 d8"
+          role="rowgroup"
+        >
+          <div
+            className="aq d9"
+            role="row"
+          >
+            <div
+              className="ag da c7 db c5 aq d8 bw bx by bv"
+            >
+              <div
+                className="dc dd bv bx aq"
+              >
+                <div
+                  className="de df dg"
+                >
+                  <div
+                    aria-label={null}
+                    className="dh di dj dk ax dl"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Carrie Fisher"
+                      className="dh di dj dk ax dm dn do dp"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/rfJtncHewKVnHjqpIZvjn24ESeC.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="dq df dr bj"
+                >
+                  <div
+                    className="bq ag c7 cg aj"
+                    data-baseweb="typo-paragraphlarge"
+                  >
+                    Carrie Fisher
+                  </div>
+                  <div
+                    className="cs ag bo da ds"
+                    data-baseweb="typo-labelsmall"
+                  >
+                    General Leia Organa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq d9"
+            role="row"
+          >
+            <div
+              className="ag da c7 db c5 aq d8 bw bx by bv"
+            >
+              <div
+                className="dc dd bv bx aq"
+              >
+                <div
+                  className="de df dg"
+                >
+                  <div
+                    aria-label={null}
+                    className="dh di dj dk ax dl"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Mark Hamill"
+                      className="dh di dj dk ax dm dn do dp"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/fk8OfdReNltKZqOk2TZgkofCUFq.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="dq df dr bj"
+                >
+                  <div
+                    className="bq ag c7 cg aj"
+                    data-baseweb="typo-paragraphlarge"
+                  >
+                    Mark Hamill
+                  </div>
+                  <div
+                    className="cs ag bo da ds"
+                    data-baseweb="typo-labelsmall"
+                  >
+                    Luke Skywalker
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq d9"
+            role="row"
+          >
+            <div
+              className="ag da c7 db c5 aq d8 bw bx by bv"
+            >
+              <div
+                className="dc dd bv bx aq"
+              >
+                <div
+                  className="de df dg"
+                >
+                  <div
+                    aria-label={null}
+                    className="dh di dj dk ax dl"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Adam Driver"
+                      className="dh di dj dk ax dm dn do dp"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/rsjwgpV2OukxOJ9HEiEyf4qu1vR.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="dq df dr bj"
+                >
+                  <div
+                    className="bq ag c7 cg aj"
+                    data-baseweb="typo-paragraphlarge"
+                  >
+                    Adam Driver
+                  </div>
+                  <div
+                    className="cs ag bo da ds"
+                    data-baseweb="typo-labelsmall"
+                  >
+                    Kylo Ren
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq d9"
+            role="row"
+          >
+            <div
+              className="ag da c7 db c5 aq d8 bw bx by bv"
+            >
+              <div
+                className="dc dd bv bx aq"
+              >
+                <div
+                  className="de df dg"
+                >
+                  <div
+                    aria-label={null}
+                    className="dh di dj dk ax dl"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="Daisy Ridley"
+                      className="dh di dj dk ax dm dn do dp"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/oP7khxQ6BUNoGiPFUCI8dikN0ew.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="dq df dr bj"
+                >
+                  <div
+                    className="bq ag c7 cg aj"
+                    data-baseweb="typo-paragraphlarge"
+                  >
+                    Daisy Ridley
+                  </div>
+                  <div
+                    className="cs ag bo da ds"
+                    data-baseweb="typo-labelsmall"
+                  >
+                    Rey
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="aq d9"
+            role="row"
+          >
+            <div
+              className="ag da c7 db c5 aq d8 bw bx by bv"
+            >
+              <div
+                className="dc dd bv bx aq"
+              >
+                <div
+                  className="de df dg"
+                >
+                  <div
+                    aria-label={null}
+                    className="dh di dj dk ax dl"
+                    data-baseweb="avatar"
+                    role={null}
+                  >
+                    <img
+                      alt="John Boyega"
+                      className="dh di dj dk ax dm dn do dp"
+                      onError={[Function]}
+                      src="https://image.tmdb.org/t/p/w185/idr2vphzhidyMGOp0ky6RqUMah8.jpg"
+                    />
+                  </div>
+                </div>
+                <div
+                  className="dq df dr bj"
+                >
+                  <div
+                    className="bq ag c7 cg aj"
+                    data-baseweb="typo-paragraphlarge"
+                  >
+                    John Boyega
+                  </div>
+                  <div
+                    className="cs ag bo da ds"
+                    data-baseweb="typo-labelsmall"
+                  >
+                    Finn
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="dt du aq"
+    >
+      <div
+        aria-label="pagination"
+        className="aq d9 c5 ag c6 bo db"
+        data-baseweb="pagination"
+      >
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb ec ed br bs bt ee ag c6 ai db b8 ba b7 b9 ef eg eh ei cs d0 ej ek el em en eo"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          &lt;
+        </button>
+        <div
+          className="ae e3 bj ep eq"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <div
+            aria-controls={null}
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="ag c6 c7 c8 ax ae ak"
+            data-baseweb="select"
+            onClick={[Function]}
+          >
+            <div
+              className="b7 b8 ba b9 ax al ak aq er bc es cy et e9 ea c5 eu d0 e5 ev"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                className="ax ae dq ew ex aq d9 ey al ez f0 f1 bx"
+              >
+                <div
+                  aria-selected="true"
+                  className="f2 ax f3 ap bg al f4 f5 f6 ae bw by f7 f8 c5 ag c6 bo"
+                  disabled={false}
+                  value={1}
+                >
+                  1
+                </div>
+                <div
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  aria-label={null}
+                  aria-labelledby={null}
+                  aria-required={null}
+                  className="ae dl bg d0 cd e5 ax e3 bs ee br bt bw by bv bx f9 fa"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  tabIndex={0}
+                />
+              </div>
+              <div
+                className="ax ae aq df d9 fb f8"
+              >
+                <svg
+                  className="dl fc c5 f9 fd bc"
+                  data-baseweb="icon"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    open
+                  </title>
+                  <path
+                    d="M12.7071 15.2929L17.1464 10.8536C17.4614 10.5386 17.2383 10 16.7929 10L7.20711 10C6.76165 10 6.53857 10.5386 6.85355 10.8536L11.2929 15.2929C11.6834 15.6834 12.3166 15.6834 12.7071 15.2929Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span
+          aria-label="page 1 of 6"
+          className="fe bl d0 cs"
+        >
+          of 6
+        </span>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb ec ed br bs bt ee ag c6 ai db b8 ba b7 b9 ef eg eh ei cs d0 ej ek el em en eo"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          &gt;
+        </button>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Credit Crew 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="ff"
+      data-baseweb="block"
+    >
+      <div
+        className="dc dd bv bx aq"
+      >
+        <div
+          className="de df dg"
+        >
+          <div
+            aria-label={null}
+            className="dh di dj dk ax dl"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="J.J. Abrams"
+              className="dh di dj dk ax dm dn do dp"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/h0o12c399M5hTKWl0qdgwhaddNt.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="dq df dr bj"
+        >
+          <div
+            className="bq ag c7 cg aj"
+            data-baseweb="typo-paragraphlarge"
+          >
+            J.J. Abrams
+          </div>
+          <div
+            className="cs ag bo da ds"
+            data-baseweb="typo-labelsmall"
+          >
+            Screenplay, Director, Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="dc dd bv bx aq"
+      >
+        <div
+          className="de df dg"
+        >
+          <div
+            aria-label={null}
+            className="dh di dj dk ax dl"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Chris Terrio"
+              className="dh di dj dk ax dm dn do dp"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/oljJKka3NTgiQhqhDs1SaCtcWMW.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="dq df dr bj"
+        >
+          <div
+            className="bq ag c7 cg aj"
+            data-baseweb="typo-paragraphlarge"
+          >
+            Chris Terrio
+          </div>
+          <div
+            className="cs ag bo da ds"
+            data-baseweb="typo-labelsmall"
+          >
+            Screenplay, Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="dc dd bv bx aq"
+      >
+        <div
+          className="de df dg"
+        >
+          <div
+            aria-label={null}
+            className="dh di dj dk ax dl"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Colin Trevorrow"
+              className="dh di dj dk ax dm dn do dp"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/i0HBClPMPKn3aq8QeQqyThS67EK.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="dq df dr bj"
+        >
+          <div
+            className="bq ag c7 cg aj"
+            data-baseweb="typo-paragraphlarge"
+          >
+            Colin Trevorrow
+          </div>
+          <div
+            className="cs ag bo da ds"
+            data-baseweb="typo-labelsmall"
+          >
+            Story
+          </div>
+        </div>
+      </div>
+      <div
+        className="dc dd bv bx aq"
+      >
+        <div
+          className="de df dg"
+        >
+          <div
+            aria-label={null}
+            className="dh di dj dk ax dl"
+            data-baseweb="avatar"
+            role={null}
+          >
+            <img
+              alt="Derek Connolly"
+              className="dh di dj dk ax dm dn do dp"
+              onError={[Function]}
+              src="https://image.tmdb.org/t/p/w185/k1VQLCP4RAAkuXZ5HWrdL1NQnWR.jpg"
+            />
+          </div>
+        </div>
+        <div
+          className="dq df dr bj"
+        >
+          <div
+            className="bq ag c7 cg aj"
+            data-baseweb="typo-paragraphlarge"
+          >
+            Derek Connolly
+          </div>
+          <div
+            className="cs ag bo da ds"
+            data-baseweb="typo-labelsmall"
+          >
+            Story
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Header Loading 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="bb ax ak fg fh fi fj fk fl fm"
+    >
+      <div
+        className="aq"
+      >
+        <div
+          className="dq ew fn ck fo"
+        >
+          <div
+            className="cn co cp cq cr cu ck hc hd fo he ak hf"
+            data-baseweb="block"
+          />
+        </div>
+        <div
+          className="dq ew ex ck fo"
+        />
+        <div
+          className="fq ew fr fs"
+        >
+          <div
+            className="cn co cp cq cr cu ck hc hd fo he ak hf"
+            data-baseweb="block"
+          />
+        </div>
+      </div>
+      <div
+        className="ak aq ft er ax fu fv fw fx fy fz g0 g1"
+      >
+        <div
+          className="dq ew g2 aq g3 dw g4 g5 g6"
+        >
+          <div
+            className="cn co cp cq cr cu hg hh gx"
+            data-baseweb="block"
+          />
+          <div
+            className="cn co cp cq cr cu hi hh"
+            data-baseweb="block"
+          />
+          <div
+            className="hh"
+            data-baseweb="block"
+          />
+          <div
+            className="cn co cp cq cr cu hg hh gx"
+            data-baseweb="block"
+          />
+          <div
+            className="cn co cp cq cr cu hi hh"
+            data-baseweb="block"
+          />
+        </div>
+        <div
+          className="fq ew fr"
+        >
+          <h1
+            className="ga ce ag ah bo aj gb gc gd ge gf gg gh gi"
+          >
+            <div
+              className="cn co cp cq cr cu hj hk"
+              data-baseweb="block"
+            />
+          </h1>
+          <h2
+            className="gj ag da bo ds gb gk gd gl gf gm gh gn"
+          >
+            <div
+              className="cn co cp cq cr cu hi hl"
+              data-baseweb="block"
+            />
+          </h2>
+          <div
+            className="ak hm"
+            data-baseweb="block"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Header Movie 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="bb ax ak fg fh fi fj fk fl fm"
+    >
+      <div
+        className="aq"
+      >
+        <div
+          className="dq ew fn ck fo"
+        >
+          <img
+            alt="No poster"
+            className="ak fp"
+            data-baseweb="block"
+            src="https://image.tmdb.org/t/p/w500/db32LaOibwEliAmSL2jjDF6oDdj.jpg"
+          />
+        </div>
+        <div
+          className="dq ew ex ck fo"
+        />
+        <div
+          className="fq ew fr fs"
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": undefined,
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ak aq ft er ax fu fv fw fx fy fz g0 g1"
+      >
+        <div
+          className="dq ew g2 aq g3 dw g4 g5 g6"
+        >
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#f9b248"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#f9b248",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"
+                />
+              </svg>
+               
+              Release
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              December 17, 2019
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#FFFFFF"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#FFFFFF",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                />
+              </svg>
+               
+              Duration
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              141 minutes
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#21A453"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#21A453",
+                  }
+                }
+                viewBox="0 0 288 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
+                />
+              </svg>
+               
+              Revenue
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              $956,030,690
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#fc3a52"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#fc3a52",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                />
+              </svg>
+               
+              Votes
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              5.1 / 10
+            </div>
+          </div>
+        </div>
+        <div
+          className="fq ew fr"
+        >
+          <h1
+            className="ga ce ag ah bo aj gb gc gd ge gf gg gh gi"
+          >
+            Star Wars: The Rise of Skywalker
+          </h1>
+          <h2
+            className="gj ag da bo ds gb gk gd gl gf gm gh gn"
+          >
+            Every generation has a legend
+          </h2>
+          <span
+            aria-label="button"
+            className="ag go bo ds d9 gp cy gq gr gs gt gu ax g9 gv dv f9 er gw gx gy gz h0 h1 h2 f8 e3  "
+            data-baseweb="tag"
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={null}
+          >
+            <span
+              className="al f5 f4 h3"
+              title="Action"
+            >
+              Action
+            </span>
+          </span>
+          <span
+            aria-label="button"
+            className="ag go bo ds d9 gp cy gq gr gs gt gu ax g9 gv dv f9 er gw gx gy gz h0 h1 h2 f8 e3  "
+            data-baseweb="tag"
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={null}
+          >
+            <span
+              className="al f5 f4 h3"
+              title="Adventure"
+            >
+              Adventure
+            </span>
+          </span>
+          <span
+            aria-label="button"
+            className="ag go bo ds d9 gp cy gq gr gs gt gu ax g9 gv dv f9 er gw gx gy gz h0 h1 h2 f8 e3  "
+            data-baseweb="tag"
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={null}
+          >
+            <span
+              className="al f5 f4 h3"
+              title="Science Fiction"
+            >
+              Science Fiction
+            </span>
+          </span>
+          <div
+            className="h4"
+            data-baseweb="block"
+          />
+          <button
+            className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag da bo ds b8 ba b7 b9 ez f0 h2 f8 h6 h7 h8 h9"
+            data-baseweb="button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+          >
+            <div
+              className="aq ha"
+            >
+              <svg
+                className="dl fc hb f9 fd"
+                data-baseweb="icon"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Plus
+                </title>
+                <path
+                  clipRule="evenodd"
+                  d="M12 5C12.5523 5 13 5.44772 13 6V11L18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13L13 13V18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18V13L6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44771 11 6 11L11 11V6C11 5.44772 11.4477 5 12 5Z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+            Watchlist
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
+  />,
+]
+`;
+
+exports[`Storyshots components|Header Tv 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="bb ax ak fg fh fi fj fk fl fm"
+    >
+      <div
+        className="aq"
+      >
+        <div
+          className="dq ew fn ck fo"
+        >
+          <img
+            alt="No poster"
+            className="ak fp"
+            data-baseweb="block"
+            src="https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
+          />
+        </div>
+        <div
+          className="dq ew ex ck fo"
+        />
+        <div
+          className="fq ew fr fs"
+        >
+          <div
+            style={
+              Object {
+                "height": "100%",
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "display": undefined,
+                  "height": "100%",
+                  "width": "100%",
+                }
+              }
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ak aq ft er ax fu fv fw fx fy fz g0 g1"
+      >
+        <div
+          className="dq ew g2 aq g3 dw g4 g5 g6"
+        >
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#f9b248"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#f9b248",
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"
+                />
+              </svg>
+               
+              Last air date
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              May 19, 2019
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#FFFFFF"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#FFFFFF",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                />
+              </svg>
+               
+              Episode runtime
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              60 minutes
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#21A453"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#21A453",
+                  }
+                }
+                viewBox="0 0 640 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M592 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h245.1v32h-160c-17.7 0-32 14.3-32 32s14.3 32 32 32h384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-160v-32H592c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h512v288z"
+                />
+              </svg>
+               
+              Number of seasons
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              8 season(s)
+            </div>
+          </div>
+          <div
+            className="g7 ff"
+            data-baseweb="block"
+          >
+            <div
+              className="g8 ag c7 da db"
+              data-baseweb="block"
+            >
+              <svg
+                color="#fc3a52"
+                fill="currentColor"
+                height="0.8em"
+                size="0.8em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": "#fc3a52",
+                  }
+                }
+                viewBox="0 0 512 512"
+                width="0.8em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                />
+              </svg>
+               
+              Votes
+            </div>
+            <div
+              className="g9 ag c7 da db"
+              data-baseweb="block"
+            >
+              8.2 / 10
+            </div>
+          </div>
+        </div>
+        <div
+          className="fq ew fr"
+        >
+          <h1
+            className="ga ce ag ah bo aj gb gc gd ge gf gg gh gi"
+          >
+            Game of Thrones
+          </h1>
+          <span
+            aria-label="button"
+            className="ag go bo ds d9 gp cy gq gr gs gt gu ax g9 gv dv f9 er gw gx gy gz h0 h1 h2 f8 e3  "
+            data-baseweb="tag"
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={null}
+          >
+            <span
+              className="al f5 f4 h3"
+              title="Sci-Fi & Fantasy"
+            >
+              Sci-Fi & Fantasy
+            </span>
+          </span>
+          <span
+            aria-label="button"
+            className="ag go bo ds d9 gp cy gq gr gs gt gu ax g9 gv dv f9 er gw gx gy gz h0 h1 h2 f8 e3  "
+            data-baseweb="tag"
+            onBlur={[Function]}
+            onClick={null}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            role="button"
+            tabIndex={null}
+          >
+            <span
+              className="al f5 f4 h3"
+              title="Drama"
+            >
+              Drama
+            </span>
+          </span>
+          <div
+            className="h4"
+            data-baseweb="block"
+          />
+          <button
+            className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag da bo ds b8 ba b7 b9 ez f0 h2 f8 h6 h7 h8 h9"
+            data-baseweb="button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+          >
+            <div
+              className="aq ha"
+            >
+              <svg
+                className="dl fc hb f9 fd"
+                data-baseweb="icon"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Plus
+                </title>
+                <path
+                  clipRule="evenodd"
+                  d="M12 5C12.5523 5 13 5.44772 13 6V11L18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13L13 13V18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18V13L6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44771 11 6 11L11 11V6C11 5.44772 11.4477 5 12 5Z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+            Watchlist
+          </button>
+        </div>
       </div>
     </div>
   </div>,
@@ -236,45 +1759,50 @@ Array [
       className="ak"
     >
       <div
-        className="c2 ak ch al"
+        className="c9 ak hn al"
       >
         <div
-          className="ak ap c2 ci cj"
+          className="ak ap c9 ho hp"
         />
         <div
-          className="c2 ce cf c4 ck cl"
+          className="c9 cl cm cb hq hr"
+        />
+        <img
+          alt="No poster"
+          className="dm ak ap hs"
+          src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
         />
         <img
           alt="No backdrop"
-          className="ak ap cm"
+          className="ck fo ht hu"
           src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
         />
       </div>
       <div
-        className="aq ae cn co cp cq cr"
+        className="aq ae hv fw fx hw hx hy"
       >
         <div
-          className="cs cd ct al cu cv"
+          className="hz i0 ck al i1 i2"
         >
           <img
             alt="No poster"
-            className="ak cw"
+            className="ak fp"
             src="https://image.tmdb.org/t/p/w500/9Vp8MKqrwRAtvACF7PBwbvdG4dq.jpg"
           />
         </div>
         <div
-          className="cx aq cy"
+          className="d8 aq d5"
         >
           <div
             className=""
           >
             <h2
-              className="cz ag d0 bi d1 c7"
+              className="ga ag cg bo c8 ce i3 i4 i5 i6 i7"
             >
               Jumanji: The Next Level
             </h2>
             <h3
-              className="d2 ag c9 bi aj"
+              className="gj ag cg bo c8 i8"
             >
               December 12, 2019
             </h3>
@@ -282,16 +1810,18 @@ Array [
               className=""
             >
               <button
-                className="d3 d4 d5 d6 d7 d8 d9 da db dc dd b7 de df dg bk bl bm dh ag di bi dj b3 b5 b2 b4 dk dl dm dn do dp dq dr ds"
+                className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag da bo ds b8 ba b7 b9 ez f0 h2 f8 h6 h7 h8 h9"
                 data-baseweb="button"
                 disabled={false}
+                onBlur={[Function]}
                 onClick={[Function]}
+                onFocus={[Function]}
               >
                 <div
-                  className="aq dt"
+                  className="aq ha"
                 >
                   <svg
-                    className="du dv dw dx dy"
+                    className="dl fc hb f9 fd"
                     data-baseweb="icon"
                     viewBox="0 0 24 24"
                   >
@@ -308,20 +1838,22 @@ Array [
                 Watchlist
               </button>
               <div
-                className="dz e0"
+                className="i9 bl"
                 data-baseweb="block"
               />
               <button
-                className="d3 d4 d5 d6 d7 d8 d9 da db dc dd b7 de df dg bk bl bm dh ag di bi dj b3 b5 b2 b4 dk dl dm dn e1 e2 e3 e4 e5"
+                className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag da bo ds b8 ba b7 b9 ez f0 h2 f8 c5 ia ib ic"
                 data-baseweb="button"
                 disabled={false}
+                onBlur={[Function]}
                 onClick={[Function]}
+                onFocus={[Function]}
               >
                 <div
-                  className="aq dt"
+                  className="aq ha"
                 >
                   <svg
-                    className="du dv dw dx dy"
+                    className="dl fc hb f9 fd"
                     data-baseweb="icon"
                     viewBox="0 0 20 20"
                   >
@@ -338,70 +1870,70 @@ Array [
             </div>
           </div>
           <div
-            className="e6 aq e7 e8 e9"
+            className="id aq ie ez if ig"
           >
             <button
-              className="c6 ea b7 ae eb ec aw ed ee"
+              className="cd ih bc ae ii ij aw ik il"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci ef"
+                className="ak ap c9 ho im"
               />
               <img
                 alt="No backdrop"
-                className="ak cw"
+                className="ak fp"
                 src="https://image.tmdb.org/t/p/original/zTxHf9iIOCqRbxvl8W5QYKrsMLq.jpg"
               />
             </button>
             <button
-              className="c6 ea b7 ae eb ec aw ed ee"
+              className="cd ih bc ae ii ij aw ik il"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci eg"
+                className="ak ap c9 ho in"
               />
               <img
                 alt="No backdrop"
-                className="ak cw"
+                className="ak fp"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
             <button
-              className="c6 ea b7 ae eb ec aw ed ee"
+              className="cd ih bc ae ii ij aw ik il"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci eg"
+                className="ak ap c9 ho in"
               />
               <img
                 alt="No backdrop"
-                className="ak cw"
+                className="ak fp"
                 src="https://image.tmdb.org/t/p/w1280/aZ1ZqJ4uO1RK5gU5jRsO4qG7rJo.jpg"
               />
             </button>
             <button
-              className="c6 ea b7 ae eb ec aw ed ee"
+              className="cd ih bc ae ii ij aw ik il"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci eg"
+                className="ak ap c9 ho in"
               />
               <img
                 alt="No backdrop"
-                className="ak cw"
+                className="ak fp"
                 src="https://image.tmdb.org/t/p/w1280/n3UanIvmnBlH531pykuzNs4LbH6.jpg"
               />
             </button>
             <button
-              className="c6 ea b7 ae eb ec aw ed ee"
+              className="cd ih bc ae ii ij aw ik il"
               onClick={[Function]}
             >
               <div
-                className="ak ap c2 ci eg"
+                className="ak ap c9 ho in"
               />
               <img
                 alt="No backdrop"
-                className="ak cw"
+                className="ak fp"
                 src="https://image.tmdb.org/t/p/w1280/1ZSjrBUHP2jm1QlQEyLGufL289q.jpg"
               />
             </button>
@@ -416,11 +1948,249 @@ Array [
 ]
 `;
 
-exports[`Storyshots components|Login Base 1`] = `
+exports[`Storyshots components|Hero Loading 1`] = `
 Array [
   <div
     className=""
+  >
+    <div
+      className="ak"
+    >
+      <div
+        className="c9 ak hn al"
+      >
+        <div
+          className="ak ap c9 ho hp"
+        />
+        <div
+          className="c9 cl cm cb hq hr"
+        />
+      </div>
+      <div
+        className="aq ae hv fw fx hw hx hy"
+      >
+        <div
+          className="hz i0 ck al i1 i2"
+        >
+          <div
+            className="cn co cp cq cr cu ak ap"
+            data-baseweb="block"
+          />
+        </div>
+        <div
+          className="d8 aq d5"
+        >
+          <div
+            className=""
+          >
+            <h2
+              className="ga ag cg bo c8 ce i3 i4 i5 i6 i7"
+            >
+              <div
+                className="cn co cp cq cr cu hj hk"
+                data-baseweb="block"
+              />
+            </h2>
+            <h3
+              className="gj ag cg bo c8 i8"
+            >
+              <div
+                className="cn co cp cq cr cu hi hl"
+                data-baseweb="block"
+              />
+            </h3>
+          </div>
+          <div
+            className="id aq ie ez if ig"
+          >
+            <button
+              className="cd ih bc ae ii ij aw ik il"
+            >
+              <div
+                className="cn co cp cq cr cu ak ap"
+                data-baseweb="block"
+              />
+            </button>
+            <button
+              className="cd ih bc ae ii ij aw ik il"
+            >
+              <div
+                className="cn co cp cq cr cu ak ap"
+                data-baseweb="block"
+              />
+            </button>
+            <button
+              className="cd ih bc ae ii ij aw ik il"
+            >
+              <div
+                className="cn co cp cq cr cu ak ap"
+                data-baseweb="block"
+              />
+            </button>
+            <button
+              className="cd ih bc ae ii ij aw ik il"
+            >
+              <div
+                className="cn co cp cq cr cu ak ap"
+                data-baseweb="block"
+              />
+            </button>
+            <button
+              className="cd ih bc ae ii ij aw ik il"
+            >
+              <div
+                className="cn co cp cq cr cu ak ap"
+                data-baseweb="block"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className=""
   />,
+]
+`;
+
+exports[`Storyshots components|Review Base 1`] = `
+Array [
+  <div
+    className=""
+  >
+    <div
+      className="ff"
+      data-baseweb="block"
+    >
+      <div
+        className="io ip dc du bv bx"
+      >
+        <div
+          className="cs ag bo da ds"
+          data-baseweb="typo-labelsmall"
+        >
+          Vogel
+        </div>
+        <p
+          className="ag c6 c7 c8 g9 gb iq ir is"
+        >
+          Well.. this was dull.
+        </p>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag c6 bo db b8 ba b7 b9 bw by bv bx cs d0 ej it el iu en iv"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          Read more
+        </button>
+      </div>
+      <div
+        className="io ip dc du bv bx"
+      >
+        <div
+          className="cs ag bo da ds"
+          data-baseweb="typo-labelsmall"
+        >
+          Olon
+        </div>
+        <p
+          className="ag c6 c7 c8 g9 gb iq ir is"
+        >
+          Went to the first showing in town tonight.  I really enjoyed the film.  Although it leaned heavy on nostalgia, it should, since it is wrapping up 40 years.  I did not care for The Last Jedi, and was worried going in.  Will do a deeper dive after I have seen it a few times.
+        </p>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag c6 bo db b8 ba b7 b9 bw by bv bx cs d0 ej it el iu en iv"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          Read more
+        </button>
+      </div>
+      <div
+        className="io ip dc du bv bx"
+      >
+        <div
+          className="cs ag bo da ds"
+          data-baseweb="typo-labelsmall"
+        >
+          Sheldon Nylander
+        </div>
+        <p
+          className="ag c6 c7 c8 g9 gb iq ir is"
+        >
+          It’s hard to write a review for this film without any major spoilers, so this might seem a little vague here and there. There will be very minor spoilers, primarily what’s revealed in the opening text crawl or the trailers, so not much, but if you want to go into this film completely virgin, stop here.
+        </p>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag c6 bo db b8 ba b7 b9 bw by bv bx cs d0 ej it el iu en iv"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          Read more
+        </button>
+      </div>
+      <div
+        className="io ip dc du bv bx"
+      >
+        <div
+          className="cs ag bo da ds"
+          data-baseweb="typo-labelsmall"
+        >
+          Luis_989
+        </div>
+        <p
+          className="ag c6 c7 c8 g9 gb iq ir is"
+        >
+          When The Force Awakens was released the vast majority of fans liked it. They were practically watching a remake of A New Hope but it was enough for them. Although they never liked Rey. That damn feminist agenda right?
+        </p>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag c6 bo db b8 ba b7 b9 bw by bv bx cs d0 ej it el iu en iv"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          Read more
+        </button>
+      </div>
+      <div
+        className="iw ix dc du bv bx"
+      >
+        <div
+          className="cs ag bo da ds"
+          data-baseweb="typo-labelsmall"
+        >
+          msbreviews
+        </div>
+        <p
+          className="ag c6 c7 c8 g9 gb iq ir is"
+        >
+          If you enjoy reading my Spoiler-Free reviews, please follow my blog @
+
+        </p>
+        <button
+          className="dv dw d9 dx ay az b0 dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea bc eb h5 ed br bs bt ee ag c6 bo db b8 ba b7 b9 bw by bv bx cs d0 ej it el iu en iv"
+          data-baseweb="button"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          Read more
+        </button>
+      </div>
+    </div>
+  </div>,
   <div
     className=""
   />,

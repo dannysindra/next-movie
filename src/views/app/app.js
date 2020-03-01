@@ -1,18 +1,38 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useLocation
+} from 'react-router-dom';
 
-import { HeaderNavigation } from '../header-navigation';
+import { Footer } from '../../components';
+import { Navigation } from '../navigation';
 import { Home } from '../home';
 import { Movie } from '../movie';
 import { TV } from '../tv';
-import { ScrollToTop } from './scroll-to-top';
+import { Watchlist } from '../watchlist';
+
+// https://reacttraining.com/react-router/web/guides/scroll-restoration
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+};
 
 export const App = () => {
     return (
         <Router>
             <ScrollToTop />
-            <HeaderNavigation />
+            <Navigation />
             <Switch>
+                <Route path="/watchlist">
+                    <Watchlist />
+                </Route>
                 <Route path="/movie/:id">
                     <Movie />
                 </Route>
@@ -23,6 +43,7 @@ export const App = () => {
                     <Home />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     );
 };
