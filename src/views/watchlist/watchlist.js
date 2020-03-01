@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Cell } from 'baseui/layout-grid';
 import { useHistory } from 'react-router-dom';
 
-import { Content, H3 } from 'next-movie-components';
+import { Content, H3, P1 } from 'next-movie-components';
 
 import { useAuth } from '../../utils/auth';
 import { useQueryWatchlistEntries } from '../../utils/graphql';
@@ -47,20 +47,24 @@ export const Watchlist = () => {
         <Root>
             <Content>
                 <H3>My Watchlist</H3>
-                <Grid
-                    gridGutters={0}
-                    gridMargins={0}
-                    overrides={{
-                        Grid: {
-                            style: {
-                                marginLeft: 0,
-                                marginRight: 0
+                {entries && entries.length > 0 ? (
+                    <Grid
+                        gridGutters={0}
+                        gridMargins={0}
+                        overrides={{
+                            Grid: {
+                                style: {
+                                    marginLeft: 0,
+                                    marginRight: 0
+                                }
                             }
-                        }
-                    }}
-                >
-                    {entries}
-                </Grid>
+                        }}
+                    >
+                        {entries}
+                    </Grid>
+                ) : (
+                    <P1>There is no movie added to your watchlist yet.</P1>
+                )}
             </Content>
         </Root>
     );

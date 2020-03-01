@@ -66,7 +66,7 @@ export const Login = ({ onClose, ...rest }) => {
                     </ListItemLabel>
                 </ListItem>
                 <ListItem artwork={Plus} artworkSize={ARTWORK_SIZES.LARGE}>
-                    <ListItemLabel description="Add movie you want to watch later to your watchlist">
+                    <ListItemLabel description="Add the movie that you want to watch later to watchlist">
                         Save
                     </ListItemLabel>
                 </ListItem>
