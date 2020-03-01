@@ -24,3 +24,7 @@ List of main technologies used in this repository:
 - **Apollo**: GraphQL client
 - **Firebase**: Authentication and data store
 - **Travis**: Continuous deployment
+
+#### Code Style
+
+You may code in any style you prefer, and it will automatically be formatted by Prettier when you run `git commit`.
