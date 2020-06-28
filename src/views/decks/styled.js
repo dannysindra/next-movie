@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStyletron } from 'baseui';
+import { useStyletron, styled } from 'baseui';
 import { Block } from 'baseui/block';
 import Show from 'baseui/icon/show';
 import { FaHeart } from 'react-icons/fa';
@@ -9,6 +9,17 @@ export const KIND = {
     movie: 'movie',
     tv: 'tv'
 };
+
+const Label = styled('span', ({ $theme }) => {
+    const { breakpoints, typography } = $theme;
+
+    return {
+        ...typography.font150,
+        [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
+            fontSize: 'initial'
+        }
+    };
+});
 
 const formatVoteCount = count => {
     if (count >= 1000) {
@@ -40,7 +51,7 @@ export const Meta = ({ title, releaseDate, votes, voteCount }) => {
                             size="0.8em"
                         />
                         &nbsp;
-                        {votes}
+                        <Label>{votes}</Label>
                     </>
                 )}
                 {voteCount && (
@@ -48,7 +59,7 @@ export const Meta = ({ title, releaseDate, votes, voteCount }) => {
                         &nbsp; &nbsp;
                         <Show />
                         &nbsp;
-                        {formatVoteCount(voteCount)}
+                        <Label>{formatVoteCount(voteCount)}</Label>
                     </>
                 )}
             </Block>
