@@ -10,13 +10,13 @@ export const KIND = {
     tv: 'tv'
 };
 
-const Label = styled('span', ({ $theme }) => {
-    const { breakpoints, typography } = $theme;
+const MediumUp = styled('span', ({ $theme }) => {
+    const { breakpoints } = $theme;
 
     return {
-        ...typography.font150,
+        display: 'none',
         [`@media screen and (min-width: ${breakpoints.medium}px)`]: {
-            fontSize: 'initial'
+            display: 'block'
         }
     };
 });
@@ -51,16 +51,16 @@ export const Meta = ({ title, releaseDate, votes, voteCount }) => {
                             size="0.8em"
                         />
                         &nbsp;
-                        <Label>{votes}</Label>
+                        {votes}
                     </>
                 )}
                 {voteCount && (
-                    <>
+                    <MediumUp>
                         &nbsp; &nbsp;
                         <Show />
                         &nbsp;
-                        <Label>{formatVoteCount(voteCount)}</Label>
-                    </>
+                        {formatVoteCount(voteCount)}
+                    </MediumUp>
                 )}
             </Block>
         </>
